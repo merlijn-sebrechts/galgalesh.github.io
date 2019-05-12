@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu &amp; Linux on Merlijn&#39;s Magical Mind</title>
+    <link>https://merlijn.sebrechts.be/categories/ubuntu-linux/</link>
+    <description>Recent content in Ubuntu &amp; Linux on Merlijn&#39;s Magical Mind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://merlijn.sebrechts.be/categories/ubuntu-linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What does “perf interrupt took too long” mean?</title>
+      <link>https://merlijn.sebrechts.be/blog/perf-interrupt-took-to-long/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/blog/perf-interrupt-took-to-long/</guid>
+      <description>Wifi problems So, I&amp;#8217;m having a problem with my laptop. When I&amp;#8217;m using the &amp;#8220;TelenetWiFree&amp;#8221; connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&amp;#8217;t seem to come back again.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Merlijn&#39;s Magical Mind</title>
+    <link>https://merlijn.sebrechts.be/categories/</link>
+    <description>Recent content in Categories on Merlijn&#39;s Magical Mind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://merlijn.sebrechts.be/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://merlijn.sebrechts.be/categories/markdown/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/categories/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu &amp; Linux</title>
+      <link>https://merlijn.sebrechts.be/categories/ubuntu-linux/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/categories/ubuntu-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://merlijn.sebrechts.be/categories/hugo/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://merlijn.sebrechts.be/categories/go/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/categories/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jekyll</title>
+      <link>https://merlijn.sebrechts.be/categories/jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/categories/jekyll/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
