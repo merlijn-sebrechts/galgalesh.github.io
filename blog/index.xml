@@ -6,15 +6,55 @@
     <description>Recent content in Blog on Merlijn&#39;s Magical Mind</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://merlijn.sebrechts.be/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>I&#39;m Back!</title>
+      <link>https://merlijn.sebrechts.be/blog/2019-05-im-back/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/blog/2019-05-im-back/</guid>
+      <description>I restored my blog from an old backup I had. I imported it into Hugo, a static blogging platform.</description>
+    </item>
+    
+    <item>
+      <title>What does “perf interrupt took too long” mean?</title>
+      <link>https://merlijn.sebrechts.be/blog/2015-09-perf-interrupt-took-to-long/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/blog/2015-09-perf-interrupt-took-to-long/</guid>
+      <description>Wifi problems So, I&amp;rsquo;m having a problem with my laptop. When I&amp;rsquo;m using the &amp;#8220;TelenetWiFree&amp;#8221; connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&amp;rsquo;t seem to come back again.</description>
+    </item>
+    
+    <item>
+      <title>cat ./pragmatic-docker-day</title>
+      <link>https://merlijn.sebrechts.be/blog/2015-04-pragmatic-docker-day/</link>
+      <pubDate>Sat, 25 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/blog/2015-04-pragmatic-docker-day/</guid>
+      <description>I got a ticket to the Pragmatic Docker Day meetup in Ghent in exchange for writing a blogpost about it. Free food, drinks &amp;amp; awesome talks for a whole day, who would want to miss that? Not me!
+So here are my unstructured thoughts I gathered from the meetup:
+Docker is awesome! What is docker? Docker encapsulates apps in their own little sandbox. Every app runs in its own container.</description>
+    </item>
+    
+    <item>
+      <title>Windows power users are not Linux power users!</title>
+      <link>https://merlijn.sebrechts.be/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</link>
+      <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</guid>
+      <description>Let&amp;rsquo;s rid the world of one of the most prominent Linux myths: &amp;#8220;Desktop Linux sucks. It&amp;rsquo;s just not there yet&amp;#8221;.
+When Windows power users try out Linux two things always happen:
+ They get frustrated because they can&amp;rsquo;t find how to do something in Linux. They brick their system, or make it extremely buggy.  I&amp;rsquo;ve been that person, I&amp;rsquo;ve bricked my system (a lot!), and the fact is, it was entirely my own fault.</description>
+    </item>
+    
+    <item>
       <title>Markdown and Shortcodes</title>
       <link>https://merlijn.sebrechts.be/blog/examples/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>https://merlijn.sebrechts.be/blog/examples/</guid>
       <description>Thanks! Special thanks to Markdown Cheatsheet.
@@ -23,68 +63,6 @@ Strong emphasis, aka bold, with asterisks or underscores.
 Combined emphasis with asterisks and underscores.
 Strikethrough uses two tildes. Scratch this.
 Emphasis, aka italics, with *asterisks* or _underscores_. Strong emphasis, aka bold, with **asterisks** or __underscores__.</description>
-    </item>
-    
-    <item>
-      <title>What does “perf interrupt took too long” mean?</title>
-      <link>https://merlijn.sebrechts.be/blog/perf-interrupt-took-to-long/</link>
-      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://merlijn.sebrechts.be/blog/perf-interrupt-took-to-long/</guid>
-      <description>Wifi problems So, I&amp;#8217;m having a problem with my laptop. When I&amp;#8217;m using the &amp;#8220;TelenetWiFree&amp;#8221; connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&amp;#8217;t seem to come back again.</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://merlijn.sebrechts.be/blog/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://merlijn.sebrechts.be/blog/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://merlijn.sebrechts.be/blog/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://merlijn.sebrechts.be/blog/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://merlijn.sebrechts.be/blog/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://merlijn.sebrechts.be/blog/hugoisforlovers/</guid>
-      <description>&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
-
-&lt;p&gt;Go to &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
-appropriate version for your os and architecture.&lt;/p&gt;
-
-&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
-
-&lt;p&gt;More complete instructions are available at &lt;a href=&#34;https://merlijn.sebrechts.be/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://merlijn.sebrechts.be/blog/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://merlijn.sebrechts.be/blog/migrate-from-jekyll/</guid>
-      <description>&lt;h2 id=&#34;move-static-content-to-static&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.
-With Jekyll, something that looked like&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/
-    ▾ images/
-        logo.png
-&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

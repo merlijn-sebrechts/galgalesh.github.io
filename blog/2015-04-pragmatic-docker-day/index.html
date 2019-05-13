@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>cat ./pragmatic-docker-day - Merlijn&#39;s Magical Mind</title>
+<meta name="description" content="cat /merlijn/brain">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <meta name="generator" content="Hugo 0.55.5" />
+  
+<meta itemprop="name" content="cat ./pragmatic-docker-day">
+<meta itemprop="description" content="I got a ticket to the Pragmatic Docker Day meetup in Ghent in exchange for writing a blogpost about it. Free food, drinks &amp; awesome talks for a whole day, who would want to miss that? Not me!
+So here are my unstructured thoughts I gathered from the meetup:
+Docker is awesome! What is docker? Docker encapsulates apps in their own little sandbox. Every app runs in its own container.">
+
+
+<meta itemprop="datePublished" content="2015-04-25T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2015-04-25T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="469">
+
+
+
+<meta itemprop="keywords" content="" />
+
+  <meta property="og:title" content="cat ./pragmatic-docker-day" />
+<meta property="og:description" content="I got a ticket to the Pragmatic Docker Day meetup in Ghent in exchange for writing a blogpost about it. Free food, drinks &amp; awesome talks for a whole day, who would want to miss that? Not me!
+So here are my unstructured thoughts I gathered from the meetup:
+Docker is awesome! What is docker? Docker encapsulates apps in their own little sandbox. Every app runs in its own container." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://merlijn.sebrechts.be/blog/2015-04-pragmatic-docker-day/" />
+<meta property="article:published_time" content="2015-04-25T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2015-04-25T00:00:00&#43;00:00"/>
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="cat ./pragmatic-docker-day"/>
+<meta name="twitter:description" content="I got a ticket to the Pragmatic Docker Day meetup in Ghent in exchange for writing a blogpost about it. Free food, drinks &amp; awesome talks for a whole day, who would want to miss that? Not me!
+So here are my unstructured thoughts I gathered from the meetup:
+Docker is awesome! What is docker? Docker encapsulates apps in their own little sandbox. Every app runs in its own container."/>
+
+  
+
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
+  
+    
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+      <link rel="stylesheet" href="/css/main.min.css">
+      <link rel="stylesheet" href="/css/add-on.css">
+    
+  
+  
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            Blog
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        <a href="/" class="link"><i class="fas fa-home">&nbsp;</i>Home</a>
+      
+        <a href="/about/" class="link"><i class="far fa-id-card">&nbsp;</i>About</a>
+      
+        <a href="/tanzania/" class="link"><i class="far fa-newspaper">&nbsp;</i>Tanzania</a>
+      
+        <a href="/categories/" class="link"><i class="fas fa-sitemap">&nbsp;</i>Categories</a>
+      
+      <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      
+
+    </menu>
+    
+
+    <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="lang-toggle" lang="en"><span class="flag-icon flag-icon-en" alt="en"></span></a>
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="lang-menu" class="flyout-menu">
+  <a href="#" lang="en" class="active"><span class="flag-icon flag-icon-en" alt="en"></span></a>
+  
+    
+      
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro">
+  <a href="/"><img src="/img/main/Merlijn%20Sebrechts100x100.jpg" class="circle" width="" alt="Merlijn Sebrechts" /></a>
+  <header>
+    <h1>Merlijn's </br>Magical Mind</h1>
+  </header>
+  <main>
+    <p>cat /merlijn/brain</p>
+  </main>
+  
+    <footer>
+      <ul class="social-icons">
+        
+
+        <li><a href="//github.com/galgalesh/galgalesh.github.io" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/merlijnsebrechts" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//orcid.org/0000-0002-4093-7338" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+
+<li><a href="mailto:merlijn.sebrechts@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+  <header>
+  <div class="title">
+    
+        <h2><a href="/blog/2015-04-pragmatic-docker-day/">cat ./pragmatic-docker-day</a></h2>
+    
+    
+</div>
+  <div class="meta">
+    <time class="published" datetime="2015-04-25 00:00:00 &#43;0000 UTC">
+      April 25, 2015
+    </time>
+    <span class="author">Merlijn</span>
+    
+        <p>3 minute read</p>
+    
+  </div>
+</header>
+
+  <section id="social-share">
+    
+
+
+
+
+  </section>
+  
+
+  <div class="content">
+    
+
+<p>I got a ticket to the Pragmatic Docker Day meetup in Ghent in exchange for writing a blogpost about it. Free food, drinks &amp; awesome talks for a whole day, who would want to miss that? <em>Not me!</em></p>
+
+<p>So here are my unstructured thoughts I gathered from the meetup:</p>
+
+<h2 id="docker-is-awesome">Docker is awesome!</h2>
+
+<p>What is docker? Docker encapsulates apps in their own little sandbox. Every app runs in its own container. An environment made especially so the app can run well and can&rsquo;t mess to much with other apps running on the same server. It&rsquo;s basically a VM without the overhead.</p>
+
+<blockquote>
+<p>Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications</p>
+</blockquote>
+
+<p>Developers write their apps and put them in a docker container. They give this container to sysadmins and they are sure everything will work once deployed on the server because the app and all its dependencies are bundled in the docker container.</p>
+
+<h2 id="docker-is-fancy">Docker is fancy!</h2>
+
+<p>This isn&rsquo;t new at all. Containers have existed on Linux for a very long time. What docker does is provide a very fancy interface and API to work with and distribute those containers. This opens container technologies to a much broader public.</p>
+
+<p>Docker is becoming so popular that even Microsoft wants in on the party. Docker announced a partnership with Microsoft to bring Docker to Windows.</p>
+
+<h2 id="docker-is-production-ready">Docker is production-ready*</h2>
+
+<p>Tomas Doran talked about how Yelp is using Docker in their Continues Integration &amp; Continues Deployment workflow. From what I gathered, almost every service at Yelp is running in docker containers. This allows for very dynamic scaling, and makes the development &#8211; testing &#8211; production chain a lot shorter without compromising on the stability.</p>
+
+<p>*Docker is still a very young and fast-moving platform. Using this in production requires a lot of knowledge and requires some caution. For a small infrastructure the benefits you get from docker might not outweigh the disadvantages from working with such early technology. However, even when you don&rsquo;t use Docker in production, you can still benefit from it during development and testing!</p>
+
+<h2 id="docker-containers-are-not-cross-platform-8230">Docker containers are not cross-platform&#8230;</h2>
+
+<p>The docker container still uses the host&rsquo;s kernel. This means that a docker container will only work on a machine that supports the same kernel functionality. If you make a docker container on Linux, and you run it on a distro with a different version of the Linux kernel, most of the time you&rsquo;ll be allright. However, running Linux docker containers native on a Mac or Windows won&rsquo;t work.</p>
+
+<h2 id="you-can-still-run-containers-on-windows">You can still run containers on Windows?!</h2>
+
+<p>It&rsquo;s still possible to run Linux docker containers on Mac and Windows using boot2docker. This is basically a lightweight Linux VM. Docker containers run in this VM. This is great for development, but there might be an overhead because of the virtualization.</p>
+
+  </div>
+  <footer>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://merlijn.sebrechts.be/categories/ubuntu-linux">Ubuntu &amp; Linux</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    <li class="tags">
+      <ul>
+        <li>None</li>
+      </ul>
+    </li>
+  
+</ul>
+
+  </footer>
+</article>
+<article class="post">
+  
+
+</article>
+<div class="pagination">
+  
+    <a href="/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/" class="button big previous"><i class="fas fa-angle-left"></i> Windows power users are not Linux power users!</a>
+  
+  
+    <a href="/blog/2015-09-perf-interrupt-took-to-long/" class="button big next">What does “perf interrupt took too long” mean? <i class="fas fa-angle-right"></i></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  <section id="recent-posts">
+    <header>
+      <h1>Recent posts</h1>
+    </header>
+    
+    <article class="mini-post">
+      <section>
+        
+
+      </section>
+      <header>
+        <h1><a href="/blog/2019-05-im-back/">I&#39;m Back!</a></h1>
+        <time class="published" datetime="">May 13, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <section>
+        
+
+      </section>
+      <header>
+        <h1><a href="/blog/2015-09-perf-interrupt-took-to-long/">What does “perf interrupt took too long” mean?</a></h1>
+        <time class="published" datetime="">September 13, 2015</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <section>
+        
+
+      </section>
+      <header>
+        <h1><a href="/blog/2015-04-pragmatic-docker-day/">cat ./pragmatic-docker-day</a></h1>
+        <time class="published" datetime="">April 25, 2015</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <section>
+        
+
+      </section>
+      <header>
+        <h1><a href="/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/">Windows power users are not Linux power users!</a></h1>
+        <time class="published" datetime="">November 8, 2014</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <section>
+        
+
+      </section>
+      <header>
+        <h1><a href="/tanzania/2013-05-05-vrijdag-3-mei-die-hp-_/">Vrijdag 3 mei: Die hp -_-</a></h1>
+        <time class="published" datetime="">May 5, 2013</time>
+      </header>
+    </article>
+    
+    
+      <a href="/blog/" class="button">See more</a>
+    
+  </section>
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/tanzania/">tanzania<span class="count">51</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/ubuntu-linux/">ubuntu-linux<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/markdown/">markdown<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/ubuntu-amp-linux/">ubuntu-amp-linux<span class="count">1</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/uncategorized/">uncategorized<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>test</p>
+    <footer>
+      <a href="/about" class="button">Learn More</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="social-icons">
+        
+
+        <li><a href="//github.com/galgalesh/galgalesh.github.io" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/merlijnsebrechts" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//orcid.org/0000-0002-4093-7338" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+
+<li><a href="mailto:merlijn.sebrechts@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2019
+      
+        Merlijn&#39;s Magical Mind
+      
+    .
+    Powered by <a href="//gohugo.io" target="_blank" rel="noopener">Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  
+  <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src=/js/util.js></script>
+  <script src=/js/main.js></script>
+  <script src=/js/add-on.js></script>
+  
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+    </div>
+  </body>
+</html>
