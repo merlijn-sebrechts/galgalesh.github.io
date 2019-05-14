@@ -3,289 +3,107 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://merlijn.sebrechts.be/blog/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    <loc>/blog/</loc>
+    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/2019-05-im-back/</loc>
+    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/blog/"
+                hreflang="nl"
+                href="/nl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://merlijn.sebrechts.be/blog/"
+                href="/"
                 />
   </url>
   
   <url>
-    <loc>https://merlijn.sebrechts.be/categories/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2015-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/categories/"
+                hreflang="nl"
+                href="/nl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://merlijn.sebrechts.be/categories/"
+                href="/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://merlijn.sebrechts.be/categories/markdown/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://merlijn.sebrechts.be/blog/examples/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://merlijn.sebrechts.be/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merlijn.sebrechts.be/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://merlijn.sebrechts.be/categories/ubuntu-linux/</loc>
+    <loc>/categories/ubuntu-linux/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://merlijn.sebrechts.be/blog/perf-interrupt-took-to-long/</loc>
+    <loc>/blog/2015-09-perf-interrupt-took-to-long/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://merlijn.sebrechts.be/blog/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/blog/creating-a-new-theme/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/blog/creating-a-new-theme/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merlijn.sebrechts.be/blog/creating-a-new-theme/"
-                />
+    <loc>/blog/2015-04-pragmatic-docker-day/</loc>
+    <lastmod>2015-04-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://merlijn.sebrechts.be/categories/hugo/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/categories/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/categories/hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merlijn.sebrechts.be/categories/hugo/"
-                />
+    <loc>/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</loc>
+    <lastmod>2014-11-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://merlijn.sebrechts.be/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/about/"
+                hreflang="nl"
+                href="/nl/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://merlijn.sebrechts.be/about/"
+                href="/about/"
                 />
   </url>
   
   <url>
-    <loc>https://merlijn.sebrechts.be/blog/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/blog/goisforlovers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/blog/goisforlovers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merlijn.sebrechts.be/blog/goisforlovers/"
-                />
+    <loc>/categories/markdown/</loc>
+    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://merlijn.sebrechts.be/blog/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/blog/hugoisforlovers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/blog/hugoisforlovers/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merlijn.sebrechts.be/blog/hugoisforlovers/"
-                />
+    <loc>/blog/examples/</loc>
+    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://merlijn.sebrechts.be/categories/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/categories/go/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/categories/go/"
+                hreflang="nl"
+                href="/nl/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://merlijn.sebrechts.be/categories/go/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://merlijn.sebrechts.be/categories/jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/categories/jekyll/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/categories/jekyll/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merlijn.sebrechts.be/categories/jekyll/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://merlijn.sebrechts.be/blog/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/blog/migrate-from-jekyll/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/blog/migrate-from-jekyll/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merlijn.sebrechts.be/blog/migrate-from-jekyll/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://merlijn.sebrechts.be/contact/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merlijn.sebrechts.be/contact/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://merlijn.sebrechts.be/tags/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://merlijn.sebrechts.be/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://merlijn.sebrechts.be/pl/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merlijn.sebrechts.be/tags/"
+                href="/tags/"
                 />
   </url>
   

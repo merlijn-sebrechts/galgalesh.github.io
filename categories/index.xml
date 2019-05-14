@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Merlijn&#39;s Magical Mind</title>
+    <title>Categories on Merlijn Sebrechts</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Merlijn&#39;s Magical Mind</description>
+    <description>Recent content in Categories on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 13 Sep 2015 00:00:00 +0000</lastBuildDate>
@@ -17,33 +17,6 @@
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>/categories/ubuntu-linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tanzania</title>
-      <link>/categories/tanzania/</link>
-      <pubDate>Sun, 05 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/tanzania/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ubuntu &amp;amp; Linux</title>
-      <link>/categories/ubuntu-amp-linux/</link>
-      <pubDate>Wed, 01 May 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/ubuntu-amp-linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Uncategorized</title>
-      <link>/categories/uncategorized/</link>
-      <pubDate>Mon, 25 Feb 2013 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/uncategorized/</guid>
       <description></description>
     </item>
     
