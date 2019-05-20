@@ -3,96 +3,96 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/</loc>
+    <loc>merlijn.sebrechts.be/blog/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/blog/2019-05-im-back/</loc>
+    <loc>merlijn.sebrechts.be/blog/2019-05-im-back/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>merlijn.sebrechts.be/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="/nl/"
+                href="merlijn.sebrechts.be/nl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="merlijn.sebrechts.be/"
                 />
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>merlijn.sebrechts.be/categories/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="/nl/categories/"
+                href="merlijn.sebrechts.be/nl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="merlijn.sebrechts.be/categories/"
                 />
   </url>
   
   <url>
-    <loc>/categories/ubuntu-linux/</loc>
+    <loc>merlijn.sebrechts.be/categories/ubuntu-linux/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/blog/2015-09-perf-interrupt-took-to-long/</loc>
+    <loc>merlijn.sebrechts.be/blog/2015-09-perf-interrupt-took-to-long/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2015-04-pragmatic-docker-day/</loc>
+    <loc>merlijn.sebrechts.be/blog/2015-04-pragmatic-docker-day/</loc>
     <lastmod>2015-04-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</loc>
+    <loc>merlijn.sebrechts.be/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</loc>
     <lastmod>2014-11-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>merlijn.sebrechts.be/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="/nl/about/"
+                href="merlijn.sebrechts.be/nl/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/about/"
+                href="merlijn.sebrechts.be/about/"
                 />
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>merlijn.sebrechts.be/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="/nl/tags/"
+                href="merlijn.sebrechts.be/nl/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="merlijn.sebrechts.be/tags/"
                 />
   </url>
   
