@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<sitemap>
-	   	<loc>merlijn.sebrechts.be/en/sitemap.xml</loc>
+	   	<loc>/en/sitemap.xml</loc>
 		
 	   	<lastmod>2019-05-13T00:00:00+00:00</lastmod>
 		
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>merlijn.sebrechts.be/nl/sitemap.xml</loc>
+	   	<loc>/nl/sitemap.xml</loc>
 		
 	   	<lastmod>2019-05-20T00:00:00+00:00</lastmod>
 		
