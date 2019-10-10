@@ -6,10 +6,32 @@
     <description>Recent content in Blog on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How I became a cyborg pt1</title>
+      <link>/blog/2019-steampunk-cyborg-1/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019-steampunk-cyborg-1/</guid>
+      <description>Close Encounters of the Third Kind &amp;ldquo;We really need to do something about the valve. We&amp;rsquo;ve passed the point where we can wait two more years to see how it progresses.&amp;rdquo;
+I was silent for a while, so the cardiologist asked &amp;ldquo;do you understand what I mean?&amp;rdquo;
+&amp;ldquo;Like, I need a transplant from a pig heart?&amp;rdquo;, I asked.
+&amp;ldquo;Well, given your age an artificial valve is more likely.&amp;rdquo;
+It was clear my heart was fucked.</description>
+    </item>
+    
+    <item>
+      <title>How to run a leaderless organization</title>
+      <link>/blog/hackerspace-blueprint/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/hackerspace-blueprint/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Who owns my research?</title>

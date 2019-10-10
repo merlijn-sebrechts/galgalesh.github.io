@@ -4,14 +4,17 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2019-steampunk-cyborg-1/</loc>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -22,6 +25,11 @@
                 hreflang="en"
                 href="/"
                 />
+  </url>
+  
+  <url>
+    <loc>/blog/hackerspace-blueprint/</loc>
+    <lastmod>2019-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -37,7 +45,6 @@
   <url>
     <loc>/categories/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -53,7 +60,6 @@
   <url>
     <loc>/categories/ubuntu-linux/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -88,7 +94,6 @@
   
   <url>
     <loc>/tags/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"

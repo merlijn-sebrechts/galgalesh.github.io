@@ -5,7 +5,6 @@
   <url>
     <loc>/nl/categories/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -21,7 +20,6 @@
   <url>
     <loc>/nl/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -37,13 +35,11 @@
   <url>
     <loc>/nl/categories/tanzania/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/nl/tanzania/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -99,7 +95,6 @@
   <url>
     <loc>/nl/categories/ubuntu-amp-linux/</loc>
     <lastmod>2013-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -330,7 +325,6 @@
   <url>
     <loc>/nl/categories/uncategorized/</loc>
     <lastmod>2013-02-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -345,7 +339,6 @@
   
   <url>
     <loc>/nl/tags/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
