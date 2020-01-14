@@ -1,45 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/2019-steampunk-cyborg-1/</loc>
-    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="/nl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-  </url>
-  
-  <url>
-    <loc>/blog/copyright-ghent-university-researcher/</loc>
-    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/2019-05-im-back/</loc>
-    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2015-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -53,8 +23,48 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="/nl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+  </url>
+  
+  <url>
     <loc>/categories/ubuntu-linux/</loc>
-    <lastmod>2015-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2020-01-docker-podman-kata-cri-o/</loc>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2019-steampunk-cyborg-2/</loc>
+    <lastmod>2019-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2019-steampunk-cyborg-1/</loc>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/copyright-ghent-university-researcher/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/2019-05-im-back/</loc>
+    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>

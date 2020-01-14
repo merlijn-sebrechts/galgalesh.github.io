@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Merlijn Sebrechts</title>
@@ -6,10 +6,29 @@
     <description>Recent content in Blog on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What&#39;s up with CRI-O, Kata Containers and Podman?</title>
+      <link>/blog/2020-01-docker-podman-kata-cri-o/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-01-docker-podman-kata-cri-o/</guid>
+      <description>The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at the &amp;ldquo;consolidation&amp;rdquo; stage of the hype cycle:
+ Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &amp;ldquo;The primary orchestrator going forward is Kubernetes.&amp;rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer.</description>
+    </item>
+    
+    <item>
+      <title>How I became a cyborg pt2</title>
+      <link>/blog/2019-steampunk-cyborg-2/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019-steampunk-cyborg-2/</guid>
+      <description>We can rebuild him When I woke up, the first thing I saw were my parents, talking to a nurse. My parents wanted to leave but the nurse asked them to stay. She said it&#39;s better to have familiar faces there when I woke up. I tried to say I agreed, but I wasn&#39;t able to produce any sound so I just closed my eyes for a bit and waited until I was a bit more awake.</description>
+    </item>
     
     <item>
       <title>How I became a cyborg pt1</title>
@@ -17,9 +36,9 @@
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/2019-steampunk-cyborg-1/</guid>
-      <description>Close Encounters of the Third Kind &amp;ldquo;We really need to do something about the valve. We&amp;rsquo;ve passed the point where we can wait two more years to see how it progresses.&amp;rdquo;
+      <description>Close Encounters of the Third Kind &amp;ldquo;We really need to do something about the valve. We&#39;ve passed the point where we can wait two more years to see how it progresses.&amp;rdquo;
 I was silent for a while, so the cardiologist asked &amp;ldquo;do you understand what I mean?&amp;rdquo;
-&amp;ldquo;Like, I need a transplant from a pig heart?&amp;rdquo;, I asked.
+&amp;ldquo;Like, I need a transplant from a pig heart?&amp;quot;, I asked.
 &amp;ldquo;Well, given your age an artificial valve is more likely.&amp;rdquo;
 It was clear my heart was fucked.</description>
     </item>
@@ -30,7 +49,7 @@ It was clear my heart was fucked.</description>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/copyright-ghent-university-researcher/</guid>
-      <description>When I submitted my first paper, I realized I had no idea who owned my research! Was I authorized to transfer the rights to a journal or did I need someone else&amp;rsquo;s permission? After some digging, I found the answer and wrote it all up in a neat little document. So here&amp;rsquo;s the dusted off version, in case it&amp;rsquo;s useful to anyone else.
+      <description>When I submitted my first paper, I realized I had no idea who owned my research! Was I authorized to transfer the rights to a journal or did I need someone else&#39;s permission? After some digging, I found the answer and wrote it all up in a neat little document. So here&#39;s the dusted off version, in case it&#39;s useful to anyone else.
 In short Intellectual property (IP) as a PhD student at Ghent University is largely divided into two parts: research results and educational material.</description>
     </item>
     
@@ -50,7 +69,7 @@ Image by clipart-library</description>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>/blog/2015-09-perf-interrupt-took-to-long/</guid>
-      <description>Wifi problems So, I&amp;rsquo;m having a problem with my laptop. When I&amp;rsquo;m using the &amp;#8220;TelenetWiFree&amp;#8221; connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&amp;rsquo;t seem to come back again.</description>
+      <description>Wifi problems So, I&#39;m having a problem with my laptop. When I&#39;m using the “TelenetWiFree” connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&#39;t seem to come back again.</description>
     </item>
     
     <item>
@@ -61,7 +80,7 @@ Image by clipart-library</description>
       <guid>/blog/2015-04-pragmatic-docker-day/</guid>
       <description>I got a ticket to the Pragmatic Docker Day meetup in Ghent in exchange for writing a blogpost about it. Free food, drinks &amp;amp; awesome talks for a whole day, who would want to miss that? Not me!
 So here are my unstructured thoughts I gathered from the meetup:
-Docker is awesome! What is docker? Docker encapsulates apps in their own little sandbox. Every app runs in its own container.</description>
+Docker is awesome! What is docker? Docker encapsulates apps in their own little sandbox. Every app runs in its own container. An environment made especially so the app can run well and can&#39;t mess to much with other apps running on the same server.</description>
     </item>
     
     <item>
@@ -70,9 +89,9 @@ Docker is awesome! What is docker? Docker encapsulates apps in their own little 
       <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</guid>
-      <description>Let&amp;rsquo;s rid the world of one of the most prominent Linux myths: &amp;#8220;Desktop Linux sucks. It&amp;rsquo;s just not there yet&amp;#8221;.
+      <description>Let&#39;s rid the world of one of the most prominent Linux myths: “Desktop Linux sucks. It&#39;s just not there yet”.
 When Windows power users try out Linux two things always happen:
- They get frustrated because they can&amp;rsquo;t find how to do something in Linux. They brick their system, or make it extremely buggy.  I&amp;rsquo;ve been that person, I&amp;rsquo;ve bricked my system (a lot!), and the fact is, it was entirely my own fault.</description>
+ They get frustrated because they can&#39;t find how to do something in Linux. They brick their system, or make it extremely buggy.  I&#39;ve been that person, I&#39;ve bricked my system (a lot!), and the fact is, it was entirely my own fault.</description>
     </item>
     
   </channel>
