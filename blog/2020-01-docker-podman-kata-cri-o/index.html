@@ -7,7 +7,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.62.2" />
+  <meta name="generator" content="Hugo 0.69.2" />
   <meta itemprop="name" content="What&#39;s up with CRI-O, Kata Containers and Podman?">
 <meta itemprop="description" content="The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at the &ldquo;consolidation&rdquo; stage of the hype cycle:
  Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &ldquo;The primary orchestrator going forward is Kubernetes.&rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer.">
@@ -226,7 +226,7 @@
 <li>The <strong>CNCF</strong> is the <em>Cloud Native Compute Foundation</em>, an organization created by the Linux Foundation which hosts a big number of open source projects that all have to do with running &ldquo;cloud native&rdquo; applications. This is mostly about microservices and containers.</li>
 <li>The Kubernetes project has also defined a number of standards. Relevant for this article is the <strong>CRI</strong>: the <em>Container Runtime Interface</em>. This interface defines how Kubernetes talks with a high-level container runtime.</li>
 </ul>
-<p>But what is a <em>high-level container runtime</em> exactly? First; we'll look at what a low-level container runtime does.</p>
+<p>But what is a <em>high-level container runtime</em> exactly? First; we&rsquo;ll look at what a low-level container runtime does.</p>
 <h1 id="high--vs-low-level-container-runtime">High- vs Low-level container runtime</h1>
 <p>An OCI runtime is relatively simple. You give it the root filesystem of the container and a json file describing core properties of the container, and the runtime spins up the container and connects it to an existing network using a pre-start hook.</p>
 <p>So what an OCI runtime does <em>not</em> do is the following.</p>
@@ -240,31 +240,31 @@
 <p>At the moment, we have three main OCI runtimes or low-level container runtimes.</p>
 <ul>
 <li><code>runc</code>, which is the default for most tools such as Docker and Podman. This is based on the code initially donated by Docker.</li>
-<li><code>kata-run</code> from the &ldquo;Kata Containers&rdquo; project, which aims to provide much better security and isolation between containers by running each container in a lightweight VM. It's a merge of the <code>runv</code> and <code>Intel Clear Containers</code> projects.</li>
+<li><code>kata-run</code> from the &ldquo;Kata Containers&rdquo; project, which aims to provide much better security and isolation between containers by running each container in a lightweight VM. It&rsquo;s a merge of the <code>runv</code> and <code>Intel Clear Containers</code> projects.</li>
 <li><code>gVisor</code> is created by Google. It provides better isolation by running each container in a tight security sandbox.</li>
 </ul>
 <p>There are also three main high-level container runtimes.</p>
 <ul>
-<li><code>containerd</code> is a CRI-compatible container runtime which was donated to the CNCF by Docker. It is currently the default in many Kubernetes distributions such ad Canonical's Charmed Kubernetes. It supports all OCI-compliant runtimes and has a special shim for <code>kata-run</code>.</li>
+<li><code>containerd</code> is a CRI-compatible container runtime which was donated to the CNCF by Docker. It is currently the default in many Kubernetes distributions such ad Canonical&rsquo;s Charmed Kubernetes. It supports all OCI-compliant runtimes and has a special shim for <code>kata-run</code>.</li>
 <li><code>CRI-O</code> is a bridge between Kubernetes and OCI-compliant runtimes created by Red Hat. It has the big advantage that it gets released in lock-step with Kubernetes itself. Each CRI-O version is compatible with the Kubernetes version that has the same version number. This runtime is the default in OpenShift.</li>
 <li>Docker itself can also be used as a CIR-compatible container runtime using the <code>docker-shim</code>. However, many Kubernetes distributors are moving away from this solution, due to the added unnecessary complexity of Docker.</li>
 </ul>
 <h1 id="podman-buildah-and-crictl">Podman, Buildah and crictl</h1>
 <p>Now, what was this about Red Hat moving from Docker to Podman in RHEL8? Scott McCarty wrote an excellent blog series excplaining <a href="https://www.linkedin.com/pulse/part-ii-why-docker-openshift-4-rhel-8-scott-mccarty/">Why There Is No Docker in OpenShift 4 and RHEL 8</a>. In short:</p>
 <ul>
-<li>Docker is a <strong>big fat daemon</strong> running almost always as root and which does a million things in the same binary. He argues it's better to split up functionality in a bunch of different projects so you can pick and choose which ones you actually need.</li>
+<li>Docker is a <strong>big fat daemon</strong> running almost always as root and which does a million things in the same binary. He argues it&rsquo;s better to split up functionality in a bunch of different projects so you can pick and choose which ones you actually need.</li>
 <li><strong>Development</strong> of the Docker engine is <strong>too slow</strong> to keep up with Kubernetes.</li>
-<li>Docker's <strong>community is on life support</strong> because of how Docker handled the CE/EE split and the move/rename to the Moby project.</li>
+<li>Docker&rsquo;s <strong>community is on life support</strong> because of how Docker handled the CE/EE split and the move/rename to the Moby project.</li>
 <li>Docker Inc.&lsquo;s future is <strong>uncertain</strong>.</li>
 </ul>
 <p>So, what should we use instead of Docker?</p>
 <ul>
-<li>Use <a href="https://blog.openshift.com/crictl-vs-podman/">Podman</a> managing pods and containers. It's a CLI tool which is very similar to <code>docker</code>. It uses libpod which uses runc in backend and is fully compatible with &ldquo;Docker Images&rdquo;.</li>
+<li>Use <a href="https://blog.openshift.com/crictl-vs-podman/">Podman</a> managing pods and containers. It&rsquo;s a CLI tool which is very similar to <code>docker</code>. It uses libpod which uses runc in backend and is fully compatible with &ldquo;Docker Images&rdquo;.</li>
 <li>Use <a href="https://developers.redhat.com/blog/2019/02/21/podman-and-buildah-for-docker-users/">Buildah</a> for building &ldquo;Docker Images&rdquo;. It supports building containers from DockerFiles, but you can also build them with simple shell scripts!</li>
 <li>Use <code>CRI-O</code> for running containers with Kubernetes. If you want to debug pods and containers maintained by Kubernetes, you can use the <a href="https://blog.openshift.com/crictl-vs-podman/"><code>crictl</code></a> tool instead of the <code>docker</code> commands.</li>
 </ul>
 <h1 id="conclusion">Conclusion</h1>
-<p>Developers who use Docker and Kubernetes might have been surprised that Docker Inc. is in such bad shape. Further inspection, however, shows an entire ecosystem that is moving on. Docker clearly started this entire revolution, but it just didn't work out. The restructured Docker inc. will focus solely on developers. This might turn out to be an excellent move, since the docker client is still the prime way for developers to build run &ldquo;Docker containers&rdquo; on their development workstations. It will be interesting to watch this space in 2020 and see if Docker is able to implement this vision.</p>
+<p>Developers who use Docker and Kubernetes might have been surprised that Docker Inc. is in such bad shape. Further inspection, however, shows an entire ecosystem that is moving on. Docker clearly started this entire revolution, but it just didn&rsquo;t work out. The restructured Docker inc. will focus solely on developers. This might turn out to be an excellent move, since the docker client is still the prime way for developers to build run &ldquo;Docker containers&rdquo; on their development workstations. It will be interesting to watch this space in 2020 and see if Docker is able to implement this vision.</p>
 <ul>
 <li><em>A special thanks to Kunal Kushwaha for his excellent presentation on Kubecon <a href="https://events19.linuxfoundation.org/wp-content/uploads/2017/11/How-Container-Runtime-Matters-in-Kubernetes_-OSS-Kunal-Kushwaha.pdf">&ldquo;How Container Runtimes matter in Kubernetes?&quot;</a>.</em></li>
 <li><em>Container ship image by <a href="https://www.pexels.com/photo/aft-container-ship-containers-cranes-2181449/">Sergii ILyushin</a></em></li>
@@ -329,6 +329,8 @@
     <a href="/blog/2019-steampunk-cyborg-1/" class="button"><div class="previous"><div>How I became a cyborg pt1</div></div></a>
   
   
+    <a href="/blog/2020-02-s4a-setup-ubuntu/" class="button"><div class="next"><div>Tutorial: S4A on Ubuntu</div></div></a>
+  
 </div>
 
 
@@ -339,6 +341,17 @@
       <header>
         <h1>Recent posts</h1>
       </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/blog/2020-02-s4a-setup-ubuntu/">Tutorial: S4A on Ubuntu</a></h1>
+          <time class="published" datetime="">February 23, 2020</time>
+        </header>
+      </article>
       
       <article class="mini-post">
         <section>
@@ -393,21 +406,6 @@
         <header>
           <h1><a href="/blog/2019-05-im-back/">I&#39;m Back!</a></h1>
           <time class="published" datetime="">May 13, 2019</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-  <a href="/blog/2015-09-perf-interrupt-took-to-long/" class="image featured">
-    <img src="/img/old/Who_Watches_the_Watchmen.jpg" alt="">
-  </a>
-
-
-        </section>
-        <header>
-          <h1><a href="/blog/2015-09-perf-interrupt-took-to-long/">What does “perf interrupt took too long” mean?</a></h1>
-          <time class="published" datetime="">September 13, 2015</time>
         </header>
       </article>
       
@@ -505,7 +503,7 @@
         Merlijn Sebrechts
       
     . <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.62.2' target='_blank' rel='noopener'>Hugo</a>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.69.2' target='_blank' rel='noopener'>Hugo</a>
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
