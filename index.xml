@@ -6,10 +6,20 @@
     <description>Recent content on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A fundamental difference between Snap and Flatpak</title>
+      <link>/blog/2020-07-03-snap-vs-flatpak/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-07-03-snap-vs-flatpak/</guid>
+      <description>Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub. If you are not familiar with these, please first read The future of Linux desktop application delivery is Flatpak and Snap.
+ Snaps and Flatpaks are often compared to each other because they both make it super easy for Linux users to get the latest versions of desktop applications.</description>
+    </item>
     
     <item>
       <title>Tutorial: S4A on Ubuntu</title>
@@ -40,7 +50,7 @@ sudo snap install arduino s4a After that, you need to give the user account on y
       <guid>/blog/2019-steampunk-cyborg-1/</guid>
       <description>Close Encounters of the Third Kind &amp;ldquo;We really need to do something about the valve. We&amp;rsquo;ve passed the point where we can wait two more years to see how it progresses.&amp;rdquo;
 I was silent for a while, so the cardiologist asked &amp;ldquo;do you understand what I mean?&amp;rdquo;
-&amp;ldquo;Like, I need a transplant from a pig heart?&amp;quot;, I asked.
+&amp;ldquo;Like, I need a transplant from a pig heart?&amp;rdquo;, I asked.
 &amp;ldquo;Well, given your age an artificial valve is more likely.&amp;rdquo;
 It was clear my heart was fucked.</description>
     </item>
@@ -105,6 +115,15 @@ When Windows power users try out Linux two things always happen:
       <description>Automatically build snap packages The easiest way to automatically build snaps is build.snapcraft.io. However, this tool is very limited: it only supports GitHub as a source and it always builds snaps from master.
 When your needs are a bit more advanced, you can use the Launchpad build service to set up automatic builds. This method is highly customizeable.
 How to set up automatic builds manually  Create a team: https://launchpad.net/people/+newteam Create a Project on launchpad: https://code.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/blog/2020-07-03-universal-linux-app-stores/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-07-03-universal-linux-app-stores/</guid>
+      <description></description>
     </item>
     
   </channel>

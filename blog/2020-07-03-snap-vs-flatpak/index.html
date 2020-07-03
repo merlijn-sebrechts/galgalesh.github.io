@@ -2,34 +2,34 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>I&#39;m Back! - Merlijn Sebrechts</title>
+<title>A fundamental difference between Snap and Flatpak - Merlijn Sebrechts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
   <meta name="generator" content="Hugo 0.73.0" />
-  <meta itemprop="name" content="I&#39;m Back!">
-<meta itemprop="description" content="I restored my blog from an old backup I had. I imported it into Hugo, a static blogging platform.
-Image by clipart-library">
-<meta itemprop="datePublished" content="2019-05-13T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-05-13T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="22">
+  <meta itemprop="name" content="A fundamental difference between Snap and Flatpak">
+<meta itemprop="description" content="Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub. If you are not familiar with these, please first read The future of Linux desktop application delivery is Flatpak and Snap.
+ Snaps and Flatpaks are often compared to each other because they both make it super easy for Linux users to get the latest versions of desktop applications.">
+<meta itemprop="datePublished" content="2020-07-03T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-07-03T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="582">
 
 
 
 <meta itemprop="keywords" content="" />
-  <meta property="og:title" content="I&#39;m Back!" />
-<meta property="og:description" content="I restored my blog from an old backup I had. I imported it into Hugo, a static blogging platform.
-Image by clipart-library" />
+  <meta property="og:title" content="A fundamental difference between Snap and Flatpak" />
+<meta property="og:description" content="Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub. If you are not familiar with these, please first read The future of Linux desktop application delivery is Flatpak and Snap.
+ Snaps and Flatpaks are often compared to each other because they both make it super easy for Linux users to get the latest versions of desktop applications." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/2019-05-im-back/" />
-<meta property="article:published_time" content="2019-05-13T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-05-13T00:00:00+00:00" />
+<meta property="og:url" content="/blog/2020-07-03-snap-vs-flatpak/" />
+<meta property="article:published_time" content="2020-07-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-03T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="I&#39;m Back!"/>
-<meta name="twitter:description" content="I restored my blog from an old backup I had. I imported it into Hugo, a static blogging platform.
-Image by clipart-library"/>
+<meta name="twitter:title" content="A fundamental difference between Snap and Flatpak"/>
+<meta name="twitter:description" content="Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub. If you are not familiar with these, please first read The future of Linux desktop application delivery is Flatpak and Snap.
+ Snaps and Flatpaks are often compared to each other because they both make it super easy for Linux users to get the latest versions of desktop applications."/>
 
   
 
@@ -181,13 +181,13 @@ Image by clipart-library"/>
   <header>
   <div class="title">
     
-        <h2><a href="/blog/2019-05-im-back/">I&#39;m Back!</a></h2>
+        <h2><a href="/blog/2020-07-03-snap-vs-flatpak/">A fundamental difference between Snap and Flatpak</a></h2>
     
     
 </div>
   <div class="meta">
-    <time class="published" datetime="2019-05-13 00:00:00 &#43;0000 UTC">
-      May 13, 2019
+    <time class="published" datetime="2020-07-03 00:00:00 &#43;0000 UTC">
+      July 3, 2020
     </time>
     <span class="author"></span>
     
@@ -203,14 +203,27 @@ Image by clipart-library"/>
 
   </section>
   
-  <a href="/blog/2019-05-im-back/" class="image featured">
-    <img src="/img/old/color-party.jpg" alt="">
+  <a href="/blog/2020-07-03-snap-vs-flatpak/" class="image featured">
+    <img src="/img/2020/snap-flatpak/snap-flatpak-banner.png" alt="">
   </a>
 
 
   <div class="content">
-    <p>I restored my blog from an old backup I had. I imported it into Hugo, a static blogging platform.</p>
-<p><em><a href="http://clipart-library.com/party.html">Image by clipart-library</a></em></p>
+    <blockquote>
+<p>Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the <a href="https://snapcraft.io/store">Snap Store</a> and <a href="https://flathub.org">Flathub</a>. If you are not familiar with these, please first read <a href="https://www.zdnet.com/article/the-future-of-linux-desktop-application-delivery-is-flatpak-and-snap/">The future of Linux desktop application delivery is Flatpak and Snap</a>.</p>
+</blockquote>
+<p>Snaps and Flatpaks are often compared to each other because they both make it super easy for Linux users to <em>get the latest versions of desktop applications</em>. If a Linux user wants to install the latest version of apps like Slack, Krita or Blender, either tool will work just fine. There is one fundamental difference between Snaps and Flatpaks, however. While both are systems for distributing Linux apps, snap is also a tool <em>to build Linux Distributions</em>.</p>
+<p>Flatpak is designed to install and update &ldquo;apps&rdquo;; user-facing software such as video editors, chat programs and more. Your operating system, however, contains a lot more software than apps. It contains a kernel, printer drivers, audio subsystems and more. While Flatpak assumes this software is installed using a traditional package manager, snaps can install anything. These are some examples.</p>
+<ul>
+<li>There is current work ongoing to put <em>the entire Linux printing stack</em> inside of a snap. This has the advantage that printer drivers can be updated independently from the operating system. Once this work is complete, every single Ubuntu version will be able to use the latest printer drivers. Trying to use new printers on old Linux distributions can be very frustrating, and installing newer printer drivers can be risky. Having the printing stack in a snap will solve this issue.</li>
+<li>A few years ago, Ubuntu drastically changed the system theme. When this initiative started, we wanted an easy way to make the latest updates of the theme available to users immediately. Normally, a system theme is shipped together with the distro, so users do not get get theme updates after the distro releases. For &ldquo;CommuniTheme&rdquo;, however, we fixed this by putting the <em>system</em> theme inside of a snap. Because of this, users got updates to their theme every day, instead of every 6 months. This is again not something Flatpak was built for. Flatpak applications can update their own theme, but it is not possible to ship the system theme as a Flatpak. This is because Flatpak was designed for distributing apps, not building an entire Linux distribution.</li>
+<li>Even the Linux kernel, the most fundamental part of a Linux distribution can be put in a snap. This is used a lot for IoT devices such as routers and satellites. The impact of a broken kernel update is catastrophic if you require a rocket in order to plug a USB stick into the device. Snaps allow these devices to safely update their kernel and automatically roll back if something goes wrong during the process.</li>
+</ul>
+<p>Just to be clear, this is <em>not</em> meant to be a criticism of Flatpak. Flatpak was designed to give developers an easy way to bring their apps directly to users, and it does that job <em>very well</em>. The focussed approach of Flatpak even has a big advantage: it&rsquo;s a lot easier for a distribution to integrate with Flatpak because it does a lot less. The tradeoff is that it only provides app distribution; it doesn&rsquo;t solve the issues of distributing entire operating systems.</p>
+<blockquote>
+<p>Note: I am a human being, and like most human beings, I make mistakes. Did you find an issue with this article? Let me know in the comments, and I&rsquo;ll be happy to correct it!</p>
+</blockquote>
+<!-- raw HTML omitted -->
 
   </div>
   <footer>
@@ -262,10 +275,8 @@ Image by clipart-library"/>
 
 <div class="pagination">
   
-    <a href="/blog/2015-09-perf-interrupt-took-to-long/" class="button"><div class="previous"><div>What does “perf interrupt took too long” mean?</div></div></a>
+    <a href="/blog/2020-02-s4a-setup-ubuntu/" class="button"><div class="previous"><div>Tutorial: S4A on Ubuntu</div></div></a>
   
-  
-    <a href="/blog/copyright-ghent-university-researcher/" class="button"><div class="next"><div>Who owns my research?</div></div></a>
   
 </div>
 
