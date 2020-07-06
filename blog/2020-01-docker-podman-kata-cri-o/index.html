@@ -6,9 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
-  <meta name="generator" content="Hugo 0.73.0" />
-  <meta itemprop="name" content="What&#39;s up with CRI-O, Kata Containers and Podman?">
+<meta name="generator" content="Hugo 0.73.0" /><meta itemprop="name" content="What&#39;s up with CRI-O, Kata Containers and Podman?">
 <meta itemprop="description" content="The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at the &ldquo;consolidation&rdquo; stage of the hype cycle:
  Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &ldquo;The primary orchestrator going forward is Kubernetes.&rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer.">
 <meta itemprop="datePublished" content="2020-01-14T00:00:00&#43;00:00" />
@@ -17,97 +15,73 @@
 
 
 
-<meta itemprop="keywords" content="" />
-  <meta property="og:title" content="What&#39;s up with CRI-O, Kata Containers and Podman?" />
+<meta itemprop="keywords" content="" /><meta property="og:title" content="What&#39;s up with CRI-O, Kata Containers and Podman?" />
 <meta property="og:description" content="The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at the &ldquo;consolidation&rdquo; stage of the hype cycle:
  Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &ldquo;The primary orchestrator going forward is Kubernetes.&rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/2020-01-docker-podman-kata-cri-o/" />
 <meta property="article:published_time" content="2020-01-14T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-01-14T00:00:00+00:00" />
-
-  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="What&#39;s up with CRI-O, Kata Containers and Podman?"/>
 <meta name="twitter:description" content="The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at the &ldquo;consolidation&rdquo; stage of the hype cycle:
  Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &ldquo;The primary orchestrator going forward is Kubernetes.&rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer."/>
-
-  
-
-  <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
-  
-    
-      <link rel="stylesheet" href="/css/normalize.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-      
-      
-      <link rel="stylesheet" href="/css/main.min.6d22afd25890242552a63002032532e43f59b91eea454409de37a6bc3cc90b90.css" integrity="sha256-bSKv0liQJCVSpjACAyUy5D9ZuR7qRUQJ3jemvDzJC5A=">
-      <link rel="stylesheet" href="/css/add-on.css">
-    
-  
-  
-  
-  
-    
-  
+<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
 </head>
 
   <body>
     
+
 <header id="site-header">
   <nav id="site-nav">
     <h1 class="nav-title">
-      <a href="/">
+      <a href="/" class="nav">
         
           Merlijn Sebrechts
         
       </a>
     </h1>
-    <menu id="site-nav-menu" class="flyout-menu">
+    <menu id="site-nav-menu" class="flyout-menu menu">
       
         
           
           
-            <a href="/" class="link"><i class='fa fa-home'></i> Home</a>
+            <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
           
         
       
         
           
-          <a href="/about/" class="link"><i class="far fa-id-card">&nbsp;</i>About</a>
+          <a href="/about/" class="nav link"><i class="far fa-id-card">&nbsp;</i>About</a>
         
       
         
           
-          <a href="/nl/tanzania/" class="link"><i class="far fa-newspaper">&nbsp;</i>Tanzania (Dutch)</a>
+          <a href="/nl/tanzania/" class="nav link"><i class="far fa-newspaper">&nbsp;</i>Tanzania (Dutch)</a>
         
       
         
           
-          <a href="/categories/" class="link"><i class="fas fa-sitemap">&nbsp;</i>Categories</a>
+          <a href="/categories/" class="nav link"><i class="fas fa-sitemap">&nbsp;</i>Categories</a>
         
       
       
-      
-
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
     </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
     
-
-    
-    <a href="#lang-menu" class="lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
   </nav>
-  <menu id="lang-menu" class="flyout-menu">
-  <a href="#" lang="en" class="link active">English (en)</a>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="en" class="nav link active">English (en)</a>
   
     
       
     
       
-        <a href="/nl" lang="nl" class="no-lang link">Nederlands (nl)</a>
+        <a href="/nl" lang="nl" class="nav no-lang link">Nederlands (nl)</a>
       
     
   
@@ -117,7 +91,7 @@
 </header>
 
     <div id="wrapper">
-      <section id="site-intro">
+      <section id="site-intro" >
   <a href="/"><img src="/img/main/Merlijn%20Sebrechts100x100.jpg" class="circle" width="" alt="Merlijn Sebrechts" /></a>
   <header>
     <h1>Merlijn Sebrechts</h1>
@@ -165,6 +139,7 @@
 
 
 
+
 <li><a href="//orcid.org/0000-0002-4093-7338" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
 
 
@@ -177,14 +152,15 @@
 </section>
 
       <main id="site-main">
-        <article class="post">
-  <header>
+        
+  <article class="post">
+    <header>
   <div class="title">
     
-        <h2><a href="/blog/2020-01-docker-podman-kata-cri-o/">What&#39;s up with CRI-O, Kata Containers and Podman?</a></h2>
+      <h2><a href="/blog/2020-01-docker-podman-kata-cri-o/">What&#39;s up with CRI-O, Kata Containers and Podman?</a></h2>
     
     
-</div>
+  </div>
   <div class="meta">
     <time class="published" datetime="2020-01-14 00:00:00 &#43;0000 UTC">
       January 14, 2020
@@ -194,22 +170,22 @@
   </div>
 </header>
 
-  <section id="socnet-share">
+    <section id="socnet-share">
+      
+
+
+
+
+
+    </section>
     
-
-
-
-
-
-  </section>
-  
   <a href="/blog/2020-01-docker-podman-kata-cri-o/" class="image featured">
     <img src="/img/2020/container-runtimes-banner.jpg" alt="">
   </a>
 
 
-  <div class="content">
-    <p>The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at <a href="https://www.gartner.com/en/documents/3887767/understanding-gartner-s-hype-cycles">the &ldquo;consolidation&rdquo; stage of the hype cycle</a>:</p>
+    <div class="content">
+      <p>The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at <a href="https://www.gartner.com/en/documents/3887767/understanding-gartner-s-hype-cycles">the &ldquo;consolidation&rdquo; stage of the hype cycle</a>:</p>
 <ul>
 <li>Docker Inc. sold off its enterprise business and had a bunch of restructuring. They <strong>shelved Docker Swarm</strong> saying &ldquo;The primary orchestrator going forward is Kubernetes.&rdquo;</li>
 <li>Twitter joined Spotify in <a href="https://www.alibabacloud.com/blog/twitter-announced-switch-from-mesos-to-kubernetes_595156"><strong>moving away from Mesos</strong>-based container orchestration to Kubernetes</a>. This was a huge blow to Mesos given Twitter was its original developer.</li>
@@ -270,36 +246,34 @@
 <li><em>Container ship image by <a href="https://www.pexels.com/photo/aft-container-ship-containers-cranes-2181449/">Sergii ILyushin</a></em></li>
 </ul>
 
-  </div>
-  <footer>
-    <ul class="stats">
-  
+    </div>
+    <footer>
+      <ul class="stats">
+  <li class="categories">
+    <ul>
     
+      
+        
+          <li><a class="article-terms-link" href="/categories/ubuntu-linux/">Ubuntu &amp; Linux</a></li>
+        
+      
     
-      <li class="categories">
-        <ul>
-          
-            
-            <li><a class="article-category-link" href="/categories/ubuntu-linux">Ubuntu &amp; Linux</a></li>
-          
-        </ul>
-      </li>
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
     
-  
-  
-    <li class="tags">
-      <ul>
-        <li>None</li>
-      </ul>
-    </li>
-  
+      <li>None</li>
+    
+    </ul>
+  </li>
 </ul>
 
-  </footer>
-</article>
-
-    <article class="post">
-        <div id="disqus_thread"></div>
+    </footer>
+  </article>
+  
+  <article class="post">
+    <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
     
@@ -319,12 +293,12 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    </article>
+  </article>
 
 
 
 
-<div class="pagination">
+  <div class="pagination">
   
     <a href="/blog/2019-steampunk-cyborg-1/" class="button"><div class="previous"><div>How I became a cyborg pt1</div></div></a>
   
@@ -352,7 +326,7 @@
 
         </section>
         <header>
-          <h1><a href="/blog/2020-07-06-why-snap-flatpak/">Why Linux desktop apps need containers</a></h1>
+          <h2><a href="/blog/2020-07-06-why-snap-flatpak/">Why Linux desktop apps need containers</a></h2>
           <time class="published" datetime="">July 6, 2020</time>
         </header>
       </article>
@@ -367,7 +341,7 @@
 
         </section>
         <header>
-          <h1><a href="/blog/2020-07-03-snap-vs-flatpak/">A fundamental difference between Snap and Flatpak</a></h1>
+          <h2><a href="/blog/2020-07-03-snap-vs-flatpak/">A fundamental difference between Snap and Flatpak</a></h2>
           <time class="published" datetime="">July 3, 2020</time>
         </header>
       </article>
@@ -382,7 +356,7 @@
 
         </section>
         <header>
-          <h1><a href="/blog/2020-02-s4a-setup-ubuntu/">Tutorial: S4A on Ubuntu</a></h1>
+          <h2><a href="/blog/2020-02-s4a-setup-ubuntu/">Tutorial: S4A on Ubuntu</a></h2>
           <time class="published" datetime="">February 23, 2020</time>
         </header>
       </article>
@@ -397,7 +371,7 @@
 
         </section>
         <header>
-          <h1><a href="/blog/2020-01-docker-podman-kata-cri-o/">What&#39;s up with CRI-O, Kata Containers and Podman?</a></h1>
+          <h2><a href="/blog/2020-01-docker-podman-kata-cri-o/">What&#39;s up with CRI-O, Kata Containers and Podman?</a></h2>
           <time class="published" datetime="">January 14, 2020</time>
         </header>
       </article>
@@ -412,13 +386,15 @@
 
         </section>
         <header>
-          <h1><a href="/blog/2019-steampunk-cyborg-1/">How I became a cyborg pt1</a></h1>
+          <h2><a href="/blog/2019-steampunk-cyborg-1/">How I became a cyborg pt1</a></h2>
           <time class="published" datetime="">October 10, 2019</time>
         </header>
       </article>
       
       
-        <a href="/blog/" class="button">See more</a>
+        <footer>
+          <a href="/blog/" class="button">See more</a>
+        </footer>
       
     </section>
   
@@ -445,15 +421,17 @@
     
   
 
-  <section id="mini-bio">
-    <header>
-      <h1>About</h1>
-    </header>
-    <p>Curious for more? <a href="/nl/">Check out the Dutch part of this blog.</a></p>
-    <footer>
-      <a href="/about" class="button">Learn More</a>
-    </footer>
-  </section>
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Curious for more? <a href="/nl/">Check out the Dutch part of this blog.</a></p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
 </section>
 
       <footer id="site-footer">
@@ -496,6 +474,7 @@
 
 
 
+
 <li><a href="//orcid.org/0000-0002-4093-7338" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
 
 
@@ -516,25 +495,9 @@
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
 
-      
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/html.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/css.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/js.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/toml.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-
-
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-  <script src=/js/util.js></script>
-  <script src=/js/main.js></script>
-  <script src=/js/add-on.js></script>
-  
-
-
-
-
-
+      <script src="/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.04e4331e7228ac2ae5ac38e52fa5be55170cb09168dfa97b6be0eedc1e2139b8.js" integrity="sha256-BOQzHnIorCrlrDjlL6W&#43;VRcMsJFo36l7a&#43;Du3B4hObg="></script>
+    <script src="/js/add-on.js"></script>
     </div>
   </body>
 </html>

@@ -118,17 +118,6 @@ When Windows power users try out Linux two things always happen:
     
     <item>
       <title></title>
-      <link>/blog/2020-02-auto-snap-builds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/2020-02-auto-snap-builds/</guid>
-      <description>Automatically build snap packages The easiest way to automatically build snaps is build.snapcraft.io. However, this tool is very limited: it only supports GitHub as a source and it always builds snaps from master.
-When your needs are a bit more advanced, you can use the Launchpad build service to set up automatic builds. This method is highly customizeable.
-How to set up automatic builds manually  Create a team: https://launchpad.net/people/+newteam Create a Project on launchpad: https://code.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>/blog/2020-07-03-universal-linux-app-stores/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
