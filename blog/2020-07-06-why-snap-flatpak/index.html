@@ -2,31 +2,34 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>What does “perf interrupt took too long” mean? - Merlijn Sebrechts</title>
+<title>Why Linux desktop apps need containers - Merlijn Sebrechts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
   <meta name="generator" content="Hugo 0.73.0" />
-  <meta itemprop="name" content="What does “perf interrupt took too long” mean?">
-<meta itemprop="description" content="Wifi problems So, I&rsquo;m having a problem with my laptop. When I&rsquo;m using the “TelenetWiFree” connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&rsquo;t seem to come back again.">
-<meta itemprop="datePublished" content="2015-09-13T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2015-09-13T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="304">
+  <meta itemprop="name" content="Why Linux desktop apps need containers">
+<meta itemprop="description" content="Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub. If you are not familiar with these, please first read The future of Linux desktop application delivery is Flatpak and Snap.
+ The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &ldquo;why do we need this?">
+<meta itemprop="datePublished" content="2020-07-06T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-07-06T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="838">
 
 
 
 <meta itemprop="keywords" content="" />
-  <meta property="og:title" content="What does “perf interrupt took too long” mean?" />
-<meta property="og:description" content="Wifi problems So, I&rsquo;m having a problem with my laptop. When I&rsquo;m using the “TelenetWiFree” connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&rsquo;t seem to come back again." />
+  <meta property="og:title" content="Why Linux desktop apps need containers" />
+<meta property="og:description" content="Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub. If you are not familiar with these, please first read The future of Linux desktop application delivery is Flatpak and Snap.
+ The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &ldquo;why do we need this?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/2015-09-perf-interrupt-took-to-long/" />
-<meta property="article:published_time" content="2015-09-13T00:00:00+00:00" />
-<meta property="article:modified_time" content="2015-09-13T00:00:00+00:00" />
+<meta property="og:url" content="/blog/2020-07-06-why-snap-flatpak/" />
+<meta property="article:published_time" content="2020-07-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-06T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="What does “perf interrupt took too long” mean?"/>
-<meta name="twitter:description" content="Wifi problems So, I&rsquo;m having a problem with my laptop. When I&rsquo;m using the “TelenetWiFree” connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&rsquo;t seem to come back again."/>
+<meta name="twitter:title" content="Why Linux desktop apps need containers"/>
+<meta name="twitter:description" content="Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub. If you are not familiar with these, please first read The future of Linux desktop application delivery is Flatpak and Snap.
+ The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &ldquo;why do we need this?"/>
 
   
 
@@ -178,13 +181,13 @@
   <header>
   <div class="title">
     
-        <h2><a href="/blog/2015-09-perf-interrupt-took-to-long/">What does “perf interrupt took too long” mean?</a></h2>
+        <h2><a href="/blog/2020-07-06-why-snap-flatpak/">Why Linux desktop apps need containers</a></h2>
     
     
 </div>
   <div class="meta">
-    <time class="published" datetime="2015-09-13 00:00:00 &#43;0000 UTC">
-      September 13, 2015
+    <time class="published" datetime="2020-07-06 00:00:00 &#43;0000 UTC">
+      July 6, 2020
     </time>
     <span class="author"></span>
     
@@ -200,50 +203,50 @@
 
   </section>
   
-  <a href="/blog/2015-09-perf-interrupt-took-to-long/" class="image featured">
-    <img src="/img/old/Who_Watches_the_Watchmen.jpg" alt="">
+  <a href="/blog/2020-07-06-why-snap-flatpak/" class="image featured">
+    <img src="/img/2020/snap-flatpak/packaging.jpg" alt="">
   </a>
 
 
   <div class="content">
-    <h2 id="wifi-problems">Wifi problems</h2>
-<p>So, I&rsquo;m having a problem with my laptop. When I&rsquo;m using the “TelenetWiFree” connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&rsquo;t seem to come back again. Only a reboot makes the Wifi work again…</p>
-<p>The “TelenetWiFree” Wifi doesn&rsquo;t play well with all the computers we have, three Ubuntu laptops and one Chromebook, but it seems particularly wonky with my computer.  I had some free time, so I started digging into the problem.</p>
-<h2 id="who-watches-the-watchmen-it-seems-the-kernel-does8230">Who watches the watchmen? It seems the kernel does…</h2>
-<p>In the <em>dmesg</em> output, I found the following line:</p>
-<blockquote>
-<p><em>perf interrupt took too long (2528 &gt; 2500), lowering kernel.perf_event_max_sample_rate to 50000</em></p>
+    <blockquote>
+<p>Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the <a href="https://snapcraft.io/store">Snap Store</a> and <a href="https://flathub.org">Flathub</a>. If you are not familiar with these, please first read <a href="https://www.zdnet.com/article/the-future-of-linux-desktop-application-delivery-is-flatpak-and-snap/">The future of Linux desktop application delivery is Flatpak and Snap</a>.</p>
 </blockquote>
-<p>This doesn&rsquo;t seem right, maybe this is the source of the problem! Let&rsquo;s do some digging:</p>
+<p>The <a href="https://snapcraft.io/store">Snap Store</a> and <a href="https://flathub.org">Flathub</a> are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &ldquo;why do we need this?&rdquo; often arises. &ldquo;Including software in distribution repositories has worked for so long, so why do we need to change it?&rdquo;</p>
+<p>There are many reasons, but this post will discuss two:</p>
 <ul>
-<li><strong>Perf</strong> is a <a href="https://en.wikipedia.org/wiki/Perf_(Linux)">Linux Kernel performance monitor</a>.</li>
-<li>Perf uses <strong><a href="http://x86vmm.blogspot.nl/2005/10/linux-nmis-on-intel-64-bit-hardware.html">Non-Maskable Interrupts</a></strong>. This basically means Perf can tell the cpu “Pauze whatever you&rsquo;re doing now and let me do something”. This allows perf to have a “watchdog” functionality where it can monitor even the most critical processes and interrupts.</li>
+<li>We need it for software that is not developed at the same speed as distributions.</li>
+<li>We need it for software that is too &ldquo;messy&rdquo; for distributions.</li>
 </ul>
-<p>With great power comes great responsibility. Perf can hang your computer by constantly pauzing everything. To make sure this won&rsquo;t happen, the kernel itself monitors perf.  When it decides perf is pauzing too long, <a href="https://lkml.org/lkml/2013/5/29/640">it tells perf to do a little bit less</a>. That&rsquo;s basically what that <em>dmesg</em> line means. The kernel told perf to do a little bit less. <strong>Does it have anything to do with the Wifi problem? Probably not…</strong> But at least I learned something: The kernel watches the watchmen…</p>
-<p>Additional sources:</p>
+<p>Let&rsquo;s look at some examples based on snap packages I&rsquo;m maintaining.</p>
+<h2 id="apps-which-release-too-quickly">Apps which release too quickly</h2>
+<p>Distributions such as Ubuntu and Fedora release a regular version about twice a year. The software available to that version changes very little in between releases, so users often have to wait six months to get major updates to an app. To make matters worse, users of the Ubuntu LTS version have to wait <em>two years</em> for major updates.</p>
+<p>In contrast, the Arduino IDE sometimes releases a new version after just one month. New versions of the Arduino IDE add support for new hardware and software, so it&rsquo;s important for users to get the latest version as soon as possible. The <a href="https://snapcraft.io/arduino">Arduino IDE Snap</a> updates immediately when a new version is released because the app and its dependencies are completely isolated from the OS itself.</p>
+<h2 id="apps-which-release-too-slowly">Apps which release too slowly</h2>
+<p>&ldquo;Scratch for Arduino (S4A)&rdquo; gives kids an introduction into robotics by allowing them to program robots using scratch. Although this application is still used for a lot for STEM introductions, it uses very old libraries, making it very hard to install on a recent Linux distribution. The application is developed by a group of educators as a side project and they do not have the resources to update S4A every six months so it works with the newest Ubuntu libraries. The snap of <a href="https://snapcraft.io/s4a">Scratch for Arduino</a> solves this issue by including set of older 32-bit libraries into the snap. These libraries still receive security fixes, but it is very hard to install them on newer Ubuntu releases. Thanks to the snap container, this piece of software can still be used on newer Ubuntu releases.</p>
+<h2 id="apps-which-are-too-messy">Apps which are too messy</h2>
+<p>The <a href="https://bridgedesigner.org/">Bridge Designer</a> is used in middle- and high-schools to give kids a realistic introduction to engineering. The kids get to build, design and test a bridge, similar to how actual engineers do it. The problem with this application is that it is actually a Windows application. Windows software has no place in the Debian repositories. It is however possible to run the software on Linux using a specially crafted Wine environment, which is exactly what the <a href="https://snapcraft.io/bridge-designer">Bridge Designer snap</a> does. Thanks to this snap, users can now install Bridge Designer on Linux without having to mess with Wine.</p>
+<h2 id="myth-its-only-for-closed-source-software">Myth: it&rsquo;s only for closed source software</h2>
+<p>All these applications are open source. It is a common myth that these kind of issues only happen in closed source software, but this is clearly not the case. Being open source does not mean a project has the resources to be ported to Linux and it does not mean the developers have enough time to update their software every six months.</p>
+<h2 id="extra-1-arduino-is-also-too-messy">Extra 1: Arduino is also too messy</h2>
+<p>Next to the &ldquo;speed&rdquo; issue, the Arduino IDE has not been updated in Debian and Ubuntu since 2015 because of <a href="https://github.com/arduino/Arduino/pull/2703">licensing issues</a>. Arduino source code uses a number of different open source licenses and according to Debian rules, it is not clear enough which files use which license. Although I think this issue should be fixed, Ubuntu users still need the Arduino IDE in the meantime. Because the snap is completely self-contained and does not affect any other part of the OS, it does not need to follow the strict rules of Debian.</p>
+<h2 id="extra-2-alternatives">Extra 2: Alternatives</h2>
+<p>Since these issues are universal, people have come up with other very smart solutions.</p>
 <ul>
-<li><a href="https://superuser.com/questions/757444/perf-samples-too-long-lowering-kernel-perf-event-max-sample-rate-to">https://superuser.com/questions/757444/perf-samples-too-long-lowering-kernel-perf-event-max-sample-rate-to</a></li>
-<li><a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1246216">https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1246216</a></li>
-<li><a href="https://bbs.archlinux.org/viewtopic.php?id=170471">https://bbs.archlinux.org/viewtopic.php?id=170471</a></li>
-<li><a href="http://ubuntuforums.org/showthread.php?t=2253552">http://ubuntuforums.org/showthread.php?t=2253552</a></li>
+<li><a href="https://appimage.org/">AppImage</a> solves these issues by creating a &ldquo;fat binary&rdquo; for each application. Each binary contains all the dependencies an application needs. One advantage is that an AppImage runs by itself; you do not need an additional package manager to run an app.</li>
+<li><a href="https://nixos.org/">Nix</a> is a package manager which allows multiple installed apps to use different versions of the same libraries. One advantage over Snaps and Flatpaks is that applications generally use less space because shared libraries are not actually duplicated.</li>
+<li>&ldquo;Rolling&rdquo; distributions such as <a href="https://manjaro.org/">Manjaro</a> do not release every X months, but continuously releases updates at the same pace of the actual developers of the software. This solves the &ldquo;too fast&rdquo; apps, but not the other issues. This is one of the reasons Manjaro also includes Snapd and Flatpak by default.</li>
 </ul>
-<p><em><a href="https://en.wikipedia.org/wiki/File:Who_Watches_the_Watchmen.jpg">Image by David Masters</a></em></p>
 
   </div>
   <footer>
     <ul class="stats">
   
-    
-    
-      <li class="categories">
-        <ul>
-          
-            
-            <li><a class="article-category-link" href="/categories/ubuntu-linux">Ubuntu &amp; Linux</a></li>
-          
-        </ul>
-      </li>
-    
+    <li class="categories">
+      <ul>
+        <li>None</li>
+      </ul>
+    </li>
   
   
     <li class="tags">
@@ -285,10 +288,8 @@
 
 <div class="pagination">
   
-    <a href="/blog/2015-04-pragmatic-docker-day/" class="button"><div class="previous"><div>Pragmatic Docker Day 2015</div></div></a>
+    <a href="/blog/2020-07-03-snap-vs-flatpak/" class="button"><div class="previous"><div>A fundamental difference between Snap and Flatpak</div></div></a>
   
-  
-    <a href="/blog/2019-05-im-back/" class="button"><div class="next"><div>I&#39;m Back!</div></div></a>
   
 </div>
 

@@ -6,10 +6,20 @@
     <description>Recent content in Blog on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why Linux desktop apps need containers</title>
+      <link>/blog/2020-07-06-why-snap-flatpak/</link>
+      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-07-06-why-snap-flatpak/</guid>
+      <description>Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub. If you are not familiar with these, please first read The future of Linux desktop application delivery is Flatpak and Snap.
+ The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &amp;ldquo;why do we need this?</description>
+    </item>
     
     <item>
       <title>A fundamental difference between Snap and Flatpak</title>
