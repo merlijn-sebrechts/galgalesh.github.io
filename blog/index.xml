@@ -6,10 +6,22 @@
     <description>Recent content in Blog on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 06 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Copyleft and LGPL in Snaps and Flatpaks</title>
+      <link>/blog/2020-07-17-lgpl-copyleft-snaps/</link>
+      <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-07-17-lgpl-copyleft-snaps/</guid>
+      <description>The question often comes up of how Snaps and Flatpaks influence copyleft, GPL and LGPL licenses often comes up. It is a common misconception that these new packaging formats significantly influence license compliance.
+Disclaimer: I am not a lawyer.
+Distributing your software in a Snap has no effect on GPL copyleft and LGPL compliance.
+ It has no effect on copyleft because containers do not trigger copyleft according to the GNU GPL FAQ [see note].</description>
+    </item>
     
     <item>
       <title>Why Linux desktop apps need containers</title>
@@ -17,8 +29,8 @@
       <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/blog/2020-07-06-why-snap-flatpak/</guid>
-      <description>Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub. If you are not familiar with these, please first read The future of Linux desktop application delivery is Flatpak and Snap.
- The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &amp;ldquo;why do we need this?</description>
+      <description>The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &amp;ldquo;why do we need this?&amp;rdquo; often arises. &amp;ldquo;Including software in distribution repositories has worked for so long, so why do we need to change it?&amp;rdquo;
+ Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub.</description>
     </item>
     
     <item>
@@ -27,8 +39,7 @@
       <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/blog/2020-07-03-snap-vs-flatpak/</guid>
-      <description>Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub. If you are not familiar with these, please first read The future of Linux desktop application delivery is Flatpak and Snap.
- Snaps and Flatpaks are often compared to each other because they both make it super easy for Linux users to get the latest versions of desktop applications.</description>
+      <description>Snaps and Flatpaks are often compared to each other because they both make it super easy for Linux users to get the latest versions of desktop applications. If a Linux user wants to install the latest version of apps like Slack, Krita or Blender, either tool will work just fine. There is one fundamental difference between Snaps and Flatpaks, however. While both are systems for distributing Linux apps, snap is also a tool to build Linux Distributions.</description>
     </item>
     
     <item>
