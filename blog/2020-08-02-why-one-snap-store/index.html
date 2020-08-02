@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Why is there only one Snap Store? - Merlijn Sebrechts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.74.3" /><meta itemprop="name" content="Why is there only one Snap Store?">
+<meta itemprop="description" content="Snap and Flatpak are the basis of two universal app stores for Linux: the Snap store and Flathub. One question that often comes up is why there is only one Snap store. In contrast; Flatpak has a great number of repositories next to Flathub. Both Fedora and Elementary OS, for example have their own Flatpak store hosting additional apps and some app developers even host stores specific to their software.">
+<meta itemprop="datePublished" content="2020-08-02T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-08-02T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1385">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta property="og:title" content="Why is there only one Snap Store?" />
+<meta property="og:description" content="Snap and Flatpak are the basis of two universal app stores for Linux: the Snap store and Flathub. One question that often comes up is why there is only one Snap store. In contrast; Flatpak has a great number of repositories next to Flathub. Both Fedora and Elementary OS, for example have their own Flatpak store hosting additional apps and some app developers even host stores specific to their software." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/2020-08-02-why-one-snap-store/" />
+<meta property="article:published_time" content="2020-08-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-02T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Why is there only one Snap Store?"/>
+<meta name="twitter:description" content="Snap and Flatpak are the basis of two universal app stores for Linux: the Snap store and Flathub. One question that often comes up is why there is only one Snap store. In contrast; Flatpak has a great number of repositories next to Flathub. Both Fedora and Elementary OS, for example have their own Flatpak store hosting additional apps and some app developers even host stores specific to their software."/>
+<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          Merlijn Sebrechts
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          
+            <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+          
+        
+      
+        
+          
+          <a href="/about/" class="nav link"><i class="far fa-id-card">&nbsp;</i>About</a>
+        
+      
+        
+          
+          <a href="/nl/tanzania/" class="nav link"><i class="far fa-newspaper">&nbsp;</i>Tanzania (Dutch)</a>
+        
+      
+        
+          
+          <a href="/categories/" class="nav link"><i class="fas fa-sitemap">&nbsp;</i>Categories</a>
+        
+      
+      
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    
+    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="en" class="nav link active">English (en)</a>
+  
+    
+      
+    
+      
+        <a href="/nl" lang="nl" class="nav no-lang link">Nederlands (nl)</a>
+      
+    
+  
+</menu>
+
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="/img/main/Merlijn%20Sebrechts100x100.jpg" class="circle" width="" alt="Merlijn Sebrechts" /></a>
+  <header>
+    <h1>Merlijn Sebrechts</h1>
+  </header>
+  <main>
+    <p>Let's talk meta!</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/galgalesh/galgalesh.github.io" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/merlijnsebrechts" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//orcid.org/0000-0002-4093-7338" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+
+
+
+<li><a href="mailto:merlijn.sebrechts@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/blog/2020-08-02-why-one-snap-store/">Why is there only one Snap Store?</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2020-08-02 00:00:00 &#43;0000 UTC">
+      August 2, 2020
+    </time>
+    <span class="author"></span>
+    
+  </div>
+</header>
+
+    <section id="socnet-share">
+      
+
+
+
+
+
+    </section>
+    
+  <a href="/blog/2020-08-02-why-one-snap-store/" class="image featured">
+    <img src="/img/2020/snap-flatpak/snap-store.png" alt="">
+  </a>
+
+
+    <div class="content">
+      <p>Snap and Flatpak are the basis of two universal app stores for Linux: the <a href="https://snapcraft.io/store">Snap store</a> and <a href="https://flathub.org/home">Flathub</a>. One question that often comes up is why there is only one Snap store. In contrast; Flatpak has a great number of repositories next to Flathub. Both Fedora and Elementary OS, for example have their own Flatpak store hosting additional apps and some app developers even host stores specific to their software.</p>
+<p>There are two reasons why Snap was designed so each device only connects to a single store. The reason is that Canonical, the company behind Snap and Ubuntu, already tried creating a distributed store and discovered that it has significant downsides for users and app developers. Before Snap, the &ldquo;official&rdquo; way to get third-party software into Ubuntu were PPA&rsquo;s. With PPA&rsquo;s, each developer creates an additional repository which contains their apps. Users add the PPA&rsquo;s of the software they want and then install the software using the package manager. This is very similar to how Flatpak works today.</p>
+<p>This led to a poor user experience because users have to add an additional repository before they can even <em>search</em> software from a different vendor. Developers also found ppa&rsquo;s too cumbersome and wanted a better way for users to discover their software. The failure of ppa&rsquo;s were not from a lack of trying: Canonical designed Launchpad to make it as easy as possible for a developer to build their software and create a ppa. Although ppa&rsquo;s are still used by many developers, many more software is only available to download from a website.</p>
+<p>Having a single Snap store solves this issue: users have a single place to discover new Linux applications and software developers can easily publish their software. The Flatpak project created Flathub for the same reason: having a single store which contains all apps benefits everyone.</p>
+<p>The second advantage of designing snap for a single store is that it makes makes everything in easier to develop. Creating a distributed system is a multiplier to complexity: each feature becomes more difficult to implement. Given the downsides of distributed stores, the Snap developers decided to focus on other features instead.</p>
+<h2 id="will-there-ever-be-an-alternative-snap-store">Will there ever be an alternative snap store?</h2>
+<p>Let&rsquo;s hope so! Although Snap is designed so that each <em>device</em> only connects to a single store, multiple stores can still to exist! A distribution like Manjaro could very well point Snap at their own store. Manjaro chose to use the snap store hosted by Canonical because they like the advantages that gives them. In the future, however, Manjaro could switch to their own snap store if that makes sense to them.</p>
+<p>This is exactly what the Ubuntu Touch project did; Ubuntu Touch uses &ldquo;click&rdquo;, the precursor to Snap. They initially used the click store hosted by Canonical but they created their <a href="https://open-store.io/">their own store</a> and switched to it completely when Canonical decided to give up on their attempt at breaking the smartphone duopoly.</p>
+<h2 id="is-the-snap-store-open-source">Is the Snap store open source?</h2>
+<p>Sadly, part of the Snap store is still closed source. Snap itself is <a href="https://github.com/snapcore/snapd">completely open source</a> and many parts of the Snap store are open source like the <a href="https://github.com/canonical-web-and-design/snapcraft.io">web-store front-end</a>, <a href="https://launchpad.net/review-tools">the automatic review tools</a>, <a href="https://launchpad.net/">the build service</a>, the <a href="https://launchpad.net/snap-store-desktop">desktop store app</a>, and <a href="https://github.com/snapcore">many more</a>. The back-end hosting the snaps, however, is still proprietary. A few years ago Canonical created <a href="https://ubuntu.com/blog/howto-host-your-own-snap-store">a prototype open source snap-store backend</a> but there wasn&rsquo;t much community interest in actually maintaining and running one, so the project bit-rotted and became incompatible with the current protocol used by snapd.</p>
+<p>Open sourcing the snap store back-end would require significant changes to it, <a href="https://www.techrepublic.com/article/why-canonical-views-the-snap-ecosystem-as-a-compelling-distribution-agnostic-solution/">according to Martin Wimpress of Canonical</a>:</p>
+<blockquote>
+<p><em>[because of its history,]</em> the Snap store now integrates with other areas of the Canonical infrastructure. So the Snap store isn&rsquo;t a single thing. It&rsquo;s not like this one piece of software that you can easily decouple from the rest of the machinery that powers the infrastructure at Canonical. So we can&rsquo;t just pull it apart and separate it and say, &ldquo;Here you go, here&rsquo;s the open source Snap store.</p>
+</blockquote>
+<p>Canonical is doubtful that this investment would be worth it because of what happened with Launchpad. Although they invested significant resources in open sourcing Launchpad, there is still only one instance of Launchpad running and they have not received any significant contributions from non-Canonical employees.</p>
+<p>Interestingly, Canonical actually <a href="https://ubuntu.com/blog/howto-host-your-own-snap-store">released an open-source prototype snap-store backend</a> a few years ago, but there was very little interest from the community in in actually maintaining and running a second Snap store, so the project bit-rotted and became incompatible with the current Snap protocol.</p>
+<h2 id="can-other-distros-curate-packages">Can other distro&rsquo;s curate packages?</h2>
+<p>Linux Mint recently made headlines by blocking users from installing snap on Linux Mint. One of the reasons they gave for this decision is that the centralization of Snap means Linux Mint cannot provide different versions of certain snaps for their users. <a href="https://linuxmint-user-guide.readthedocs.io/en/latest/snap.html">They explain</a> that this is possible with APT:</p>
+<blockquote>
+<p>Thanks to the way APT works, if a bug isn’t fixed upstream, Debian can fix it with a patch. If Debian doesn’t, Ubuntu can. If Ubuntu doesn’t Linux Mint can. If Linux Mint doesn’t, anyone can, and not only can they fix it, they can distribute it with a PPA.</p>
+</blockquote>
+<p>It&rsquo;s understandable that a distribution wants some level of control over what packages their users get and this should definitely be possible with Snap by using <a href="https://core.docs.ubuntu.com/en/build-store/">&ldquo;Brand stores&rdquo;</a>. These are special copies of the store where you can select exactly what packages are available and provide your own modified packages. The European Space Agency, for example, has <a href="https://sdrsatcom.snapcraft.io/">a brand store specific to satcom research</a>. These brand stores can be used by other distributions to have more control over what snaps their users can install. The downside of Brand stores is that you&rsquo;re still using the infrastructure of Canonical.</p>
+<p>It&rsquo;s understandable that some distributions might shy away from using Canonical infrastructure but Linux Mint is no stranger to this; they heavily relied on Canonical infrastructure when they first started out, only using their own repositories for the packages that they patched. This is very common for Ubuntu derivatives. Another option would be to create their own Snap store with similar functionality and <a href="https://ubuntu.com/blog/howto-host-your-own-snap-store">Canonical&rsquo;s previous behavior</a> suggests they would be open to helping that effort.</p>
+<h2 id="my-thoughts-about-this">My thoughts about this</h2>
+<p>Having a single snap store which has closed source parts is very controversial in some parts of the Linux community. The decision to have only a single store per device seems reasonable to me: it has clear advantages both to users and developers. That said, I am happy that there is competition and I think the <a href="https://blog.elementary.io/elementary-appcenter-flatpak/">hybrid model</a> that Elementary OS is doing is really interesting. I also hope that someday the community creates an alternative snap store similar to what F-Droid is doing.</p>
+<p>I do not like the fact that the snap store backend is proprietary because it is becoming such a core part of Ubuntu. I don&rsquo;t think there is anything wrong with Canonical producing closed-source add-ons on top of Ubuntu in an &ldquo;Open Core&rdquo; fashion. GitLab does this really well and we have an amazing open source GitHub alternative because of it. There is nothing wrong with Canonical trying to make money; Ubuntu would not be here without them. Linux is great because of all the companies surrounding it.</p>
+<p>What I do take issue with is that you currently cannot use Snap for its intended purpose without this proprietary back-end. Ironically, Ubuntu&rsquo;s former community member, Jono Bacon made it very clear <a href="https://www.youtube.com/watch?v=o-OOxOS8oDs">in a recent video</a> that the proprietary parts of an Open Core project need to be <em>optional</em>. Having proprietary enterprise features such as the <a href="https://docs.ubuntu.com/snap-store-proxy/en/">Snap Store Proxy</a> is fine, but the core should remain open source.</p>
+<p>That said, I&rsquo;m pragmatic about this. DockerHub and GitHub are insanely popular and their back-end is <em>completely</em> proprietary. Moreover, Canonical is much more receptive to community pressure than Docker inc or GitHub so we are in a much better position to steer them towards doing &ldquo;the right thing&rdquo;. Finally, if things don&rsquo;t work out in the end, we can always build our own back-end.</p>
+<blockquote>
+<p>Note: I am a human being, and like most human beings, I make mistakes. Did you find an issue with this article? Let me know in the comments, and I&rsquo;ll be happy to correct it!</p>
+</blockquote>
+
+    </div>
+    <footer>
+      <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      <li>None</li>
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      <li>None</li>
+    
+    </ul>
+  </li>
+</ul>
+
+    </footer>
+  </article>
+  
+  <article class="post">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "merlijn" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
+
+
+
+
+  <div class="pagination">
+  
+    <a href="/blog/2020-07-17-lgpl-copyleft-snaps/" class="button"><div class="previous"><div>Copyleft and LGPL in Snaps and Flatpaks</div></div></a>
+  
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/2020-08-02-why-one-snap-store/" class="image featured">
+    <img src="/img/2020/snap-flatpak/snap-store.png" alt="">
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/blog/2020-08-02-why-one-snap-store/">Why is there only one Snap Store?</a></h2>
+          <time class="published" datetime="">August 2, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/2020-07-17-lgpl-copyleft-snaps/" class="image featured">
+    <img src="/img/2020/snap-flatpak/snap-flatpak-gpl.png" alt="">
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/blog/2020-07-17-lgpl-copyleft-snaps/">Copyleft and LGPL in Snaps and Flatpaks</a></h2>
+          <time class="published" datetime="">July 17, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/2020-07-06-why-snap-flatpak/" class="image featured">
+    <img src="/img/2020/snap-flatpak/packaging.jpg" alt="">
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/blog/2020-07-06-why-snap-flatpak/">Why Linux desktop apps need containers</a></h2>
+          <time class="published" datetime="">July 6, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/2020-07-03-snap-vs-flatpak/" class="image featured">
+    <img src="/img/2020/snap-flatpak/snap-flatpak-banner.png" alt="">
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/blog/2020-07-03-snap-vs-flatpak/">A fundamental difference between Snap and Flatpak</a></h2>
+          <time class="published" datetime="">July 3, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+  <a href="/blog/2020-02-s4a-setup-ubuntu/" class="image featured">
+    <img src="/img/2020/s4a/s4a-banner.png" alt="">
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/blog/2020-02-s4a-setup-ubuntu/">Tutorial: S4A on Ubuntu</a></h2>
+          <time class="published" datetime="">February 23, 2020</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="/blog/" class="button">See more</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/ubuntu-linux/">ubuntu-linux<span class="count">4</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Curious for more? <a href="/nl/">Check out the Dutch part of this blog.</a></p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/galgalesh/galgalesh.github.io" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/merlijnsebrechts" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//orcid.org/0000-0002-4093-7338" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+
+
+
+<li><a href="mailto:merlijn.sebrechts@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        Merlijn Sebrechts
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.74.3' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.04e4331e7228ac2ae5ac38e52fa5be55170cb09168dfa97b6be0eedc1e2139b8.js" integrity="sha256-BOQzHnIorCrlrDjlL6W&#43;VRcMsJFo36l7a&#43;Du3B4hObg="></script>
+    <script src="/js/add-on.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172953075-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172953075-1');
+</script>
+
+    </div>
+  </body>
+</html>

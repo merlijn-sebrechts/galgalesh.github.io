@@ -6,10 +6,19 @@
     <description>Recent content in Blog on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why is there only one Snap Store?</title>
+      <link>/blog/2020-08-02-why-one-snap-store/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-08-02-why-one-snap-store/</guid>
+      <description>Snap and Flatpak are the basis of two universal app stores for Linux: the Snap store and Flathub. One question that often comes up is why there is only one Snap store. In contrast; Flatpak has a great number of repositories next to Flathub. Both Fedora and Elementary OS, for example have their own Flatpak store hosting additional apps and some app developers even host stores specific to their software.</description>
+    </item>
     
     <item>
       <title>Copyleft and LGPL in Snaps and Flatpaks</title>
