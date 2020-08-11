@@ -17,7 +17,8 @@
       <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/blog/2020-08-02-why-one-snap-store/</guid>
-      <description>Snap and Flatpak are the basis of two universal app stores for Linux: the Snap store and Flathub. One question that often comes up is why there is only one Snap store. In contrast; Flatpak has a great number of repositories next to Flathub. Both Fedora and Elementary OS, for example have their own Flatpak store hosting additional apps and some app developers even host stores specific to their software.</description>
+      <description>Snap and Flatpak are the basis of two universal app stores for Linux: the Snap Store and Flathub. Interestingly, Flatpak has multiple repositories: Flathub is the main one but both Fedora and Elementary OS also host their own store. In contrast; there is only one Snap store. Why is that?
+ Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.</description>
     </item>
     
     <item>
@@ -39,7 +40,7 @@ Distributing your software in a Snap has no effect on GPL copyleft and LGPL comp
       
       <guid>/blog/2020-07-06-why-snap-flatpak/</guid>
       <description>The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &amp;ldquo;why do we need this?&amp;rdquo; often arises. &amp;ldquo;Including software in distribution repositories has worked for so long, so why do we need to change it?&amp;rdquo;
- Note: This article talks about Snaps and Flatpaks. This is the software behind two universal Linux app stores: the Snap Store and Flathub.</description>
+ Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.</description>
     </item>
     
     <item>
