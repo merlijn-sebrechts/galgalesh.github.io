@@ -14,7 +14,7 @@ I was silent for a while, so the cardiologist asked &ldquo;do you understand wha
 It was clear my heart was fucked.">
 <meta itemprop="datePublished" content="2019-10-10T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2019-10-10T00:00:00+00:00" />
-<meta itemprop="wordCount" content="907">
+<meta itemprop="wordCount" content="916">
 
 
 
@@ -253,16 +253,38 @@ It was clear my heart was fucked."/>
 <p>Before I knew it, the secretary was calling different departments to schedule a bunch of preparatory exams. Open Heart surgery is pretty gruelling to your body so they wanted to make sure I didn&rsquo;t have any other issues. There was a lot that needed to be done and my brain jumped on it like any other project. Emotionally detached, as if it was a complicated process to fix my computer. I scheduled the appointments, read up on the illness and the procedures and informed family and friends.</p>
 <p>There was still some uncertainty about the extent of the issue. The issue with my valve was congenital; it just didn&rsquo;t get the memo on how to do this &ldquo;valve&rdquo; thing properly and the doctors wanted to see if any other parts of my heart and veins were slacking off. They did this using a coronarography, or &ldquo;an alien&rsquo;s wet dream&rdquo;, as I like to call it. They opened two veins in my groin, put in long probes to reach my heart, injected a bunch of contrast fluid, and watched it flow using a Rontgen scan. To top it all off, this procedure was done while I was awake and I could follow along on a giant screen next to me. If this sound uncomfortable, that&rsquo;s probably because it is. Thank god I live in Belgium; just imagine living in the US and becoming financially ruined while some doctors reenact the final scene of &ldquo;the fourth kind&rdquo; on you..</p>
 <p>Thankfully, the result of the coronarography was positive: the other parts of my heart were nicely executing their assigned tasks, and the surgeons were once again paid to probe a fellow human being. Even better, I now had a bunch of cool videos showing how my heart (mal)functioned.</p>
-<!-- raw HTML omitted -->
+<!-- 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/OFHO9u5H48U?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+ -->
 <blockquote>
-<!-- raw HTML omitted -->
+<video width="480" height="480" autoplay loop muted>
+  <source src="/img/2019/coronaro-aorta-valve-regurgitation.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 <p>This video shows a probe injecting contrast fluid in my aorta. Most of the fluid is pumped up through the aorta to the rest of the body. However, due to the leaking valve, part of the fluid is sucked down, back into the left ventricle of the heart itself.</p>
 </blockquote>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+```bash
+# Export images in DICOM file to jpg
+mogrify -format jpg F000001
+# Create mp4 video file from sequence of jpg images
+ffmpeg -framerate 15 -i F000001-%000d.jpg -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p output.mp4
+```
+
+source: https://askubuntu.com/a/610945/172367
+-->
 <p>Next step: the heart surgery itself! We scheduled it about six weeks after the coronarography so that I had some time to finish up at work and go on a holiday. However, some complications foiled the plan of finishing up at work. All the probing in my groin tore one of my veins, causing a pseudo-aneurism. After a week of trying to fix it from the outside, the doctors gave up and did a surgery under full anesthesia to sew everything back together. Long story short; I ended up losing four of those six weeks to recovering from the coronarography. Thankfully, the doctor cleared me to go on a holiday after that.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<!--
+
+```
+# Convert images into jpg; manually specify contrast
+mogrify -define dcm:window=525X3050 -format jpg *
+# Convert jpgs into video
+ffmpeg -framerate 15 -i F%06d.jpg -c:v libx264 -profile:v high -crf 20 -pix_fmt yuv420p -vf scale=720:-2 output.mp4
+```
+-->
 
     </div>
     <footer>
@@ -333,6 +355,21 @@ It was clear my heart was fucked."/>
       <article class="mini-post">
         <section>
           
+  <a href="/blog/2020-steampunk-cyborg-2/" class="image featured">
+    <img src="/img/2019/mechanical-valve.png" alt="">
+  </a>
+
+
+        </section>
+        <header>
+          <h2><a href="/blog/2020-steampunk-cyborg-2/">How I became a cyborg pt2</a></h2>
+          <time class="published" datetime="">August 15, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
   <a href="/blog/2020-08-02-why-one-snap-store/" class="image featured">
     <img src="/img/2020/snap-flatpak/snap-store.png" alt="">
   </a>
@@ -387,21 +424,6 @@ It was clear my heart was fucked."/>
         <header>
           <h2><a href="/blog/2020-07-03-snap-vs-flatpak/">A fundamental difference between Snap and Flatpak</a></h2>
           <time class="published" datetime="">July 3, 2020</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-  <a href="/blog/2020-02-s4a-setup-ubuntu/" class="image featured">
-    <img src="/img/2020/s4a/s4a-banner.png" alt="">
-  </a>
-
-
-        </section>
-        <header>
-          <h2><a href="/blog/2020-02-s4a-setup-ubuntu/">Tutorial: S4A on Ubuntu</a></h2>
-          <time class="published" datetime="">February 23, 2020</time>
         </header>
       </article>
       
