@@ -6,10 +6,20 @@
     <description>Recent content in Snap on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/snap/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Verifying the source of a Snap package</title>
+      <link>/blog/2020-08-17-audit-snap/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-08-17-audit-snap/</guid>
+      <description>Many Snap packages contain two files which allows users to verify what sources were used to build the package.
+ snap/snapcraft.yaml is the &amp;ldquo;source&amp;rdquo; of the package. This file was used by Snapcraft to build the package. snap/manifest.yaml is a &amp;ldquo;recording&amp;rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more.</description>
+    </item>
     
     <item>
       <title>Why is there only one Snap Store?</title>
