@@ -2,31 +2,31 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>Why Linux desktop apps need containers - Merlijn Sebrechts</title>
+<title>Verifying the source of a Snap package - Merlijn Sebrechts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="generator" content="Hugo 0.74.3" /><meta itemprop="name" content="Why Linux desktop apps need containers">
-<meta itemprop="description" content="The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &ldquo;why do we need this?&rdquo; often arises. &ldquo;Including software in distribution repositories has worked for so long, so why do we need to change it?&rdquo;
- Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.">
-<meta itemprop="datePublished" content="2020-07-06T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-07-06T00:00:00+00:00" />
-<meta itemprop="wordCount" content="855">
+<meta name="generator" content="Hugo 0.74.3" /><meta itemprop="name" content="Verifying the source of a Snap package">
+<meta itemprop="description" content="Many Snap packages contain two files which allows users to verify what sources were used to build the package.
+ snap/snapcraft.yaml is the &ldquo;source&rdquo; of the package. This file was used by Snapcraft to build the package. snap/manifest.yaml is a &ldquo;recording&rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more.">
+<meta itemprop="datePublished" content="2020-08-16T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-08-16T00:00:00+00:00" />
+<meta itemprop="wordCount" content="874">
 
 
 
-<meta itemprop="keywords" content="Snap,Flatpak," />
-<meta property="og:title" content="Why Linux desktop apps need containers" />
-<meta property="og:description" content="The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &ldquo;why do we need this?&rdquo; often arises. &ldquo;Including software in distribution repositories has worked for so long, so why do we need to change it?&rdquo;
- Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap." />
+<meta itemprop="keywords" content="Snap," />
+<meta property="og:title" content="Verifying the source of a Snap package" />
+<meta property="og:description" content="Many Snap packages contain two files which allows users to verify what sources were used to build the package.
+ snap/snapcraft.yaml is the &ldquo;source&rdquo; of the package. This file was used by Snapcraft to build the package. snap/manifest.yaml is a &ldquo;recording&rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/2020-07-06-why-snap-flatpak/" />
-<meta property="article:published_time" content="2020-07-06T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-07-06T00:00:00+00:00" />
+<meta property="og:url" content="/blog/2020-08-17-verify-snap/" />
+<meta property="article:published_time" content="2020-08-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-16T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Why Linux desktop apps need containers"/>
-<meta name="twitter:description" content="The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &ldquo;why do we need this?&rdquo; often arises. &ldquo;Including software in distribution repositories has worked for so long, so why do we need to change it?&rdquo;
- Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap."/>
+<meta name="twitter:title" content="Verifying the source of a Snap package"/>
+<meta name="twitter:description" content="Many Snap packages contain two files which allows users to verify what sources were used to build the package.
+ snap/snapcraft.yaml is the &ldquo;source&rdquo; of the package. This file was used by Snapcraft to build the package. snap/manifest.yaml is a &ldquo;recording&rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more."/>
 
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/github.min.css">
           <link rel="stylesheet" href="/css/bundle.min.182747932867f43d8c875b59a0300848b838002d4008d4a5b8ddcc41a37c4cf7.css" integrity="sha256-GCdHkyhn9D2Mh1tZoDAISLg4AC1ACNSluN3MQaN8TPc="><link rel="stylesheet" href="/css/add-on.css">
@@ -160,12 +160,12 @@
     <header>
   <div class="title">
     
-      <h2><a href="/blog/2020-07-06-why-snap-flatpak/">Why Linux desktop apps need containers</a></h2>
+      <h2><a href="/blog/2020-08-17-verify-snap/">Verifying the source of a Snap package</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2020-07-06 00:00:00 &#43;0000 UTC">July 6, 2020</time>
+    <time datetime="2020-08-16 00:00:00 &#43;0000 UTC">August 16, 2020</time>
     
     
   </div>
@@ -180,36 +180,70 @@
 
     </div>
     <div class="content">
-      <a href="/blog/2020-07-06-why-snap-flatpak/" class="image" style="--bg-image: url('/img/2020/snap-flatpak/packaging.jpg');">
-    <img src="/img/2020/snap-flatpak/packaging.jpg" alt="">
-  </a>
-      <p>The <a href="https://snapcraft.io/store">Snap Store</a> and <a href="https://flathub.org">Flathub</a> are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &ldquo;why do we need this?&rdquo; often arises. &ldquo;Including software in distribution repositories has worked for so long, so why do we need to change it?&rdquo;</p>
-<blockquote>
-<p>Note: for an introduction into Flatpak and Snap, please read <a href="https://www.zdnet.com/article/the-future-of-linux-desktop-application-delivery-is-flatpak-and-snap/">The future of Linux desktop application delivery is Flatpak and Snap</a>.</p>
-</blockquote>
-<p>There are many reasons we need Snaps and Flatpaks, but this post will discuss two:</p>
+      
+      <p>Many Snap packages contain two files which allows users to verify what sources were used to build the package.</p>
 <ul>
-<li>We need it for software that is not developed at the same speed as distributions.</li>
-<li>We need it for software that is too &ldquo;messy&rdquo; for distributions.</li>
+<li><code>snap/snapcraft.yaml</code> is the &ldquo;source&rdquo; of the package. This file was used by Snapcraft to build the package.</li>
+<li><code>snap/manifest.yaml</code> is a &ldquo;recording&rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more.</li>
 </ul>
-<p>Let&rsquo;s look at some examples based on snap packages I&rsquo;m maintaining.</p>
-<h2 id="apps-which-release-too-quickly">Apps which release too quickly</h2>
-<p>Distributions such as Ubuntu and Fedora release a regular version about twice a year. The software available to that version changes very little in between releases, so users often have to wait six months to get major updates to an app. To make matters worse, users of the Ubuntu LTS version have to wait <em>two years</em> for major updates.</p>
-<p>In contrast, the Arduino IDE sometimes releases a new version after just one month. New versions of the Arduino IDE add support for new hardware and software, so it&rsquo;s important for users to get the latest version as soon as possible. The <a href="https://snapcraft.io/arduino">Arduino IDE Snap</a> updates immediately when a new version is released because the app and its dependencies are completely isolated from the OS itself.</p>
-<h2 id="apps-which-release-too-slowly">Apps which release too slowly</h2>
-<p>&ldquo;Scratch for Arduino (S4A)&rdquo; gives kids an introduction into robotics by allowing them to program robots using scratch. Although this application is still used for a lot for STEM introductions, it uses very old libraries, making it very hard to install on a recent Linux distribution. The application is developed by a group of educators as a side project and they do not have the resources to update S4A every six months so it works with the newest Ubuntu libraries. The snap of <a href="https://snapcraft.io/s4a">Scratch for Arduino</a> solves this issue by including set of older 32-bit libraries into the snap. These libraries still receive security fixes, but it is very hard to install them on newer Ubuntu releases. Thanks to the snap container, this piece of software can still be used on newer Ubuntu releases.</p>
-<h2 id="apps-which-are-too-messy">Apps which are too messy</h2>
-<p>The <a href="https://bridgedesigner.org/">Bridge Designer</a> is used in middle- and high-schools to give kids a realistic introduction to engineering. The kids get to build, design and test a bridge, similar to how actual engineers do it. The problem with this application is that it is actually a Windows application. Windows software has no place in the Debian repositories. It is however possible to run the software on Linux using a specially crafted Wine environment, which is exactly what the <a href="https://snapcraft.io/bridge-designer">Bridge Designer snap</a> does. Thanks to this snap, users can now install Bridge Designer on Linux without having to mess with Wine.</p>
-<h2 id="myth-its-only-for-closed-source-software">Myth: it&rsquo;s only for closed source software</h2>
-<p>All these applications are open source. It is a common myth that these kind of issues only happen in closed source software, but this is clearly not the case. Being open source does not mean a project has the resources to be ported to Linux and it does not mean the developers have enough time to update their software every six months.</p>
-<h2 id="extra-1-arduino-is-also-too-messy">Extra 1: Arduino is also too messy</h2>
-<p>Next to the &ldquo;speed&rdquo; issue, the Arduino IDE has not been updated in Debian and Ubuntu since 2015 because of <a href="https://github.com/arduino/Arduino/pull/2703">licensing issues</a>. Arduino source code uses a number of different open source licenses and according to Debian rules, it is not clear enough which files use which license. Although I think this issue should be fixed, Ubuntu users still need the Arduino IDE in the meantime. Because the snap is completely self-contained and does not affect any other part of the OS, it does not need to follow the strict rules of Debian.</p>
-<h2 id="extra-2-alternatives">Extra 2: Alternatives</h2>
-<p>Since these issues are universal, people have come up with other very smart solutions.</p>
+<p>The manifest is used by the Snap Store to check if Snap packages contain libraries with security vulnerabilities. If this is the case, the publisher gets an email asking them to rebuild the package.</p>
+<p>Both these files are added by the <code>snapcraft</code> build tool when the environment variable <code>SNAPCRAFT_BUILD_INFO</code> is set during the build. This is automatically enabled for all snaps built by snapcraft.io and Launchpad.</p>
+<h2 id="what-do-the-manifests-contain">What do the manifests contain?</h2>
+<p>Let&rsquo;s look at Canonical&rsquo;s Chromium snap as an example. If you&rsquo;ve already installed the snap</p>
+<p>In <code>snap/snapcraft.yaml</code>, <code>source</code> explains what repository is used to build the package and <code>stage-packages</code> describe what dependencies are included in the snap.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">desktop-gtk3</span>:
+    <span style="color:#66d9ef">source</span>: https://github.com/ubuntu/snapcraft-desktop-helpers.git
+    <span style="color:#66d9ef">source-subdir</span>: gtk
+    <span style="color:#66d9ef">stage-packages</span>:
+      - libxkbcommon0
+      - ttf-ubuntu-font-family
+      - shared-mime-info
+...
+</code></pre></div><p>In <code>snap/manifest.yaml</code>, <code>source-commit</code> is added to narrow down what exact source was used for this package and <code>stage-packages</code> include the exact version of each dependency.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">desktop-gtk3</span>:
+    <span style="color:#66d9ef">source</span>: https://github.com/ubuntu/snapcraft-desktop-helpers.git
+    <span style="color:#66d9ef">source-commit</span>: 622e2aa7a840b3a7dbb6ea4d432d687d5cc2e8ef
+    <span style="color:#66d9ef">source-subdir</span>: gtk
+    <span style="color:#66d9ef">stage-packages</span>:
+    - libxkbcommon0=<span style="color:#ae81ff">0.8.2-1</span>~ubuntu18<span style="color:#ae81ff">.04.1</span>
+    - ttf-ubuntu-font-family=<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">0.83-2</span>
+    - shared-mime-info=<span style="color:#ae81ff">1.9-2</span>
+...
+</code></pre></div><p>Finally, for snaps built on Launchpad, <code>snap/manifest.yaml</code> also contains a URL to the build log.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">image-info</span>:
+  <span style="color:#66d9ef">build-request-id</span>: lp<span style="color:#ae81ff">-58361925</span>
+  <span style="color:#66d9ef">build-request-timestamp</span>: <span style="color:#e6db74">&#39;2020-08-05T11:55:18Z&#39;</span>
+  <span style="color:#66d9ef">build_url</span>: https://launchpad.net/~osomon/+snap/chromium-snap-firstrun-notice/+build/<span style="color:#ae81ff">1071421</span>
+</code></pre></div><h2 id="how-do-i-access-these-files">How do I access these files?</h2>
+<p>Currently, you need to download the snaps before you can access the manifest.</p>
 <ul>
-<li><a href="https://appimage.org/">AppImage</a> solves these issues by creating a &ldquo;fat binary&rdquo; for each application. Each binary contains all the dependencies an application needs. One advantage is that an AppImage runs by itself; you do not need an additional package manager to run an app.</li>
-<li><a href="https://nixos.org/">Nix</a> is a package manager which allows multiple installed apps to use different versions of the same libraries. One advantage over Snaps and Flatpaks is that applications generally use less space because shared libraries are not actually duplicated.</li>
-<li>&ldquo;Rolling&rdquo; distributions such as <a href="https://manjaro.org/">Manjaro</a> do not release every X months, but continuously releases updates at the same pace of the actual developers of the software. This solves the &ldquo;too fast&rdquo; apps, but not the other issues. This is one of the reasons Manjaro also includes Snapd and Flatpak by default.</li>
+<li>If you don&rsquo;t have the Snap installed, run <code>snap download snap-name</code>, which will download the snap to the current directory. You can then open the snap with any archive manager to look at the files.</li>
+<li>If you have the snap installed, you can find them in <code>/snap/snap-name/current/snap/</code>.</li>
+</ul>
+<h2 id="can-the-manifests-be-doctored">Can the manifests be doctored?</h2>
+<p>Yes; a malicious publisher can change the contents of these files. If the snap was built on Launchpad, however, you can verify if the manifest was changed since the package was built:</p>
+<ol>
+<li>Download the snap and look for the <code>build_url</code> in <code>snap/manifest.yaml</code>.</li>
+<li>Surf to the URL and download the snap in &ldquo;Built files&rdquo;.</li>
+<li>Calculate the checksum of both snaps and see if they match.</li>
+</ol>
+<p>If the checksums match, you know the manifest was not changed since the package was built. On Launchpad, you can also see which machine the package was built on, the entire build log and the source of that build.</p>
+<blockquote>
+<p>Note: This process requires you to trust the information in Launchpad is correct. This is the same infrastructure that builds the regular Ubuntu packages and hosts their source code, however, so Ubuntu and all of its derivatives already depend on this information being correct.</p>
+</blockquote>
+<h2 id="can-i-trust-any-package-built-on-launchpad">Can I trust any package built on Launchpad?</h2>
+<p>No! It is still very important to trust the <em>publisher</em> of a package themselves. Because the publisher controls the entire source code of the application, it is impossible to stop them from including malicious code. Even if that code is built on Launchpad.</p>
+<blockquote>
+<p>Note: for this reason, I don&rsquo;t think it&rsquo;s useful to force publishers to include manifests and/or use Launchpad. It would only give users a false sense of security.</p>
+</blockquote>
+<p>Snap is specifically designed to let developers publish their apps directly to users without a middleman. This also means that users should only install software from developers they trust. The Snap sandbox helps to reduce the damage a malicious or broken snap can do, but it does not completely protect you from harm.</p>
+<h2 id="areas-of-improvement">Areas of improvement</h2>
+<p>If you&rsquo;re interested in transparency, trust and reproducibility of snaps, there are many areas you can work on to further improve this. From the top of my head, these are some of the things that can improve:</p>
+<ul>
+<li>To see the manifest, users need to download the snap and manually look through the files. It would be very useful if the <a href="https://github.com/canonical-web-and-design/snapcraft.io">Snap Store web frontend</a> and the <a href="https://github.com/snapcore/snapd"><code>snap</code> CLI command</a> could show you the manifest and the data in it.</li>
+<li>Although the manifest records everything used to build the package, you can&rsquo;t yet use this recording to reproduce the package. The <a href="https://github.com/snapcore/snapcraft"><code>snapcraft</code></a> build tool needs to be modified so it can rebuild a snap from the <code>manifest.yaml</code>. You won&rsquo;t be starting from scratch though, as <code>snapcraft</code> already supports many of the fields in the manifest.</li>
+<li>The manifest currently does not contain the source url of the repository which contains the <code>snapcraft.yaml</code> file itself. You can use Launchpad to find this repository, but it would be better to include this repository in the manifest itself.</li>
+<li>As far as I know, Launchpad is currently the only build service for Snaps which includes a link to the build log. It would be useful for others such as the <a href="build.neon.kde.org">KDE Neon build service</a> to do the same thing.</li>
 </ul>
 <blockquote>
 <p>Note: I am a human being, and like most human beings, I make mistakes. Did you find an issue with this article? Let me know in the comments, and I&rsquo;ll be happy to correct it!</p>
@@ -232,8 +266,6 @@
       
         
           <li><a class="article-terms-link" href="/tags/snap/">Snap</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/flatpak/">Flatpak</a></li>
         
       
     </ul>
@@ -273,10 +305,8 @@
   
   <div class="pagination">
     
-      <a href="/blog/2020-07-17-lgpl-copyleft-snaps/" class="button left"><span>Copyleft and LGPL in Snaps and Flatpaks</span></a>
     
-    
-      <a href="/blog/2020-07-03-snap-vs-flatpak/" class="button right"><span>A fundamental difference between Snap and Flatpak</span></a>
+      <a href="/blog/2020-steampunk-cyborg-2/" class="button right"><span>How I became a cyborg pt2</span></a>
     
   </div>
 
