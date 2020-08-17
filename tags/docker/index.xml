@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Merlijn Sebrechts</title>
+    <link>/tags/docker/</link>
+    <description>Recent content in Docker on Merlijn Sebrechts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What&#39;s up with CRI-O, Kata Containers and Podman?</title>
+      <link>/blog/2020-01-docker-podman-kata-cri-o/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-01-docker-podman-kata-cri-o/</guid>
+      <description>The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at the &amp;ldquo;consolidation&amp;rdquo; stage of the hype cycle:
+ Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &amp;ldquo;The primary orchestrator going forward is Kubernetes.&amp;rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer.</description>
+    </item>
+    
+  </channel>
+</rss>

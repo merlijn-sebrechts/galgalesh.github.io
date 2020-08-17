@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PhD on Merlijn Sebrechts</title>
+    <link>/categories/phd/</link>
+    <description>Recent content in PhD on Merlijn Sebrechts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/phd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Who owns my research?</title>
+      <link>/blog/copyright-ghent-university-researcher/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/copyright-ghent-university-researcher/</guid>
+      <description>When I submitted my first paper, I realized I had no idea who owned my research! Was I authorized to transfer the rights to a journal or did I need someone else&amp;rsquo;s permission? After some digging, I found the answer and wrote it all up in a neat little document. So here&amp;rsquo;s the dusted off version, in case it&amp;rsquo;s useful to anyone else.
+In short Intellectual property (IP) as a PhD student at Ghent University is largely divided into two parts: research results and educational material.</description>
+    </item>
+    
+  </channel>
+</rss>

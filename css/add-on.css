@@ -13,9 +13,17 @@
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: .10em;
+  text-transform: none;
+
 }
 
+/* .post > header .title {
+  font-size: 1.3em;
+} */
 
+.mini-post header h2 {
+  font-size: 0.9em;
+}
 
 article.post {
   font-size: 1.2em;
@@ -27,9 +35,14 @@ article.post {
   text-align: left;
 }
 
-.content a {
-  color: #0366d6;
-  border: none;
+#content a {
+  color: #0366d6 !important;
+  border: none !important;
+}
+
+.content li a {
+  color: #0366d6 !important;
+  border: none !important;
 }
 
 article.post p a {

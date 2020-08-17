@@ -6,17 +6,35 @@
     <description>Recent content in Categories on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ubuntu &amp; Linux</title>
-      <link>/categories/ubuntu-linux/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      <title>Health</title>
+      <link>/categories/health/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/ubuntu-linux/</guid>
+      <guid>/categories/health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/categories/linux/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PhD</title>
+      <link>/categories/phd/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/phd/</guid>
       <description></description>
     </item>
     

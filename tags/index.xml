@@ -6,9 +6,73 @@
     <description>Recent content in Tags on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Sat, 15 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Heart</title>
+      <link>/tags/heart/</link>
+      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/heart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Snap</title>
+      <link>/tags/snap/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/snap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Copyright</title>
+      <link>/tags/copyright/</link>
+      <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/copyright/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flatpak</title>
+      <link>/tags/flatpak/</link>
+      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/flatpak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Containers</title>
+      <link>/tags/containers/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/containers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>/tags/docker/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k8s</title>
+      <link>/tags/k8s/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/k8s/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

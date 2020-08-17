@@ -13,6 +13,31 @@
   </url>
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="/nl/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/health/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/heart/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2020-steampunk-cyborg-2/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url>
@@ -33,6 +58,31 @@
   </url>
   
   <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="/nl/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/linux/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/snap/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/2020-08-02-why-one-snap-store/</loc>
     <lastmod>2020-08-02T00:00:00+00:00</lastmod>
   </url>
@@ -40,6 +90,16 @@
   <url>
     <loc>/blog/2020-07-17-lgpl-copyleft-snaps/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/copyright/</loc>
+    <lastmod>2020-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/flatpak/</loc>
+    <lastmod>2020-07-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -58,22 +118,17 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/tags/containers/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="/nl/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/"
-                />
   </url>
   
   <url>
-    <loc>/categories/ubuntu-linux/</loc>
+    <loc>/tags/docker/</loc>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/k8s/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -85,6 +140,11 @@
   <url>
     <loc>/blog/2019-steampunk-cyborg-1/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/phd/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -110,20 +170,6 @@
   <url>
     <loc>/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</loc>
     <lastmod>2014-11-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="/nl/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
   </url>
   
 </urlset>

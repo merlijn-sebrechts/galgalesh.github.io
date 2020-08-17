@@ -16,7 +16,9 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Merlijn Sebrechts"/>
 <meta name="twitter:description" content="Meer context bij technologie"/>
-<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/github.min.css">
+          <link rel="stylesheet" href="/css/bundle.min.182747932867f43d8c875b59a0300848b838002d4008d4a5b8ddcc41a37c4cf7.css" integrity="sha256-GCdHkyhn9D2Mh1tZoDAISLg4AC1ACNSluN3MQaN8TPc="><link rel="stylesheet" href="/css/add-on.css">
 </head>
 
   <body>
@@ -26,45 +28,34 @@
     <p style="text-align:center;">This message, related to the development of the theme, only displays on the
       <code>localhost</code> homepage to notify you of any important theme changes.</p>
       <hr>
-      <h5 style="color:#f4f4f4;text-align:center;"><i class="fas fa-exclamation-triangle"></i>Version 1.1.0 - May 18, 2020<i class="fas fa-exclamation-triangle"></i></h5>
-    <p>With this version, the theme has fully implemented <strong>static search</strong> using
-<code>lunr.js</code>. That being said, a few modifications were necessary to implement this
-feature.</p>
-<p>To utilize this, or future version of <em>Hugo Future Imperfect Slim</em>, please make
-the following changes:</p>
+      <h5 style="color:#f4f4f4;text-align:center;"><i class="fas fa-exclamation-triangle"></i>Version 2.0.0 - July 20, 2020<i class="fas fa-exclamation-triangle"></i></h5>
+    <p>Below are the following changes that <em>could</em> be breaking changes for your site. For more details on any change, please refer to <a href="https://github.com/pacollins/hugo-future-imperfect-slim/pull/154">PR #154</a>.</p>
+<p>The major breaking change is:</p>
 <ol>
-<li>Add the following to your <code>config.toml</code> before <code>[params]</code>:</li>
+<li>Users that have front matter that utilize <code>images</code> (backwards compatibility for <code>featured</code> and associated parameters still remains) <em>will</em> need to adjust from <code>[images]=&quot;SRC&quot;</code> to the new format.</li>
 </ol>
-<pre><code>...
-disableLanguages = [&quot;&quot;]
-
-[outputs]
-    home = [&quot;html&quot;, &quot;json&quot;]
-
-[params]
-...
-</code></pre><ol start="2">
-<li>
-<p>Remove the underscore from all <code>about</code> and <code>contact</code> page file names:
-<code>_index.md --&gt; index.md</code></p>
-</li>
-<li>
-<p>Add <code>layout = &quot;about&quot;</code> or <code>layout = &quot;contact&quot;</code> to all of the files you just
-just adjusted the file names for.</p>
-</li>
+<pre><code>[[images]]
+    src = &quot;&quot; // Link to image
+    alt = &quot;&quot; // Alt text for image
+    stretch = // Optional: See screenshots for referenced values and outcomes
+</code></pre><p>If you utilize any of the following, there <em>might</em> be a breaking:</p>
+<ol>
+<li>User custom templates <em>may</em> require adjustment.</li>
+<li>User custom i18n languages, or custom templates referencing i18n translations <em>may</em> require adjustment.</li>
+<li>User custom template for comments <em>will</em> require adjustment <em>if</em> it uses the theme&rsquo;s CSS and/or JS.</li>
+<li>User custom CSS <em>may</em> need to adjust due to a variety of class name changes and specificity changes.</li>
 </ol>
-<p>While I realize this is inconvenient, I hope that it is worth it to you in the
-long run. Thanks for using the theme, and feel free to submit issues as needed.</p>
+<p>While I realize this is inconvenient, I hope that it is worth it to you in the long run. Thanks for using the theme, and feel free to submit issues as needed.</p>
 
     <div style="text-align:center;">
       <button onclick="removeBox()" class="button" style="color:#f4f4f4;margin-bottom:1em;">Close Notification Until Next Update</button>
     </div>
     <script>
-      if (window.location.href.indexOf('localhost:') < 1 || window.localStorage.getItem('HFIS-version') == '1.1.0') {
+      if (window.location.href.indexOf('localhost:') < 1 || window.localStorage.getItem('HFIS-version') == '2.0.0') {
         document.getElementsByTagName("body")[0].removeChild(document.getElementById("theme-message"));
       }
       function removeBox() {
-        window.localStorage.setItem('HFIS-version', '1.1.0');
+        window.localStorage.setItem('HFIS-version', '2.0.0');
         document.getElementsByTagName("body")[0].removeChild(document.getElementById("theme-message"));
       }
     </script>
@@ -91,7 +82,7 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
         
       
       
-      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
     </menu>
     <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
     
@@ -112,7 +103,7 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
 
     <div id="wrapper">
       <section id="site-intro" >
-  <a href="/nl"><img src="/img/main/Merlijn%20Sebrechts100x100.jpg" class="circle" width="" alt="Merlijn Sebrechts" /></a>
+  <a href="/nl"><img src="/img/main/Merlijn%20Sebrechts100x100.jpg" class="circle" width="100" alt="Merlijn Sebrechts" /></a>
   <header>
     <h1>Merlijn Sebrechts</h1>
   </header>
@@ -186,40 +177,35 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2013-04-04 00:00:00 &#43;0000 UTC">
-      April 4, 2013
-    </time>
-    <span class="author"></span>
+    <time datetime="2013-04-04 00:00:00 &#43;0000 UTC">4 April 2013</time>
+    
     
   </div>
 </header>
 
-  
-
-  
-  <p>Vandaag is het Newman gesloten (paasmaandag) dus blijven we na het ontbijt schoonekes zitten in de zetels van aqua lodge. Tijd om eens na te denken over het stagerapport en wat aan mijn blog verder te schrijven.</p>
-  <footer>
-    <a href="/nl/tanzania/2013-04-04-maandag-1-maart-slecht-weer/" class="button big">Read more</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
+  <div class="content">
     
+    
+    <p>Vandaag is het Newman gesloten (paasmaandag) dus blijven we na het ontbijt schoonekes zitten in de zetels van aqua lodge. Tijd om eens na te denken over het stagerapport en wat aan mijn blog verder te schrijven.</p>
+  </div>
+  <footer>
+    <a href="/nl/tanzania/2013-04-04-maandag-1-maart-slecht-weer/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
       
         
           <li><a class="article-terms-link" href="/nl/categories/tanzania/">Tanzania</a></li>
         
       
-    
     </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
+  
+  
+    <ul class="tags">
       <li>None</li>
-    
     </ul>
-  </li>
-</ul>
+  
+</div>
 
   </footer>
 </article>
@@ -234,40 +220,35 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2013-04-03 00:00:00 &#43;0000 UTC">
-      April 3, 2013
-    </time>
-    <span class="author"></span>
+    <time datetime="2013-04-03 00:00:00 &#43;0000 UTC">3 April 2013</time>
+    
     
   </div>
 </header>
 
-  
-
-  
-  <p>5 uurtjes slapen en dan opstaan om te koken. We gaan brunchen en iedereen gaat iets koken. Ik maak noedelsoep.</p>
-  <footer>
-    <a href="/nl/tanzania/2013-04-03-zondag-brunchdag/" class="button big">Read more</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
+  <div class="content">
     
+    
+    <p>5 uurtjes slapen en dan opstaan om te koken. We gaan brunchen en iedereen gaat iets koken. Ik maak noedelsoep.</p>
+  </div>
+  <footer>
+    <a href="/nl/tanzania/2013-04-03-zondag-brunchdag/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
       
         
           <li><a class="article-terms-link" href="/nl/categories/tanzania/">Tanzania</a></li>
         
       
-    
     </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
+  
+  
+    <ul class="tags">
       <li>None</li>
-    
     </ul>
-  </li>
-</ul>
+  
+</div>
 
   </footer>
 </article>
@@ -282,40 +263,35 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2013-04-01 00:00:00 &#43;0000 UTC">
-      April 1, 2013
-    </time>
-    <span class="author"></span>
+    <time datetime="2013-04-01 00:00:00 &#43;0000 UTC">1 April 2013</time>
+    
     
   </div>
 </header>
 
-  
-
-  
-  <p>Even een korte inhaalbeweging voor mijn blog.</p>
-  <footer>
-    <a href="/nl/tanzania/2013-04-01-inhaalbeweging/" class="button big">Read more</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
+  <div class="content">
     
+    
+    <p>Even een korte inhaalbeweging voor mijn blog.</p>
+  </div>
+  <footer>
+    <a href="/nl/tanzania/2013-04-01-inhaalbeweging/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
       
         
           <li><a class="article-terms-link" href="/nl/categories/tanzania/">Tanzania</a></li>
         
       
-    
     </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
+  
+  
+    <ul class="tags">
       <li>None</li>
-    
     </ul>
-  </li>
-</ul>
+  
+</div>
 
   </footer>
 </article>
@@ -330,40 +306,35 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2013-04-01 00:00:00 &#43;0000 UTC">
-      April 1, 2013
-    </time>
-    <span class="author"></span>
+    <time datetime="2013-04-01 00:00:00 &#43;0000 UTC">1 April 2013</time>
+    
     
   </div>
 </header>
 
-  
-
-  
-  <p>Vitus vertrekt binnenkort op boarding school en dat moet gevierd worden. We hebben een quiz getsjoept van de Antwerpenaren en spelen die tegen mekaar met Maxime als Quizmaster en Franky als vertaler engels voor Ben en Vitus.</p>
-  <footer>
-    <a href="/nl/tanzania/2013-04-01-zaterdagavond-30-maart-you-like-tanzanian-girls/" class="button big">Read more</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
+  <div class="content">
     
+    
+    <p>Vitus vertrekt binnenkort op boarding school en dat moet gevierd worden. We hebben een quiz getsjoept van de Antwerpenaren en spelen die tegen mekaar met Maxime als Quizmaster en Franky als vertaler engels voor Ben en Vitus.</p>
+  </div>
+  <footer>
+    <a href="/nl/tanzania/2013-04-01-zaterdagavond-30-maart-you-like-tanzanian-girls/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
       
         
           <li><a class="article-terms-link" href="/nl/categories/tanzania/">Tanzania</a></li>
         
       
-    
     </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
+  
+  
+    <ul class="tags">
       <li>None</li>
-    
     </ul>
-  </li>
-</ul>
+  
+</div>
 
   </footer>
 </article>
@@ -378,40 +349,35 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2013-03-30 00:00:00 &#43;0000 UTC">
-      March 30, 2013
-    </time>
-    <span class="author"></span>
+    <time datetime="2013-03-30 00:00:00 &#43;0000 UTC">30 Maart 2013</time>
+    
     
   </div>
 </header>
 
-  
-
-  
-  <p>“what do you do here exactly?” Vraag ik aan Michelle. Tijd om een lang antwoord te geven heeft ze zeker, Windows zal nog zeker 5 uur bezig zijn met te installeren. Ik kan niets doen ondertussen…</p>
-  <footer>
-    <a href="/nl/tanzania/2013-03-30-een-manier-om-naar-de-wereld-te-kijken/" class="button big">Read more</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
+  <div class="content">
     
+    
+    <p>“what do you do here exactly?” Vraag ik aan Michelle. Tijd om een lang antwoord te geven heeft ze zeker, Windows zal nog zeker 5 uur bezig zijn met te installeren. Ik kan niets doen ondertussen…</p>
+  </div>
+  <footer>
+    <a href="/nl/tanzania/2013-03-30-een-manier-om-naar-de-wereld-te-kijken/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
       
         
           <li><a class="article-terms-link" href="/nl/categories/tanzania/">Tanzania</a></li>
         
       
-    
     </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
+  
+  
+    <ul class="tags">
       <li>None</li>
-    
     </ul>
-  </li>
-</ul>
+  
+</div>
 
   </footer>
 </article>
@@ -426,40 +392,35 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2013-03-30 00:00:00 &#43;0000 UTC">
-      March 30, 2013
-    </time>
-    <span class="author"></span>
+    <time datetime="2013-03-30 00:00:00 &#43;0000 UTC">30 Maart 2013</time>
+    
     
   </div>
 </header>
 
-  
-
-  
-  <p>Wanneer het tijd is voor het avondeten zit ik nog steeds te babbelen met Michelle. Ze bied mij aan om pasta te maken voor mij. Ik kan moeilijk anders dan “yes, thank you” antwoorden. Het plan valt echter snel in duigen als we merken dat het fornuis kapot is.</p>
-  <footer>
-    <a href="/nl/tanzania/2013-03-30-popcorn/" class="button big">Read more</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
+  <div class="content">
     
+    
+    <p>Wanneer het tijd is voor het avondeten zit ik nog steeds te babbelen met Michelle. Ze bied mij aan om pasta te maken voor mij. Ik kan moeilijk anders dan “yes, thank you” antwoorden. Het plan valt echter snel in duigen als we merken dat het fornuis kapot is.</p>
+  </div>
+  <footer>
+    <a href="/nl/tanzania/2013-03-30-popcorn/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
       
         
           <li><a class="article-terms-link" href="/nl/categories/tanzania/">Tanzania</a></li>
         
       
-    
     </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
+  
+  
+    <ul class="tags">
       <li>None</li>
-    
     </ul>
-  </li>
-</ul>
+  
+</div>
 
   </footer>
 </article>
@@ -474,40 +435,35 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2013-03-29 00:00:00 &#43;0000 UTC">
-      March 29, 2013
-    </time>
-    <span class="author"></span>
+    <time datetime="2013-03-29 00:00:00 &#43;0000 UTC">29 Maart 2013</time>
+    
     
   </div>
 </header>
 
-  
-
-  
-  <p>We hebben ons kot nog niet geopend en Katrien komt al bij ons “het internet ligt uit, ik heb niets van verbinding meer”. Een klein onderzoekje later vinden we het probleem: de switch in mandeleo staat weer uit. Ik ben al dien boel beu en vraag aan Katrien of we geen rechtstreekse kabel mogen trekken. “Voor mij goed, maar je hebt de toestemming van Edison nodig”. Edison vind het ook een goed idee dus ik begin. Ik kies een mooi, lang kabeltje uit en begin het samen met Jeroen op te hangen.&hellip;</p>
-  <footer>
-    <a href="/nl/tanzania/2013-03-29-dinsdag-26-maart-doe-het-zelf-ladder/" class="button big">Read more</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
+  <div class="content">
     
+    
+    <p>We hebben ons kot nog niet geopend en Katrien komt al bij ons “het internet ligt uit, ik heb niets van verbinding meer”. Een klein onderzoekje later vinden we het probleem: de switch in mandeleo staat weer uit. Ik ben al dien boel beu en vraag aan Katrien of we geen rechtstreekse kabel mogen trekken. “Voor mij goed, maar je hebt de toestemming van Edison nodig”. Edison vind het ook een goed idee dus ik begin. Ik kies een mooi, lang kabeltje uit en begin het samen met Jeroen op te hangen.&hellip;</p>
+  </div>
+  <footer>
+    <a href="/nl/tanzania/2013-03-29-dinsdag-26-maart-doe-het-zelf-ladder/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
       
         
           <li><a class="article-terms-link" href="/nl/categories/tanzania/">Tanzania</a></li>
         
       
-    
     </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
+  
+  
+    <ul class="tags">
       <li>None</li>
-    
     </ul>
-  </li>
-</ul>
+  
+</div>
 
   </footer>
 </article>
@@ -522,40 +478,35 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2013-03-29 00:00:00 &#43;0000 UTC">
-      March 29, 2013
-    </time>
-    <span class="author"></span>
+    <time datetime="2013-03-29 00:00:00 &#43;0000 UTC">29 Maart 2013</time>
+    
     
   </div>
 </header>
 
-  
-
-  
-  <p>Ik sta op en kijk of de bestanden gedownload zijn. Natuurlijk is de downloader vastgelopen ergens in het midden -_- dan proberen we het maar op het Newman</p>
-  <footer>
-    <a href="/nl/tanzania/2013-03-29-woensdag-27-maart-ik-ben-geboren-voor-het-ongeluk/" class="button big">Read more</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
+  <div class="content">
     
+    
+    <p>Ik sta op en kijk of de bestanden gedownload zijn. Natuurlijk is de downloader vastgelopen ergens in het midden -_- dan proberen we het maar op het Newman</p>
+  </div>
+  <footer>
+    <a href="/nl/tanzania/2013-03-29-woensdag-27-maart-ik-ben-geboren-voor-het-ongeluk/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
       
         
           <li><a class="article-terms-link" href="/nl/categories/tanzania/">Tanzania</a></li>
         
       
-    
     </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
+  
+  
+    <ul class="tags">
       <li>None</li>
-    
     </ul>
-  </li>
-</ul>
+  
+</div>
 
   </footer>
 </article>
@@ -570,40 +521,35 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2013-03-28 00:00:00 &#43;0000 UTC">
-      March 28, 2013
-    </time>
-    <span class="author"></span>
+    <time datetime="2013-03-28 00:00:00 &#43;0000 UTC">28 Maart 2013</time>
+    
     
   </div>
 </header>
 
-  
-
-  
-  <p>Het internet heeft heel het weekend uitgelegen. Men vertelt ons dat het komt doordat er een onderzeese internetkabel kapot is. Bepaalde delen van Afrika zitten zonder internet of hebben zeer slecht internet. We vinden er echter niets over in het nieuws ofzo waardoor we betwijfelen of het echt waar is.De programma’s zijn dus helemaal niet gedownload waardoor ik niet verder kan doen aan Michelle haar computer.</p>
-  <footer>
-    <a href="/nl/tanzania/2013-03-28-maandag-25-maart-kabel-kapot/" class="button big">Read more</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
+  <div class="content">
     
+    
+    <p>Het internet heeft heel het weekend uitgelegen. Men vertelt ons dat het komt doordat er een onderzeese internetkabel kapot is. Bepaalde delen van Afrika zitten zonder internet of hebben zeer slecht internet. We vinden er echter niets over in het nieuws ofzo waardoor we betwijfelen of het echt waar is.De programma’s zijn dus helemaal niet gedownload waardoor ik niet verder kan doen aan Michelle haar computer.</p>
+  </div>
+  <footer>
+    <a href="/nl/tanzania/2013-03-28-maandag-25-maart-kabel-kapot/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
       
         
           <li><a class="article-terms-link" href="/nl/categories/tanzania/">Tanzania</a></li>
         
       
-    
     </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
+  
+  
+    <ul class="tags">
       <li>None</li>
-    
     </ul>
-  </li>
-</ul>
+  
+</div>
 
   </footer>
 </article>
@@ -618,126 +564,102 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
   </div>
   <div class="meta">
-    <time class="published" datetime="2013-03-23 00:00:00 &#43;0000 UTC">
-      March 23, 2013
-    </time>
-    <span class="author"></span>
+    <time datetime="2013-03-23 00:00:00 &#43;0000 UTC">23 Maart 2013</time>
+    
     
   </div>
 </header>
 
-  
-
-  
-  <p>Om 5 uur uur gaat de wekker. Opstaan Merlijn! Voor moest ik mijn wekker niet gehoord hebben begint de plaatselijke imam het ochtendgebed door een megafoon te schreeuwen. Hoe ik daar de vorige nachten ben doorgeslapen, ik snap het niet…</p>
-  <footer>
-    <a href="/nl/tanzania/2013-03-23-vrijdag-doe-het-zelf-weg/" class="button big">Read more</a>
-    <ul class="stats">
-  <li class="categories">
-    <ul>
+  <div class="content">
     
+    
+    <p>Om 5 uur uur gaat de wekker. Opstaan Merlijn! Voor moest ik mijn wekker niet gehoord hebben begint de plaatselijke imam het ochtendgebed door een megafoon te schreeuwen. Hoe ik daar de vorige nachten ben doorgeslapen, ik snap het niet…</p>
+  </div>
+  <footer>
+    <a href="/nl/tanzania/2013-03-23-vrijdag-doe-het-zelf-weg/" class="button big">Lees verder</a>
+    <div class="stats">
+  
+    <ul class="categories">
       
         
           <li><a class="article-terms-link" href="/nl/categories/tanzania/">Tanzania</a></li>
         
       
-    
     </ul>
-  </li>
-  <li class="tags">
-    <ul>
-    
+  
+  
+    <ul class="tags">
       <li>None</li>
-    
     </ul>
-  </li>
-</ul>
+  
+</div>
 
   </footer>
 </article>
 
   
-  
-<div class="pagination">
-  
-    <a href="/nl/page/2/" class="button"><div class="previous"><div>Previous</div></div></a>
-  
-  
-    <a href="/nl/page/4/" class="button"><div class="next"><div>Next</div></div></a>
-  
-</div>
-
+  <div class="pagination">
+    
+      <a href="/nl/page/2/" class="button left"><span>Vorige Pagina</span></a>
+    
+    
+      <a href="/nl/page/4/" class="button right"><span>Volgende Pagina</span></a>
+    
+  </div>
 
       </main>
       <section id="site-sidebar">
   
     <section id="recent-posts">
       <header>
-        <h1>Recent posts</h1>
+        <h1>Recente berichten</h1>
       </header>
       
       <article class="mini-post">
-        <section>
-          
-  <a href="/nl/tanzania/overzicht/" class="image featured">
+          <a href="/nl/tanzania/overzicht/" class="image" style="--bg-image: url('/img/old/2013-03-13%2018.57.28.jpg');">
     <img src="/img/old/2013-03-13%2018.57.28.jpg" alt="">
   </a>
-
-
-        </section>
         <header>
           <h2><a href="/nl/tanzania/overzicht/">Tanzania</a></h2>
-          <time class="published" datetime="">May 20, 2019</time>
+          <time class="published" datetime="2019-05-20 00:00:00 &#43;0000 UTC">20 Mei 2019</time>
         </header>
       </article>
       
       <article class="mini-post">
-        <section>
           
-
-        </section>
         <header>
           <h2><a href="/nl/tanzania/2013-05-05-vrijdag-3-mei-die-hp-_/">Vrijdag 3 mei: Die hp -_-</a></h2>
-          <time class="published" datetime="">May 5, 2013</time>
+          <time class="published" datetime="2013-05-05 00:00:00 &#43;0000 UTC">5 Mei 2013</time>
         </header>
       </article>
       
       <article class="mini-post">
-        <section>
           
-
-        </section>
         <header>
           <h2><a href="/nl/tanzania/2013-05-04-donderdag-2-mei-toch-hoop/">Donderdag 2 mei: Toch hoop</a></h2>
-          <time class="published" datetime="">May 4, 2013</time>
+          <time class="published" datetime="2013-05-04 00:00:00 &#43;0000 UTC">4 Mei 2013</time>
         </header>
       </article>
       
       <article class="mini-post">
-        <section>
           
-
-        </section>
         <header>
           <h2><a href="/nl/tanzania/2013-05-02-dinsdag-30-april-hopen/">Dinsdag 30 april: Hopen</a></h2>
-          <time class="published" datetime="">May 2, 2013</time>
+          <time class="published" datetime="2013-05-02 00:00:00 &#43;0000 UTC">2 Mei 2013</time>
         </header>
       </article>
       
       <article class="mini-post">
-        <section>
           
-
-        </section>
         <header>
           <h2><a href="/nl/tanzania/2013-05-02-woensdag-1-mei-geen-hoop/">Woensdag 1 mei: geen hoop</a></h2>
-          <time class="published" datetime="">May 2, 2013</time>
+          <time class="published" datetime="2013-05-02 00:00:00 &#43;0000 UTC">2 Mei 2013</time>
         </header>
       </article>
       
       
         <footer>
-          <a href="/nl/tanzania/" class="button">See more</a>
+          <a href="/nl/tanzania/" class="button">Toon meer</a>
         </footer>
       
     </section>
@@ -747,27 +669,19 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
     
       <section id="categories">
         <header>
-          <h1><a href="/nl/categories">Categories</a></h1>
+          <h1><a href="/nl/categories">categories</a></h1>
         </header>
         <ul>
           
-            
-          
           
           <li>
-            
               <a href="/nl/categories/tanzania/">tanzania<span class="count">52</span></a>
-            
           
           <li>
-            
               <a href="/nl/categories/ubuntu-amp-linux/">ubuntu-amp-linux<span class="count">1</span></a>
-            
           
           <li>
-            
               <a href="/nl/categories/uncategorized/">uncategorized<span class="count">1</span></a>
-            
           
           </li>
         </ul>
@@ -778,11 +692,11 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
   
     <section id="mini-bio">
       <header>
-        <h1>About</h1>
+        <h1>Over Mij</h1>
       </header>
       <p>Curious for more? <a href="/nl/">Check out the Dutch part of this blog.</a></p>
       <footer>
-        <a href="/nl/about" class="button">Learn More</a>
+        <a href="/nl/about" class="button">Meer Informatie</a>
       </footer>
     </section>
   
@@ -840,28 +754,27 @@ long run. Thanks for using the theme, and feel free to submit issues as needed.<
       </ul>
   
   <p class="copyright">
-    
-      &copy; 2019
-      
-        Merlijn Sebrechts
-      
-    . <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.74.3' target='_blank' rel='noopener'>Hugo</a>
+    © 2019 Merlijn Sebrechts
+      <br>
+    Thema: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>Een <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Gemaakt met <a href='https://gohugo.io/' title='0.74.3' target='_blank' rel='noopener'>Hugo</a>
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
 
       <script src="/js/highlight.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/html.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/css.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/js.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/toml.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.04e4331e7228ac2ae5ac38e52fa5be55170cb09168dfa97b6be0eedc1e2139b8.js" integrity="sha256-BOQzHnIorCrlrDjlL6W&#43;VRcMsJFo36l7a&#43;Du3B4hObg="></script>
     <script src="/js/add-on.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172953075-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-172953075-1');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-172953075-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
     </div>
   </body>

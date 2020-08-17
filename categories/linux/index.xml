@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Merlijn Sebrechts</title>
+    <link>/categories/linux/</link>
+    <description>Recent content in Linux on Merlijn Sebrechts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why is there only one Snap Store?</title>
+      <link>/blog/2020-08-02-why-one-snap-store/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-08-02-why-one-snap-store/</guid>
+      <description>Snap and Flatpak are the basis of two universal app stores for Linux: the Snap Store and Flathub. Interestingly, Flatpak has multiple repositories: Flathub is the main one but both Fedora and Elementary OS also host their own store. In contrast; there is only one Snap store. Why is that?
+ Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.</description>
+    </item>
+    
+    <item>
+      <title>Copyleft and LGPL in Snaps and Flatpaks</title>
+      <link>/blog/2020-07-17-lgpl-copyleft-snaps/</link>
+      <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-07-17-lgpl-copyleft-snaps/</guid>
+      <description>The question often comes up of how Snaps and Flatpaks influence copyleft, GPL and LGPL licenses. It is a common misconception that these new packaging formats significantly influence license compliance.
+Disclaimer: I am not a lawyer, this is not legal advice.
+Distributing your software in a Snap has no effect on GPL copyleft and LGPL compliance.
+ It has no effect on copyleft because containers do not trigger copyleft according to the GNU GPL FAQ [see note].</description>
+    </item>
+    
+    <item>
+      <title>Why Linux desktop apps need containers</title>
+      <link>/blog/2020-07-06-why-snap-flatpak/</link>
+      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-07-06-why-snap-flatpak/</guid>
+      <description>The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &amp;ldquo;why do we need this?&amp;rdquo; often arises. &amp;ldquo;Including software in distribution repositories has worked for so long, so why do we need to change it?&amp;rdquo;
+ Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.</description>
+    </item>
+    
+    <item>
+      <title>A fundamental difference between Snap and Flatpak</title>
+      <link>/blog/2020-07-03-snap-vs-flatpak/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-07-03-snap-vs-flatpak/</guid>
+      <description>Snaps and Flatpaks are often compared to each other because they both make it super easy for Linux users to get the latest versions of desktop applications. If a Linux user wants to install the latest version of apps like Slack, Krita or Blender, either tool will work just fine. There is one fundamental difference between Snaps and Flatpaks, however. While both are systems for distributing Linux apps, snap is also a tool to build Linux Distributions.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial: S4A on Ubuntu</title>
+      <link>/blog/2020-02-s4a-setup-ubuntu/</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-02-s4a-setup-ubuntu/</guid>
+      <description>S4A, or Scratch for Arduino, is an app that you can use to program Arduino boards using Scratch. You can program robots and LED&amp;rsquo;s without writing any code: all you need to do is drag and drop instructions in the visual programming environment.
+Step 1: Install Arduino IDE and S4A The first step is to install Arduino and S4A from the Snap Store.
+sudo snap install arduino s4a After that, you need to give the user account on your computer access to USB devices.</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s up with CRI-O, Kata Containers and Podman?</title>
+      <link>/blog/2020-01-docker-podman-kata-cri-o/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2020-01-docker-podman-kata-cri-o/</guid>
+      <description>The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at the &amp;ldquo;consolidation&amp;rdquo; stage of the hype cycle:
+ Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &amp;ldquo;The primary orchestrator going forward is Kubernetes.&amp;rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer.</description>
+    </item>
+    
+    <item>
+      <title>What does “perf interrupt took too long” mean?</title>
+      <link>/blog/2015-09-perf-interrupt-took-to-long/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015-09-perf-interrupt-took-to-long/</guid>
+      <description>Wifi problems So, I&amp;rsquo;m having a problem with my laptop. When I&amp;rsquo;m using the “TelenetWiFree” connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&amp;rsquo;t seem to come back again.</description>
+    </item>
+    
+    <item>
+      <title>Pragmatic Docker Day 2015</title>
+      <link>/blog/2015-04-pragmatic-docker-day/</link>
+      <pubDate>Sat, 25 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2015-04-pragmatic-docker-day/</guid>
+      <description>I got a ticket to the Pragmatic Docker Day meetup in Ghent in exchange for writing a blogpost about it. Free food, drinks &amp;amp; awesome talks for a whole day, who would want to miss that? Not me!
+So here are my unstructured thoughts I gathered from the meetup:
+Docker is awesome! What is docker? Docker encapsulates apps in their own little sandbox. Every app runs in its own container. An environment made especially so the app can run well and can&amp;rsquo;t mess to much with other apps running on the same server.</description>
+    </item>
+    
+    <item>
+      <title>Windows power users are not Linux power users!</title>
+      <link>/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</link>
+      <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</guid>
+      <description>Let&amp;rsquo;s rid the world of one of the most prominent Linux myths: “Desktop Linux sucks. It&amp;rsquo;s just not there yet”.
+When Windows power users try out Linux two things always happen:
+ They get frustrated because they can&amp;rsquo;t find how to do something in Linux. They brick their system, or make it extremely buggy.  I&amp;rsquo;ve been that person, I&amp;rsquo;ve bricked my system (a lot!), and the fact is, it was entirely my own fault.</description>
+    </item>
+    
+  </channel>
+</rss>
