@@ -7,7 +7,7 @@
 
 
 <meta name="generator" content="Hugo 0.74.3" /><meta itemprop="name" content="How to verify the source of a Snap package">
-<meta itemprop="description" content="Many Snap packages contain two files which allows users to verify what sources were used to build the package.
+<meta itemprop="description" content="Many Snap packages contain two files which allow users to verify what sources were used to build the package.
  snap/snapcraft.yaml is the &ldquo;source&rdquo; of the package. This file was used by snapcraft to build the package. snap/manifest.yaml is a &ldquo;recording&rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more.">
 <meta itemprop="datePublished" content="2020-08-16T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-08-16T00:00:00+00:00" />
@@ -17,7 +17,7 @@
 
 <meta itemprop="keywords" content="Snap," />
 <meta property="og:title" content="How to verify the source of a Snap package" />
-<meta property="og:description" content="Many Snap packages contain two files which allows users to verify what sources were used to build the package.
+<meta property="og:description" content="Many Snap packages contain two files which allow users to verify what sources were used to build the package.
  snap/snapcraft.yaml is the &ldquo;source&rdquo; of the package. This file was used by snapcraft to build the package. snap/manifest.yaml is a &ldquo;recording&rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/2020-08-17-verify-snap/" />
@@ -25,7 +25,7 @@
 <meta property="article:modified_time" content="2020-08-16T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to verify the source of a Snap package"/>
-<meta name="twitter:description" content="Many Snap packages contain two files which allows users to verify what sources were used to build the package.
+<meta name="twitter:description" content="Many Snap packages contain two files which allow users to verify what sources were used to build the package.
  snap/snapcraft.yaml is the &ldquo;source&rdquo; of the package. This file was used by snapcraft to build the package. snap/manifest.yaml is a &ldquo;recording&rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more."/>
 
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/github.min.css">
@@ -181,15 +181,15 @@
     </div>
     <div class="content">
       
-      <p>Many Snap packages contain two files which allows users to verify what sources were used to build the package.</p>
+      <p>Many <a href="https://snapcraft.io/">Snap packages</a> contain two files which allow users to verify what sources were used to build the package.</p>
 <ul>
 <li><code>snap/snapcraft.yaml</code> is the &ldquo;source&rdquo; of the package. This file was used by <a href="https://snapcraft.io/docs/snapcraft-overview"><code>snapcraft</code></a> to build the package.</li>
 <li><code>snap/manifest.yaml</code> is a &ldquo;recording&rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more.</li>
 </ul>
 <p>The manifest is used by the Snap Store to check if Snap packages contain libraries with security vulnerabilities. If this is the case, the publisher gets an email asking them to rebuild the package.</p>
-<p>Both these files are added by the <code>snapcraft</code> build tool when the environment variable <code>SNAPCRAFT_BUILD_INFO</code> is set during the build. This is automatically enabled for all snaps built by snapcraft.io and Launchpad.</p>
+<p>Both these files are added by the <code>snapcraft</code> build tool when the environment variable <code>SNAPCRAFT_BUILD_INFO</code> is set during the build. This is automatically enabled for all snaps built by snapcraft.io, Launchpad and on GitHub.</p>
 <h2 id="what-do-the-manifests-contain">What do the manifests contain?</h2>
-<p>Let&rsquo;s look at Canonical&rsquo;s Chromium snap as an example. If you&rsquo;ve already installed the snap</p>
+<p>Let&rsquo;s look at Canonical&rsquo;s Chromium snap as an example.</p>
 <p>In <code>snap/snapcraft.yaml</code>, <code>source</code> explains what repository is used to build the package and <code>stage-packages</code> describe what dependencies are included in the snap.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"> <span style="color:#66d9ef">desktop-gtk3</span>:
     <span style="color:#66d9ef">source</span>: https://github.com/ubuntu/snapcraft-desktop-helpers.git
@@ -209,7 +209,7 @@
     - ttf-ubuntu-font-family=<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">0.83-2</span>
     - shared-mime-info=<span style="color:#ae81ff">1.9-2</span>
 ...
-</code></pre></div><p>Finally, for snaps built on Launchpad, <code>snap/manifest.yaml</code> also contains a URL to the build log.</p>
+</code></pre></div><p>Finally, for snaps built on Launchpad and GitHub, <code>snap/manifest.yaml</code> also contains a URL to the build log.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">image-info</span>:
   <span style="color:#66d9ef">build-request-id</span>: lp<span style="color:#ae81ff">-58361925</span>
   <span style="color:#66d9ef">build-request-timestamp</span>: <span style="color:#e6db74">&#39;2020-08-05T11:55:18Z&#39;</span>
@@ -237,8 +237,8 @@
 <p>Note: for this reason, I&rsquo;m not convinced that it&rsquo;s useful to force publishers to include manifests and/or use Launchpad. It would only give users a false sense of security.</p>
 </blockquote>
 <p>Snap is specifically designed to let developers publish their apps directly to users without a middleman. This also means that users should only install software from developers they trust. The Snap sandbox helps to reduce the damage a malicious or broken snap can do, but it does not completely protect you from harm.</p>
-<h2 id="extra-what-if-the-snap-was-built-on-github">Extra: What if the Snap was built on GitHub?</h2>
-<p>As James Henstridge pointed out, if the Snap was built on GitHub using the official actions, you can also verify the manifest. The process is a little bit more complicated, though.</p>
+<h2 id="what-if-the-snap-was-built-on-github">What if the Snap was built on GitHub?</h2>
+<p>As James Henstridge pointed out in the comments, if the Snap was built on GitHub using the official actions, you can also verify the manifest. The process is a little bit more complicated, though.</p>
 <ol>
 <li>
 <p>Download the snap and look for the <code>build_url</code> in <code>snap/manifest.yaml</code>.</p>
