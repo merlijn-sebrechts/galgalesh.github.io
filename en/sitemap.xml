@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>/blog/2020-08-17-verify-snap/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/linux/</loc>
     <lastmod>2020-08-16T00:00:00+00:00</lastmod>
   </url>
@@ -60,11 +65,6 @@
                 hreflang="en"
                 href="/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>/blog/2020-08-17-verify-snap/</loc>
-    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
