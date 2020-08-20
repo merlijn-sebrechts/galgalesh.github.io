@@ -11,7 +11,7 @@
  snap/snapcraft.yaml is the &ldquo;source&rdquo; of the package. This file was used by Snapcraft to build the package. snap/manifest.yaml is a &ldquo;recording&rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more.">
 <meta itemprop="datePublished" content="2020-08-16T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-08-16T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1087">
+<meta itemprop="wordCount" content="1086">
 
 
 
@@ -237,14 +237,6 @@
 <p>Note: for this reason, I&rsquo;m not convinced that it&rsquo;s useful to force publishers to include manifests and/or use Launchpad. It would only give users a false sense of security.</p>
 </blockquote>
 <p>Snap is specifically designed to let developers publish their apps directly to users without a middleman. This also means that users should only install software from developers they trust. The Snap sandbox helps to reduce the damage a malicious or broken snap can do, but it does not completely protect you from harm.</p>
-<h2 id="areas-of-improvement">Areas of improvement</h2>
-<p>If you&rsquo;re interested in transparency, trust and reproducibility of snaps, there are many areas you can work on to further improve this. From the top of my head, these are some of the things that can improve:</p>
-<ul>
-<li>To see the manifest, users need to download the snap and manually look through the files. It would be very useful if the <a href="https://github.com/canonical-web-and-design/snapcraft.io">Snap Store web frontend</a> and the <a href="https://github.com/snapcore/snapd"><code>snap</code> CLI command</a> could show you the manifest and the data in it.</li>
-<li>Although the manifest records everything used to build the package, you can&rsquo;t yet use this recording to reproduce the package. The <a href="https://github.com/snapcore/snapcraft"><code>snapcraft</code></a> build tool needs to be modified so it can rebuild a snap from the <code>manifest.yaml</code>. You won&rsquo;t be starting from scratch though, as <code>snapcraft</code> already supports many of the fields in the manifest.</li>
-<li>The manifest currently does not contain the source url of the repository which contains the <code>snapcraft.yaml</code> file itself. You can use Launchpad to find this repository, but it would be better to include this repository in the manifest itself.</li>
-<li>As far as I know, Launchpad and GitHub are currently the only build services for Snaps which include a link to the build log. It would be useful for others such as the <a href="https://build.neon.kde.org">KDE Neon build service</a> to do the same thing.</li>
-</ul>
 <h2 id="extra-what-if-the-snap-was-built-on-github">Extra: What if the Snap was built on GitHub?</h2>
 <p>As James Henstridge pointed out, if the Snap was built on GitHub using the official actions, you can also verify the manifest. The process is a little bit more complicated, though.</p>
 <ol>
@@ -273,7 +265,14 @@ latest   amd64   stable     1.0.14     13
 <blockquote>
 <p>Note: This process requires you to trust that the information in the Snap Store and on GitHub is correct.</p>
 </blockquote>
-<p>.</p>
+<h2 id="areas-of-improvement">Areas of improvement</h2>
+<p>If you&rsquo;re interested in transparency, trust and reproducibility of snaps, there are many areas you can work on to further improve this. From the top of my head, these are some of the things that can improve:</p>
+<ul>
+<li>To see the manifest, users need to download the snap and manually look through the files. It would be very useful if the <a href="https://github.com/canonical-web-and-design/snapcraft.io">Snap Store web frontend</a> and the <a href="https://github.com/snapcore/snapd"><code>snap</code> CLI command</a> could show you the manifest and the data in it.</li>
+<li>Although the manifest records everything used to build the package, you can&rsquo;t yet use this recording to reproduce the package. The <a href="https://github.com/snapcore/snapcraft"><code>snapcraft</code></a> build tool needs to be modified so it can rebuild a snap from the <code>manifest.yaml</code>. You won&rsquo;t be starting from scratch though, as <code>snapcraft</code> already supports many of the fields in the manifest.</li>
+<li>The manifest currently does not contain the source url of the repository which contains the <code>snapcraft.yaml</code> file itself. You can use Launchpad to find this repository, but it would be better to include this repository in the manifest itself.</li>
+<li>As far as I know, Launchpad and GitHub are currently the only build services for Snaps which include a link to the build log. It would be useful for others such as the <a href="https://build.neon.kde.org">KDE Neon build service</a> to do the same thing.</li>
+</ul>
 <blockquote>
 <p>Note: I am a human being, and like most human beings, I make mistakes. Did you find an issue with this article? Let me know in the comments, and I&rsquo;ll be happy to correct it!</p>
 </blockquote>
