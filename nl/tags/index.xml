@@ -5,10 +5,6 @@
     <link>/nl/tags/</link>
     <description>Recent content in Tags on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>nl</language>
-    
-	<atom:link href="/nl/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>nl</language><atom:link href="/nl/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

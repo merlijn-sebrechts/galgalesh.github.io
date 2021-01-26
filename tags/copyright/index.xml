@@ -6,11 +6,7 @@
     <description>Recent content in Copyright on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Copyleft and LGPL in Snaps and Flatpaks</title>
       <link>/blog/2020-07-17-lgpl-copyleft-snaps/</link>
