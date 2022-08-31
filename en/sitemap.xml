@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/blog/</loc>
-    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/categories/</loc>
-    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -20,21 +17,15 @@
                 hreflang="en"
                 href="/categories/"
                 />
-  </url>
-  
-  <url>
-    <loc>/blog/2020-08-17-verify-snap/</loc>
-    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/linux/</loc>
-    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/exchange-activesync/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2021-08-31-ugent-thunderbird/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/</loc>
-    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -45,16 +36,15 @@
                 hreflang="en"
                 href="/"
                 />
-  </url>
-  
-  <url>
-    <loc>/tags/snap/</loc>
-    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/outlook/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/phd/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/</loc>
-    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -65,116 +55,80 @@
                 hreflang="en"
                 href="/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/thunderbird/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2020-08-17-verify-snap/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/linux/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/snap/</loc>
+    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/about/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/health/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/heart/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2020-steampunk-cyborg-2/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2020-08-02-why-one-snap-store/</loc>
     <lastmod>2020-08-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2020-07-17-lgpl-copyleft-snaps/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/copyright/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/flatpak/</loc>
     <lastmod>2020-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2020-07-06-why-snap-flatpak/</loc>
     <lastmod>2020-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2020-07-03-snap-vs-flatpak/</loc>
     <lastmod>2020-07-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2020-02-s4a-setup-ubuntu/</loc>
     <lastmod>2020-02-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/containers/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/docker/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/k8s/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2020-01-docker-podman-kata-cri-o/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2019-steampunk-cyborg-1/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/phd/</loc>
-    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/copyright-ghent-university-researcher/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2019-05-im-back/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2015-09-perf-interrupt-took-to-long/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2015-04-pragmatic-docker-day/</loc>
     <lastmod>2015-04-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</loc>
     <lastmod>2014-11-08T00:00:00+00:00</lastmod>
   </url>
-  
 </urlset>
