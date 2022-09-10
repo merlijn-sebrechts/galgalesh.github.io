@@ -2,7 +2,7 @@
     "title": "Open Google Drive and Google Calendar as a specific user",
     "date": "",
     "description": "",
-    "body": "Quick tip: did you know you can open Google Drive, Google Calendar and more as a specific user?\nJust add ?authuser= and your URL encoded email address behind the address. For example,\nhttps://drive.google.com/?authuser=merlijn.sebrechts%40gmail.com opens Google Drive as user merlijn.sebrechts@gmail.com. https://calendar.google.com/?authuser=merlijn.sebrechts%40ugent.be opens Google Calendar as user merlijn.sebrechts@ugent.be. This works with almost every google website, including gmail.\nNote: you can use an online tool to URL encode your email address.\n",
+    "body": "Quick tip: did you know you can open Google Drive, Google Calendar and more as a specific user?\nJust add ?authuser= and your URL encoded email address behind the address.\nFor example,\nhttps://drive.google.com/?authuser=merlijn.sebrechts%40gmail.com opens Google Drive as user merlijn.sebrechts@gmail.com. https://calendar.google.com/?authuser=merlijn.sebrechts%40ugent.be opens Google Calendar as user merlijn.sebrechts@ugent.be. This works with almost every google website, including gmail.\nNote: you can use an online tool to URL encode your email address.\n",
     "ref": "/blog/2022-09-10-google-drive-calendar-specific-user/"
   },{
     "title": "Lightweight Kubernetes Controllers with WebAssembly",
