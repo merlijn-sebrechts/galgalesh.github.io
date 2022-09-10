@@ -1,4 +1,16 @@
 [{
+    "title": "Open Google Drive and Google Calendar as a specific user",
+    "date": "",
+    "description": "",
+    "body": "Quick tip: did you know you can open Google Drive, Google Calendar and more as a specific user?\nJust add ?authuser= and your URL encoded email address behind the address. For example,\nhttps://drive.google.com/?authuser=merlijn.sebrechts%40gmail.com opens Google Drive as user merlijn.sebrechts@gmail.com. https://calendar.google.com/?authuser=merlijn.sebrechts%40ugent.be opens Google Calendar as user merlijn.sebrechts@ugent.be. This works with almost every google website, including gmail.\nNote: you can use an online tool to URL encode your email address.\n",
+    "ref": "/blog/2022-09-10-google-drive-calendar-specific-user/"
+  },{
+    "title": "Lightweight Kubernetes Controllers with WebAssembly",
+    "date": "",
+    "description": "",
+    "body": "Kubernetes uses a lot of RAM. This is an issue on edge devices, which typically don\u0026rsquo;t have a lot of it. Kubernetes controllers and operators are a big contributor to this. Running controllers on-demand as WebAssembly modules might help solve this issue.\nKubernetes Controllers and Operators More and more applications on Kubernetes are managed using operators and Custom Resources. These add additional functionality to the Kubernetes API. For example, the ArgoCD operators provide additional resources to create CI/CD pipelines and Rook allows you to manage storage clusters such as Ceph.\nThe issue with operators is that they keep running even when there is nothing to do. Simply adding the ArgoCD functionality to a Kubernetes cluster will eat up RAM, even when you\u0026rsquo;re not actively using it.\nWebAssembly This paper presents a WebAssembly-based framework for running lightweight controllers on-demand, only when they are needed. This framework extends the WebAssembly System Interface (WASI), in order to run Kubernetes controllers as lightweight Wasm modules. The framework runs these Wasm controllers in a modified version of Wasmtime, the reference WebAssembly (Wasm) runtime, that swaps idle controllers to disk and activates them when needed. A thorough evaluation shows this framework achieves a 64% memory reduction compared to traditional container-based controller frameworks.\n",
+    "ref": "/blog/2022-09-05-wasm-k8s-controllers/"
+  },{
     "title": "Ghent University address book in Thunderbird",
     "date": "",
     "description": "",

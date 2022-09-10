@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Edge on Merlijn Sebrechts</title>
+    <link>/tags/edge/</link>
+    <description>Recent content in Edge on Merlijn Sebrechts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/edge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lightweight Kubernetes Controllers with WebAssembly</title>
+      <link>/blog/2022-09-05-wasm-k8s-controllers/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022-09-05-wasm-k8s-controllers/</guid>
+      <description>Kubernetes uses a lot of RAM. This is an issue on edge devices, which typically don&amp;rsquo;t have a lot of it. Kubernetes controllers and operators are a big contributor to this. Running controllers on-demand as WebAssembly modules might help solve this issue.
+Kubernetes Controllers and Operators More and more applications on Kubernetes are managed using operators and Custom Resources. These add additional functionality to the Kubernetes API. For example, the ArgoCD operators provide additional resources to create CI/CD pipelines and Rook allows you to manage storage clusters such as Ceph.</description>
+    </item>
+    
+  </channel>
+</rss>
