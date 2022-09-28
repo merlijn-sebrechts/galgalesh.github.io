@@ -14,8 +14,7 @@
       
       <guid>/blog/2022-09-05-wasm-k8s-controllers/</guid>
       <description>We created a prototype that runs Kubernetes operators in WebAssembly (wasm) and suspends them to disk when they are not used.
-Why Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically so they only run when there is actually something to do.
-Kubernetes Operators Operators are an important part of the Kubernetes control plane.</description>
+Why Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically. This way, they only run when there is actually something to do.</description>
     </item>
     
   </channel>

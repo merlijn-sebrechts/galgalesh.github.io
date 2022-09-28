@@ -8,14 +8,12 @@
 
 <meta name="generator" content="Hugo 0.104.1" /><meta itemprop="name" content="Lightweight Kubernetes Operators with WebAssembly">
 <meta itemprop="description" content="We created a prototype that runs Kubernetes operators in WebAssembly (wasm) and suspends them to disk when they are not used.
-Why Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically so they only run when there is actually something to do.
-Kubernetes Operators Operators are an important part of the Kubernetes control plane."><meta itemprop="datePublished" content="2022-09-28T00:00:00+00:00" />
+Why Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically. This way, they only run when there is actually something to do."><meta itemprop="datePublished" content="2022-09-28T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-09-28T00:00:00+00:00" />
-<meta itemprop="wordCount" content="562">
+<meta itemprop="wordCount" content="641">
 <meta itemprop="keywords" content="Kubernetes,WebAssembly,Edge," /><meta property="og:title" content="Lightweight Kubernetes Operators with WebAssembly" />
 <meta property="og:description" content="We created a prototype that runs Kubernetes operators in WebAssembly (wasm) and suspends them to disk when they are not used.
-Why Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically so they only run when there is actually something to do.
-Kubernetes Operators Operators are an important part of the Kubernetes control plane." />
+Why Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically. This way, they only run when there is actually something to do." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/blog/2022-09-05-wasm-k8s-controllers/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2022-09-28T00:00:00+00:00" />
@@ -24,8 +22,7 @@ Kubernetes Operators Operators are an important part of the Kubernetes control p
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Lightweight Kubernetes Operators with WebAssembly"/>
 <meta name="twitter:description" content="We created a prototype that runs Kubernetes operators in WebAssembly (wasm) and suspends them to disk when they are not used.
-Why Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically so they only run when there is actually something to do.
-Kubernetes Operators Operators are an important part of the Kubernetes control plane."/>
+Why Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically. This way, they only run when there is actually something to do."/>
 
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/github.min.css">
           <link rel="stylesheet" href="/css/bundle.min.1bfccf86359e3de974865922b006112447a52f942c2a9c2bf93d159980ae641b.css" integrity="sha256-G/zPhjWePel0hlkisAYRJEelL5QsKpwr&#43;T0VmYCuZBs="><link rel="stylesheet" href="/css/add-on.css">
@@ -182,21 +179,33 @@ Kubernetes Operators Operators are an important part of the Kubernetes control p
       
       <p>We created <a href="https://github.com/IBCNServices/wasm-operator">a prototype that runs Kubernetes operators in WebAssembly (wasm)</a> and suspends them to disk when they are not used.</p>
 <h2 id="why">Why</h2>
-<p>Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically so they only run when there is actually something to do.</p>
+<p>Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically. This way, they only run when there is actually something to do.</p>
 <h2 id="kubernetes-operators">Kubernetes Operators</h2>
-<p>Operators are an important part of the Kubernetes control plane. They manage applications using Custom Resources and add additional functionality to Kubernetes. The ArgoCD operators, for example, provide additional resources to create CI/CD pipelines and Rook allows you to manage storage clusters such as Ceph.</p>
+<p>Operators are an important part of the Kubernetes control plane. They add additional functionality to Kubernetes using Custom Resources. The ArgoCD operators, for example, provide additional resources to create CI/CD pipelines, and Rook allows you to manage storage clusters such as Ceph.</p>
 <p>The issue with operators is that they keep running even when there is nothing to do. Simply adding the ArgoCD functionality to a Kubernetes cluster will eat up RAM, even when you&rsquo;re not actively using it.</p>
 <h2 id="webassembly--wasi">WebAssembly + WASI</h2>
 <p>WebAssembly (wasm) is a binary format to run applications in lightweight virtual machines. Many compilers support <code>wasm</code> as a target next to <code>arm</code> and <code>x86_64</code>. The WebAssembly System Interface (WASI) is a standardized API for wasm apps to talk to the outside world. They&rsquo;re the &ldquo;System Calls&rdquo; of the WebAssembly world.</p>
-<p>Combining these two gives you a very lightweight but very secure way to isolate applications. Each wasm app runs in their own sandbox and the runtime decides what external resources it can access.</p>
+<p>Combining these two gives you a very lightweight but very secure way to isolate applications. Each wasm app runs in their own sandbox and the runtime decides what external resources it can access. Moreover, wasm apps start up lightning fast!</p>
 <h2 id="kubernetes-operators-in-webassembly">Kubernetes Operators in WebAssembly</h2>
-<p>In 2020, Markus Thömmes and Francesco Guardiani introduced the idea of running Kubernetes controllers in WebAssembly: .</p>
+<p>In 2020, Markus Thömmes and Francesco Guardiani introduced the idea of running Kubernetes controllers in WebAssembly:</p>
 <blockquote>
 <p><em>Today I’m going to introduce you an idea Markus Thömmes and I had to package, deploy and operate Kubernetes controllers in a modern and efficient way that may have a fundamental impact on the Kubernetes ecosystem.</em> - <a href="https://slinkydeveloper.com/Kubernetes-controllers-A-New-Hope/">Kubernetes Controllers - A new hope</a></p>
 </blockquote>
-<p>Their prototype didn&rsquo;t support unloading idle controllers and hasn&rsquo;t seen any activity in over 2 years, however. So, to continue this dream, we ported this prototype to <a href="https://wasmtime.dev/">wasmtime</a>, and added the functionality to suspend idle operators to disk.</p>
+<p>Their prototype didn&rsquo;t support unloading idle controllers, however, and hasn&rsquo;t seen any activity in over 2 years. So, to continue this dream, we ported their prototype to <a href="https://wasmtime.dev/">wasmtime</a>, and added the functionality to suspend idle operators to disk.</p>
+<h2 id="performance">Performance</h2>
+<p>We did a bunch of extensive performance tests to see whether this actually reduces the memory footprint of controllers. The results are published in <a href="https://arxiv.org/abs/2209.01077">our paper at IEEE CloudNet 2022</a>. Two findings from the paper:</p>
+<ul>
+<li>
+<p>100 Rust operators running in our wasm runtime use <strong>68% less memory</strong> than if they run in containerd.</p>
+<img src="/img/2022/wasi-operators-perf-containment.png" alt="wasi-operators-perf-containment" width="500"/>
+</li>
+<li>
+<p>Moreover, they use an additional <strong>50% less memory</strong> when swapped to disk during idling.</p>
+<img src="/img/2022/wasi-operators-perf-unloading.png" alt="wasi-operators-perf-unloading" width="500"/>
+</li>
+</ul>
 <h2 id="next-steps">Next steps</h2>
-<p>Right now, this is a very rough prototype which shows the potential of the approach. It&rsquo;s definitely not ready for any serious usage, though, so our first step is to get it into a more usable state. There are also a couple of new features planned:</p>
+<p>Right now, <a href="https://github.com/IBCNServices/wasm-operator">this</a> is a very rough prototype which shows the potential of the approach. It&rsquo;s definitely not ready for any serious usage, though, so our first step is to get it into a more usable state. There are also a couple of new features planned:</p>
 <ul>
 <li>Predictive unloading/swapping to disk. Right now, a controller gets swapped to disk immediately after finishing a control loop. This creates a lot of overhead, however, for controllers which have more changes to process. We want to be smarter about when to unload controllers.</li>
 <li>Go support. Right now, we only support controllers written in Rust. Go is the default language for controllers, however, so we want to take a look at adding support for those controllers in the framework.</li>
@@ -204,9 +213,9 @@ Kubernetes Operators Operators are an important part of the Kubernetes control p
 </ul>
 <h2 id="more-information">More information</h2>
 <ul>
-<li><a href="https://github.com/IBCNServices/wasm-operator">The runtime</a> and <a href="https://github.com/IBCNServices/kube-rs">The modifications to kube-rs</a> are available on Github.</li>
-<li><a href="https://arxiv.org/abs/2209.01077">A preprint of the paper introducing this prototype at IEEE CloudNet 2022</a></li>
-<li><a href="https://lib.ugent.be/fulltxt/RUG01/003/063/694/RUG01-003063694_2022_0001_AC.pdf">Tim Ramlot&rsquo;s master&rsquo;s thesis about this framework</a></li>
+<li><a href="https://github.com/IBCNServices/wasm-operator">The runtime</a> and <a href="https://github.com/IBCNServices/kube-rs">the modifications to kube-rs</a> are available on Github.</li>
+<li>We published <a href="https://arxiv.org/abs/2209.01077">a preprint of the paper introducing this prototype at IEEE CloudNet 2022</a>.</li>
+<li>For even more information, read <a href="https://lib.ugent.be/fulltxt/RUG01/003/063/694/RUG01-003063694_2022_0001_AC.pdf">Tim Ramlot&rsquo;s master&rsquo;s thesis about this framework</a>.</li>
 </ul>
 <h2 id="acknowledgements">Acknowledgements</h2>
 <p>A great amount of thanks goes to Tim Ramlot, who developed the software as part of his master&rsquo;s thesis, and Markus Thömmes and Francesco Guardiani for the initial idea and original Proof of Concept.</p>
