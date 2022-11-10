@@ -6,7 +6,19 @@
     <description>Recent content on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>You can now completely disable automatic snap updates!</title>
+      <link>/blog/2022-11-10-turn-off-snap-updates/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2022-11-10-turn-off-snap-updates/</guid>
+      <description>During the Ubuntu Summit, a long-awaited feature was quietly released for preview: You can now completely turn off automatic updates of snaps.
+&amp;ldquo;The snap refresh --hold command holds, or postpones, snap updates for individual snaps, or for all snaps on the system, either indefinitely or for a specified period of time.&amp;rdquo;
+(currently only available in edge channel of snapd)
+This might sound like an obvious feature to many people, but it&amp;rsquo;s a continental shift in philosophy for the Snap developers.</description>
+    </item>
+    
     <item>
       <title>Lightweight Kubernetes Operators with WebAssembly</title>
       <link>/blog/2022-09-05-wasm-k8s-controllers/</link>

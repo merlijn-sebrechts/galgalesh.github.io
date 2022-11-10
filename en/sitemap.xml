@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/blog/</loc>
-    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -18,20 +18,11 @@
                 href="/categories/"
                 />
   </url><url>
-    <loc>/tags/edge/</loc>
-    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/kubernetes/</loc>
-    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/2022-09-05-wasm-k8s-controllers/</loc>
-    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/categories/linux/</loc>
-    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -43,8 +34,11 @@
                 href="/"
                 />
   </url><url>
+    <loc>/tags/snap/</loc>
+    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/</loc>
-    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -55,6 +49,18 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url><url>
+    <loc>/blog/2022-11-10-turn-off-snap-updates/</loc>
+    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/edge/</loc>
+    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/kubernetes/</loc>
+    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2022-09-05-wasm-k8s-controllers/</loc>
+    <lastmod>2022-09-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/webassembly/</loc>
     <lastmod>2022-09-28T00:00:00+00:00</lastmod>
@@ -87,9 +93,6 @@
     <lastmod>2022-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/2020-08-17-verify-snap/</loc>
-    <lastmod>2020-08-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/snap/</loc>
     <lastmod>2020-08-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/about/</loc>

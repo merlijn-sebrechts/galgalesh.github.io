@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snap</title>
+      <link>/tags/snap/</link>
+      <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/snap/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Edge</title>
       <link>/tags/edge/</link>
@@ -85,15 +94,6 @@
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/thunderbird/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Snap</title>
-      <link>/tags/snap/</link>
-      <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/snap/</guid>
       <description></description>
     </item>
     
