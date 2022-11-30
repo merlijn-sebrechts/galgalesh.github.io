@@ -8,6 +8,18 @@
     <language>en</language>
     <lastBuildDate>Thu, 10 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About Merlijn Sebrechts</title>
+      <link>/about/</link>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I&amp;rsquo;m a certified cyborg. I enjoy weird food, hiking, and games with a good story. I want to make the world a better place.
+I&amp;rsquo;m a post-doctoral researcher at imec and teaching fellow at Ghent University in the IDLab research group in Belgium.
+Research My research is focussed on service orchestration in the cloud, edge and fog.
+Making it easier to deploy and manage complex applications in the cloud and edge.</description>
+    </item>
+    
+    <item>
       <title>You can finally disable Snap updates</title>
       <link>/blog/2022-11-10-turn-off-snap-updates/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
@@ -61,17 +73,6 @@ Open TBSync settings, click Account actions &amp;gt; Add New Account &amp;gt; Ex
       <guid>/blog/2020-08-17-verify-snap/</guid>
       <description>Many Snap packages contain two files which allow users to verify what sources were used to build the package.
 snap/snapcraft.yaml is the &amp;ldquo;source&amp;rdquo; of the package. This file was used by snapcraft to build the package. snap/manifest.yaml is a &amp;ldquo;recording&amp;rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more.</description>
-    </item>
-    
-    <item>
-      <title>About Merlijn</title>
-      <link>/about/</link>
-      <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>I&amp;rsquo;m a certified cyborg. I enjoy weird food, hiking, milkshakes and games with a good story. I want to make the world a better place.
-I&amp;rsquo;m a PHD researcher and Teaching Assistant at Ghent University - IDLab - imec.
-My research specializes in DataOps and cloud modelling languages. I assist in teaching distributed data processing, DataOps, DevOps, systems programming, C/C++ and Python. I&amp;rsquo;m a passionate user of and contributor to open source.</description>
     </item>
     
     <item>
