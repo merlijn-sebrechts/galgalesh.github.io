@@ -6,7 +6,17 @@
     <description>Recent content on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Dell MH3021P speakerphone on Ubuntu Linux</title>
+      <link>/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</link>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</guid>
+      <description>I recently bought the Dell MH3021P speakerphone. I want to use it for hybrid meetings and for recording audio during lectures. Dell doesn&amp;rsquo;t say the device supports Linux, so I was curious to see how much of the device works. Google didn&amp;rsquo;t have an answer so I bought the device to test it for myself.
+Thankfully I can say all the important parts work very well out of the box on Ubuntu 22.</description>
+    </item>
+    
     <item>
       <title>About Merlijn Sebrechts</title>
       <link>/about/</link>

@@ -2,14 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/about/</loc>
-    <lastmod>2022-11-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/</loc>
-    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -22,10 +19,10 @@
                 />
   </url><url>
     <loc>/categories/linux/</loc>
-    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -36,6 +33,12 @@
                 hreflang="en"
                 href="/"
                 />
+  </url><url>
+    <loc>/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</loc>
+    <lastmod>2023-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/about/</loc>
+    <lastmod>2022-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/snap/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
