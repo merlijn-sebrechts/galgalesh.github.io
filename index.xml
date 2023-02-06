@@ -8,6 +8,18 @@
     <language>en</language>
     <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About Merlijn Sebrechts</title>
+      <link>/about/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>PhD holder and certified cyborg. I enjoy weird food, hiking, and games with a good story. I want to make the world a better place.
+I&amp;rsquo;m a senior researcher at imec and teaching fellow at Ghent University in the IDLab research group in Belgium.
+Research My research is focussed on service orchestration in the cloud, edge and fog.
+Making it easier to deploy and manage complex applications in the cloud and edge.</description>
+    </item>
+    
+    <item>
       <title>Using Dell MH3021P speakerphone on Ubuntu Linux</title>
       <link>/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</link>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
@@ -15,18 +27,6 @@
       <guid>/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</guid>
       <description>I recently bought the Dell MH3021P speakerphone. I want to use it for hybrid meetings and for recording audio during lectures. Dell doesn&amp;rsquo;t say the device supports Linux, so I was curious to see how much of the device works. Google didn&amp;rsquo;t have an answer so I bought the device to test it for myself.
 Thankfully I can say all the important parts work very well out of the box on Ubuntu 22.</description>
-    </item>
-    
-    <item>
-      <title>About Merlijn Sebrechts</title>
-      <link>/about/</link>
-      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>I&amp;rsquo;m a certified cyborg. I enjoy weird food, hiking, and games with a good story. I want to make the world a better place.
-I&amp;rsquo;m a post-doctoral researcher at imec and teaching fellow at Ghent University in the IDLab research group in Belgium.
-Research My research is focussed on service orchestration in the cloud, edge and fog.
-Making it easier to deploy and manage complex applications in the cloud and edge.</description>
     </item>
     
     <item>
