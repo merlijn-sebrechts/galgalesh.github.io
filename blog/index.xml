@@ -6,7 +6,16 @@
     <description>Recent content in Blog on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>We allowed using ChatGPT to write master&#39;s theses</title>
+      <link>/blog/2023-05-05-ai-chatgpt-master-thesis/</link>
+      <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023-05-05-ai-chatgpt-master-thesis/</guid>
+      <description>During my day job, I teach a number of computer science courses in the information engineering programme at Ghent University. The release of ChatGPT and GPT-4 has a large impact on our education because it can get grades of above 80% on most exams and can effortlessly write essays on complex subjects. Students are aware of this, and are thus increasingly using Large Language Models (LLMs) in their education for a number of tasks.</description>
+    </item>
+    
     <item>
       <title>Using Dell MH3021P speakerphone on Ubuntu Linux</title>
       <link>/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</link>
