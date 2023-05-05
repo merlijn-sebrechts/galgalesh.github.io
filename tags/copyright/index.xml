@@ -16,7 +16,7 @@
       <description>The question often comes up of how Snaps and Flatpaks influence copyleft, GPL and LGPL licenses. It is a common misconception that these new packaging formats significantly influence license compliance.
 Disclaimer: I am not a lawyer, this is not legal advice.
 Distributing your software in a Snap has no effect on GPL copyleft and LGPL compliance.
-It has no effect on copyleft because containers do not trigger copyleft according to the GNU GPL FAQ [see note].</description>
+ It has no effect on copyleft because containers do not trigger copyleft according to the GNU GPL FAQ [see note].</description>
     </item>
     
     <item>

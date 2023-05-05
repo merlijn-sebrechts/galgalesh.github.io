@@ -16,8 +16,8 @@
       <description>Quick tip: did you know you can open Google Drive, Google Calendar and more as a specific user?
 Just add ?authuser= and your URL encoded email address behind the address.
 For example,
-https://drive.google.com/?authuser=merlijn.sebrechts%40gmail.com opens Google Drive as user merlijn.sebrechts@gmail.com. https://calendar.google.com/?authuser=merlijn.sebrechts%40ugent.be opens Google Calendar as user merlijn.sebrechts@ugent.be. This works with almost every google website, including gmail.
-Note: you can use an online tool to URL encode your email address.</description>
+ https://drive.google.com/?authuser=merlijn.sebrechts%40gmail.com opens Google Drive as user merlijn.sebrechts@gmail.com. https://calendar.google.com/?authuser=merlijn.sebrechts%40ugent.be opens Google Calendar as user merlijn.sebrechts@ugent.be.  This works with almost every google website, including gmail.
+ Note: you can use an online tool to URL encode your email address.</description>
     </item>
     
   </channel>
