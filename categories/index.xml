@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Merlijn Sebrechts</title>
-    <link>/categories/</link>
+    <link>https://merlijn.sebrechts.be/categories/</link>
     <description>Recent content in Categories on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Education</title>
-      <link>/categories/education/</link>
+      <link>https://merlijn.sebrechts.be/categories/education/</link>
       <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>/categories/education/</guid>
+      <guid>https://merlijn.sebrechts.be/categories/education/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>/categories/linux/</link>
+      <link>https://merlijn.sebrechts.be/categories/linux/</link>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/categories/linux/</guid>
+      <guid>https://merlijn.sebrechts.be/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PhD</title>
-      <link>/categories/phd/</link>
+      <link>https://merlijn.sebrechts.be/categories/phd/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/categories/phd/</guid>
+      <guid>https://merlijn.sebrechts.be/categories/phd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Health</title>
-      <link>/categories/health/</link>
+      <link>https://merlijn.sebrechts.be/categories/health/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/health/</guid>
+      <guid>https://merlijn.sebrechts.be/categories/health/</guid>
       <description></description>
     </item>
     

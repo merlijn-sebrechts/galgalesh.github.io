@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Copyright on Merlijn Sebrechts</title>
-    <link>/tags/copyright/</link>
+    <link>https://merlijn.sebrechts.be/tags/copyright/</link>
     <description>Recent content in Copyright on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Copyleft and LGPL in Snaps and Flatpaks</title>
-      <link>/blog/2020-07-17-lgpl-copyleft-snaps/</link>
+      <link>https://merlijn.sebrechts.be/blog/2020-07-17-lgpl-copyleft-snaps/</link>
       <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-07-17-lgpl-copyleft-snaps/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2020-07-17-lgpl-copyleft-snaps/</guid>
       <description>The question often comes up of how Snaps and Flatpaks influence copyleft, GPL and LGPL licenses. It is a common misconception that these new packaging formats significantly influence license compliance.
 Disclaimer: I am not a lawyer, this is not legal advice.
 Distributing your software in a Snap has no effect on GPL copyleft and LGPL compliance.
@@ -21,10 +21,10 @@ Distributing your software in a Snap has no effect on GPL copyleft and LGPL comp
     
     <item>
       <title>Who owns my research?</title>
-      <link>/blog/copyright-ghent-university-researcher/</link>
+      <link>https://merlijn.sebrechts.be/blog/copyright-ghent-university-researcher/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/copyright-ghent-university-researcher/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/copyright-ghent-university-researcher/</guid>
       <description>When I submitted my first paper, I realized I had no idea who owned my research! Was I authorized to transfer the rights to a journal or did I need someone else&amp;rsquo;s permission? After some digging, I found the answer and wrote it all up in a neat little document. So here&amp;rsquo;s the dusted off version, in case it&amp;rsquo;s useful to anyone else.
 In short Intellectual property (IP) as a PhD student at Ghent University is largely divided into two parts: research results and educational material.</description>
     </item>

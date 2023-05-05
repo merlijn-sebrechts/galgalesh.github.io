@@ -2,169 +2,169 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/blog/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/</loc>
     <lastmod>2023-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2023-05-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="/nl/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/"
-                />
-  </url><url>
-    <loc>/categories/education/</loc>
-    <lastmod>2023-05-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
+    <loc>https://merlijn.sebrechts.be/categories/</loc>
     <lastmod>2023-05-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="/nl/"
+                href="https://merlijn.sebrechts.be/nl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://merlijn.sebrechts.be/categories/"
                 />
   </url><url>
-    <loc>/blog/2023-05-05-ai-chatgpt-master-thesis/</loc>
+    <loc>https://merlijn.sebrechts.be/categories/education/</loc>
     <lastmod>2023-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>https://merlijn.sebrechts.be/</loc>
+    <lastmod>2023-05-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://merlijn.sebrechts.be/nl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merlijn.sebrechts.be/"
+                />
+  </url><url>
+    <loc>https://merlijn.sebrechts.be/blog/2023-05-05-ai-chatgpt-master-thesis/</loc>
+    <lastmod>2023-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://merlijn.sebrechts.be/about/</loc>
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/linux/</loc>
+    <loc>https://merlijn.sebrechts.be/categories/linux/</loc>
     <lastmod>2023-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</loc>
     <lastmod>2023-01-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/snap/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/snap/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="/nl/tags/"
+                href="https://merlijn.sebrechts.be/nl/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://merlijn.sebrechts.be/tags/"
                 />
   </url><url>
-    <loc>/blog/2022-11-10-turn-off-snap-updates/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2022-11-10-turn-off-snap-updates/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/edge/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/edge/</loc>
     <lastmod>2022-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/kubernetes/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/kubernetes/</loc>
     <lastmod>2022-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2022-09-05-wasm-k8s-controllers/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2022-09-05-wasm-k8s-controllers/</loc>
     <lastmod>2022-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/webassembly/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/webassembly/</loc>
     <lastmod>2022-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/gmail/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/gmail/</loc>
     <lastmod>2022-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/google-calendar/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/google-calendar/</loc>
     <lastmod>2022-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/google-drive/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/google-drive/</loc>
     <lastmod>2022-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2022-09-10-google-drive-calendar-specific-user/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2022-09-10-google-drive-calendar-specific-user/</loc>
     <lastmod>2022-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/phd/</loc>
+    <loc>https://merlijn.sebrechts.be/categories/phd/</loc>
     <lastmod>2022-09-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/exchange-activesync/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/exchange-activesync/</loc>
     <lastmod>2022-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2021-08-31-ugent-thunderbird/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2021-08-31-ugent-thunderbird/</loc>
     <lastmod>2022-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/outlook/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/outlook/</loc>
     <lastmod>2022-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/thunderbird/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/thunderbird/</loc>
     <lastmod>2022-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2020-08-17-verify-snap/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2020-08-17-verify-snap/</loc>
     <lastmod>2020-08-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/health/</loc>
+    <loc>https://merlijn.sebrechts.be/categories/health/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/heart/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/heart/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2020-steampunk-cyborg-2/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2020-steampunk-cyborg-2/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2020-08-02-why-one-snap-store/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2020-08-02-why-one-snap-store/</loc>
     <lastmod>2020-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2020-07-17-lgpl-copyleft-snaps/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2020-07-17-lgpl-copyleft-snaps/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/copyright/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/copyright/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/flatpak/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/flatpak/</loc>
     <lastmod>2020-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2020-07-06-why-snap-flatpak/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2020-07-06-why-snap-flatpak/</loc>
     <lastmod>2020-07-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2020-07-03-snap-vs-flatpak/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2020-07-03-snap-vs-flatpak/</loc>
     <lastmod>2020-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2020-02-s4a-setup-ubuntu/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2020-02-s4a-setup-ubuntu/</loc>
     <lastmod>2020-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/containers/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/containers/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/docker/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/docker/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/k8s/</loc>
+    <loc>https://merlijn.sebrechts.be/tags/k8s/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2020-01-docker-podman-kata-cri-o/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2020-01-docker-podman-kata-cri-o/</loc>
     <lastmod>2020-01-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2019-steampunk-cyborg-1/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2019-steampunk-cyborg-1/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/copyright-ghent-university-researcher/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/copyright-ghent-university-researcher/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2019-05-im-back/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2019-05-im-back/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2015-09-perf-interrupt-took-to-long/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2015-09-perf-interrupt-took-to-long/</loc>
     <lastmod>2015-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2015-04-pragmatic-docker-day/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2015-04-pragmatic-docker-day/</loc>
     <lastmod>2015-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</loc>
+    <loc>https://merlijn.sebrechts.be/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</loc>
     <lastmod>2014-11-08T00:00:00+00:00</lastmod>
   </url>
 </urlset>

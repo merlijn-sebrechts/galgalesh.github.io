@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google Drive on Merlijn Sebrechts</title>
-    <link>/tags/google-drive/</link>
+    <link>https://merlijn.sebrechts.be/tags/google-drive/</link>
     <description>Recent content in Google Drive on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/google-drive/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/tags/google-drive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Google Drive and Google Calendar as a specific user</title>
-      <link>/blog/2022-09-10-google-drive-calendar-specific-user/</link>
+      <link>https://merlijn.sebrechts.be/blog/2022-09-10-google-drive-calendar-specific-user/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2022-09-10-google-drive-calendar-specific-user/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2022-09-10-google-drive-calendar-specific-user/</guid>
       <description>Quick tip: did you know you can open Google Drive, Google Calendar and more as a specific user?
 Just add ?authuser= and your URL encoded email address behind the address.
 For example,

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Merlijn Sebrechts</title>
-    <link>/</link>
+    <link>https://merlijn.sebrechts.be/</link>
     <description>Recent content on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Our students can use AI for their master&#39;s thesis - the policy</title>
-      <link>/blog/2023-05-05-ai-chatgpt-master-thesis/</link>
+      <link>https://merlijn.sebrechts.be/blog/2023-05-05-ai-chatgpt-master-thesis/</link>
       <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2023-05-05-ai-chatgpt-master-thesis/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2023-05-05-ai-chatgpt-master-thesis/</guid>
       <description>During my day job, I teach a number of computer science courses in the Information Engineering Technology programme at Ghent University. The release of ChatGPT and GPT-4 has a large impact on our education because it can get grades of above 80% on most exams and can effortlessly write essays on complex subjects. Students are aware of this, and are thus increasingly using Large Language Models (LLMs) in their education for a number of tasks.</description>
     </item>
     
     <item>
       <title>About Merlijn Sebrechts</title>
-      <link>/about/</link>
+      <link>https://merlijn.sebrechts.be/about/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://merlijn.sebrechts.be/about/</guid>
       <description>PhD holder and certified cyborg. I enjoy weird food, hiking, and games with a good story. I want to make the world a better place.
 I&amp;rsquo;m a senior researcher at imec and teaching fellow at Ghent University in the IDLab research group in Belgium.
 Research My research is focussed on service orchestration in the cloud, edge and fog.
@@ -30,20 +30,20 @@ Research My research is focussed on service orchestration in the cloud, edge and
     
     <item>
       <title>Using Dell MH3021P speakerphone on Ubuntu Linux</title>
-      <link>/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</link>
+      <link>https://merlijn.sebrechts.be/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</link>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2023-01-24-dell-mh3021p-speakerphone-linux/</guid>
       <description>I recently bought the Dell MH3021P speakerphone. I want to use it for hybrid meetings and for recording audio during lectures. Dell doesn&amp;rsquo;t say the device supports Linux, so I was curious to see how much of the device works. Google didn&amp;rsquo;t have an answer so I bought the device to test it for myself.
 Thankfully I can say all the important parts work very well out of the box on Ubuntu 22.</description>
     </item>
     
     <item>
       <title>You can finally disable Snap updates</title>
-      <link>/blog/2022-11-10-turn-off-snap-updates/</link>
+      <link>https://merlijn.sebrechts.be/blog/2022-11-10-turn-off-snap-updates/</link>
       <pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2022-11-10-turn-off-snap-updates/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2022-11-10-turn-off-snap-updates/</guid>
       <description>During the Ubuntu Summit, a long-awaited feature was quietly released for preview: You can now completely turn off automatic updates of snaps.
  &amp;ldquo;The snap refresh --hold command holds, or postpones, snap updates for individual snaps, or for all snaps on the system, either indefinitely or for a specified period of time.&amp;rdquo;
 (currently only available in edge channel of snapd)
@@ -52,20 +52,20 @@ Thankfully I can say all the important parts work very well out of the box on Ub
     
     <item>
       <title>Lightweight Kubernetes Operators with WebAssembly</title>
-      <link>/blog/2022-09-05-wasm-k8s-controllers/</link>
+      <link>https://merlijn.sebrechts.be/blog/2022-09-05-wasm-k8s-controllers/</link>
       <pubDate>Wed, 28 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2022-09-05-wasm-k8s-controllers/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2022-09-05-wasm-k8s-controllers/</guid>
       <description>We created a prototype that runs Kubernetes operators in WebAssembly (wasm) and suspends them to disk when they are not used.
 Why Developers want to use Kubernetes in the edge, but it uses too much memory for most devices. Running k8s operators in wasm greatly reduces their memory overhead and allows us to start and stop them dynamically. This way, they only run when there is actually something to do.</description>
     </item>
     
     <item>
       <title>Open Google Drive and Google Calendar as a specific user</title>
-      <link>/blog/2022-09-10-google-drive-calendar-specific-user/</link>
+      <link>https://merlijn.sebrechts.be/blog/2022-09-10-google-drive-calendar-specific-user/</link>
       <pubDate>Sat, 10 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2022-09-10-google-drive-calendar-specific-user/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2022-09-10-google-drive-calendar-specific-user/</guid>
       <description>Quick tip: did you know you can open Google Drive, Google Calendar and more as a specific user?
 Just add ?authuser= and your URL encoded email address behind the address.
 For example,
@@ -75,10 +75,10 @@ For example,
     
     <item>
       <title>Ghent University address book in Thunderbird</title>
-      <link>/blog/2021-08-31-ugent-thunderbird/</link>
+      <link>https://merlijn.sebrechts.be/blog/2021-08-31-ugent-thunderbird/</link>
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2021-08-31-ugent-thunderbird/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2021-08-31-ugent-thunderbird/</guid>
       <description>UGent address book support in Mozilla Thunderbird Ghent University has an LDAP address book which contains all students and staff. Adding this address book to Thunderbird is non-trivial, though. Follow these steps to add it.
   Install the extensions &amp;ldquo;TbSync&amp;rdquo; and &amp;ldquo;Provider for Exchange ActiveSync&amp;rdquo;. (Press alt to show the menu and choose Edit &amp;gt; Preferences &amp;gt; Add-ons and Themes)
   Open TBSync settings, click Account actions &amp;gt; Add New Account &amp;gt; Exchange ActiveSync.</description>
@@ -86,20 +86,20 @@ For example,
     
     <item>
       <title>How to verify the source of a Snap package</title>
-      <link>/blog/2020-08-17-verify-snap/</link>
+      <link>https://merlijn.sebrechts.be/blog/2020-08-17-verify-snap/</link>
       <pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-08-17-verify-snap/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2020-08-17-verify-snap/</guid>
       <description>Many Snap packages contain two files which allow users to verify what sources were used to build the package.
  snap/snapcraft.yaml is the &amp;ldquo;source&amp;rdquo; of the package. This file was used by snapcraft to build the package. snap/manifest.yaml is a &amp;ldquo;recording&amp;rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more.</description>
     </item>
     
     <item>
       <title>How I became a cyborg pt2</title>
-      <link>/blog/2020-steampunk-cyborg-2/</link>
+      <link>https://merlijn.sebrechts.be/blog/2020-steampunk-cyborg-2/</link>
       <pubDate>Sat, 15 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-steampunk-cyborg-2/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2020-steampunk-cyborg-2/</guid>
       <description>This is part 2 of a series on how I became a cyborg. Warning: this article talks in details about heart surgery and shows post-op images.
 Read part 1 first
  We can rebuild him 2019-08-06: Waking up from heart surgery.
@@ -108,20 +108,20 @@ The first thing I saw were my parents talking to a nurse. My parents wanted to l
     
     <item>
       <title>Why is there only one Snap Store?</title>
-      <link>/blog/2020-08-02-why-one-snap-store/</link>
+      <link>https://merlijn.sebrechts.be/blog/2020-08-02-why-one-snap-store/</link>
       <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-08-02-why-one-snap-store/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2020-08-02-why-one-snap-store/</guid>
       <description>Snap and Flatpak are the basis of two universal app stores for Linux: the Snap Store and Flathub. Interestingly, Flatpak has multiple repositories: Flathub is the main one but both Fedora and Elementary OS also host their own store. In contrast; there is only one Snap store. Why is that?
  Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.</description>
     </item>
     
     <item>
       <title>Copyleft and LGPL in Snaps and Flatpaks</title>
-      <link>/blog/2020-07-17-lgpl-copyleft-snaps/</link>
+      <link>https://merlijn.sebrechts.be/blog/2020-07-17-lgpl-copyleft-snaps/</link>
       <pubDate>Fri, 17 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-07-17-lgpl-copyleft-snaps/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2020-07-17-lgpl-copyleft-snaps/</guid>
       <description>The question often comes up of how Snaps and Flatpaks influence copyleft, GPL and LGPL licenses. It is a common misconception that these new packaging formats significantly influence license compliance.
 Disclaimer: I am not a lawyer, this is not legal advice.
 Distributing your software in a Snap has no effect on GPL copyleft and LGPL compliance.
@@ -130,29 +130,29 @@ Distributing your software in a Snap has no effect on GPL copyleft and LGPL comp
     
     <item>
       <title>Why Linux desktop apps need containers</title>
-      <link>/blog/2020-07-06-why-snap-flatpak/</link>
+      <link>https://merlijn.sebrechts.be/blog/2020-07-06-why-snap-flatpak/</link>
       <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-07-06-why-snap-flatpak/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2020-07-06-why-snap-flatpak/</guid>
       <description>The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &amp;ldquo;why do we need this?&amp;rdquo; often arises. &amp;ldquo;Including software in distribution repositories has worked for so long, so why do we need to change it?&amp;rdquo;
  Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.</description>
     </item>
     
     <item>
       <title>A fundamental difference between Snap and Flatpak</title>
-      <link>/blog/2020-07-03-snap-vs-flatpak/</link>
+      <link>https://merlijn.sebrechts.be/blog/2020-07-03-snap-vs-flatpak/</link>
       <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-07-03-snap-vs-flatpak/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2020-07-03-snap-vs-flatpak/</guid>
       <description>Snaps and Flatpaks are often compared to each other because they both make it super easy for Linux users to get the latest versions of desktop applications. If a Linux user wants to install the latest version of apps like Slack, Krita or Blender, either tool will work just fine. There is one fundamental difference between Snaps and Flatpaks, however. While both are systems for distributing Linux apps, snap is also a tool to build Linux Distributions.</description>
     </item>
     
     <item>
       <title>Tutorial: S4A on Ubuntu</title>
-      <link>/blog/2020-02-s4a-setup-ubuntu/</link>
+      <link>https://merlijn.sebrechts.be/blog/2020-02-s4a-setup-ubuntu/</link>
       <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-02-s4a-setup-ubuntu/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2020-02-s4a-setup-ubuntu/</guid>
       <description>S4A, or Scratch for Arduino, is an app that you can use to program Arduino boards using Scratch. You can program robots and LED&amp;rsquo;s without writing any code: all you need to do is drag and drop instructions in the visual programming environment.
 Step 1: Install Arduino IDE and S4A The first step is to install Arduino and S4A from the Snap Store.
 sudo snap install arduino s4a After that, you need to give the user account on your computer access to USB devices.</description>
@@ -160,20 +160,20 @@ sudo snap install arduino s4a After that, you need to give the user account on y
     
     <item>
       <title>What&#39;s up with CRI-O, Kata Containers and Podman?</title>
-      <link>/blog/2020-01-docker-podman-kata-cri-o/</link>
+      <link>https://merlijn.sebrechts.be/blog/2020-01-docker-podman-kata-cri-o/</link>
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-01-docker-podman-kata-cri-o/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2020-01-docker-podman-kata-cri-o/</guid>
       <description>The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at the &amp;ldquo;consolidation&amp;rdquo; stage of the hype cycle:
  Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &amp;ldquo;The primary orchestrator going forward is Kubernetes.&amp;rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer.</description>
     </item>
     
     <item>
       <title>How I became a cyborg pt1</title>
-      <link>/blog/2019-steampunk-cyborg-1/</link>
+      <link>https://merlijn.sebrechts.be/blog/2019-steampunk-cyborg-1/</link>
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2019-steampunk-cyborg-1/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2019-steampunk-cyborg-1/</guid>
       <description>Close Encounters of the Third Kind &amp;ldquo;We really need to do something about the valve. We&amp;rsquo;ve passed the point where we can wait two more years to see how it progresses.&amp;rdquo;
 I was silent for a while, so the cardiologist asked &amp;ldquo;do you understand what I mean?&amp;rdquo;
 &amp;ldquo;Like, I need a transplant from a pig heart?&amp;rdquo;, I asked.
@@ -183,39 +183,39 @@ It was clear my heart was fucked.</description>
     
     <item>
       <title>Who owns my research?</title>
-      <link>/blog/copyright-ghent-university-researcher/</link>
+      <link>https://merlijn.sebrechts.be/blog/copyright-ghent-university-researcher/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/copyright-ghent-university-researcher/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/copyright-ghent-university-researcher/</guid>
       <description>When I submitted my first paper, I realized I had no idea who owned my research! Was I authorized to transfer the rights to a journal or did I need someone else&amp;rsquo;s permission? After some digging, I found the answer and wrote it all up in a neat little document. So here&amp;rsquo;s the dusted off version, in case it&amp;rsquo;s useful to anyone else.
 In short Intellectual property (IP) as a PhD student at Ghent University is largely divided into two parts: research results and educational material.</description>
     </item>
     
     <item>
       <title>I&#39;m Back!</title>
-      <link>/blog/2019-05-im-back/</link>
+      <link>https://merlijn.sebrechts.be/blog/2019-05-im-back/</link>
       <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2019-05-im-back/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2019-05-im-back/</guid>
       <description>I restored my blog from an old backup I had. I imported it into Hugo, a static blogging platform.
 Image by clipart-library</description>
     </item>
     
     <item>
       <title>What does “perf interrupt took too long” mean?</title>
-      <link>/blog/2015-09-perf-interrupt-took-to-long/</link>
+      <link>https://merlijn.sebrechts.be/blog/2015-09-perf-interrupt-took-to-long/</link>
       <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2015-09-perf-interrupt-took-to-long/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2015-09-perf-interrupt-took-to-long/</guid>
       <description>Wifi problems So, I&amp;rsquo;m having a problem with my laptop. When I&amp;rsquo;m using the “TelenetWiFree” connection, I get disconnected after a certain amount of time, and for some reason I cannot reconnect until I restart my computer. Toggling the hardware Wifi kill-switch, which lets you disable and enable the power to the wifi hardware, does not resolve the problem. After re-enabling the hardware, the wifi doesn&amp;rsquo;t seem to come back again.</description>
     </item>
     
     <item>
       <title>Pragmatic Docker Day 2015</title>
-      <link>/blog/2015-04-pragmatic-docker-day/</link>
+      <link>https://merlijn.sebrechts.be/blog/2015-04-pragmatic-docker-day/</link>
       <pubDate>Sat, 25 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2015-04-pragmatic-docker-day/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2015-04-pragmatic-docker-day/</guid>
       <description>I got a ticket to the Pragmatic Docker Day meetup in Ghent in exchange for writing a blogpost about it. Free food, drinks &amp;amp; awesome talks for a whole day, who would want to miss that? Not me!
 So here are my unstructured thoughts I gathered from the meetup:
 Docker is awesome! What is docker? Docker encapsulates apps in their own little sandbox. Every app runs in its own container. An environment made especially so the app can run well and can&amp;rsquo;t mess to much with other apps running on the same server.</description>
@@ -223,10 +223,10 @@ Docker is awesome! What is docker? Docker encapsulates apps in their own little 
     
     <item>
       <title>Windows power users are not Linux power users!</title>
-      <link>/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</link>
+      <link>https://merlijn.sebrechts.be/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</link>
       <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</guid>
+      <guid>https://merlijn.sebrechts.be/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</guid>
       <description>Let&amp;rsquo;s rid the world of one of the most prominent Linux myths: “Desktop Linux sucks. It&amp;rsquo;s just not there yet”.
 When Windows power users try out Linux two things always happen:
  They get frustrated because they can&amp;rsquo;t find how to do something in Linux. They brick their system, or make it extremely buggy.  I&amp;rsquo;ve been that person, I&amp;rsquo;ve bricked my system (a lot!), and the fact is, it was entirely my own fault.</description>
