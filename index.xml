@@ -8,6 +8,18 @@
     <language>en</language>
     <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Talks &amp; Teaching</title>
+      <link>https://merlijn.sebrechts.be/talks/</link>
+      <pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/talks/</guid>
+      <description>This is a selection of the talks and guest lectures I gave in the past.
+I love sharing my knowledge, both with peers and with the wider public! Contact me if you’re looking for a guest lecturer on one of these topics.
+Community building   Do-ocratic communities: when merit is not the only metric (recording) Ubuntu Summit, November 2023
+  How to solve conflict in a community of equals (recording) rC3, December 2020</description>
+    </item>
+    
+    <item>
       <title>Our students can use AI for their master&#39;s thesis - the policy</title>
       <link>https://merlijn.sebrechts.be/blog/2023-05-05-ai-chatgpt-master-thesis/</link>
       <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>

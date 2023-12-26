@@ -1,4 +1,10 @@
 [{
+    "title": "Talks & Teaching",
+    "date": "",
+    "description": "",
+    "body": "This is a selection of the talks and guest lectures I gave in the past.\nI love sharing my knowledge, both with peers and with the wider public! Contact me if you’re looking for a guest lecturer on one of these topics.\nCommunity building   Do-ocratic communities: when merit is not the only metric (recording) Ubuntu Summit, November 2023\n  How to solve conflict in a community of equals (recording) rC3, December 2020\n  Building Communities with Do-ocracy - Hackerspace Design (recording) 36c3 Podcast, December 2019\n  Do-ocracy done well (recording) 36c3, December 2019\n    -- WebAssembly   Bringing orchestration to the edge with Wasm component model (recording) Wasm Research Day 2023, October 2023\n  Lightweight Kubernetes Operators with WebAssembly (recording) Fosdem 2023, Februari 2023\n  Snapcrafters  Bringing Windows Applications to Linux App Stores (recording) Ubuntu Summit, November 2023  AI   How open source software is changing the (AI) world (slides) Science Festival Ghent, November 2023\n  Interview Urgent.fm about AI track at Science Festival (recording) Science Festival Ghent, November 2023\n  ",
+    "ref": "/talks/"
+  },{
     "title": "Our students can use AI for their master's thesis - the policy",
     "date": "",
     "description": "",
