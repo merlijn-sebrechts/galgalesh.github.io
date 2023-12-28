@@ -6,22 +6,22 @@
     <description>Recent content in Categories on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://merlijn.sebrechts.be/categories/linux/</link>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/categories/linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Education</title>
       <link>https://merlijn.sebrechts.be/categories/education/</link>
       <pubDate>Fri, 05 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://merlijn.sebrechts.be/categories/education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://merlijn.sebrechts.be/categories/linux/</link>
-      <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://merlijn.sebrechts.be/categories/linux/</guid>
       <description></description>
     </item>
     
