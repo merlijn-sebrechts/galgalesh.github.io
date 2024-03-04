@@ -2,14 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://merlijn.sebrechts.be/blog/2024-02-17-ubuntu-community-council-year/</loc>
-    <lastmod>2024-02-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://merlijn.sebrechts.be/blog/</loc>
-    <lastmod>2024-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://merlijn.sebrechts.be/categories/</loc>
-    <lastmod>2024-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -21,11 +18,14 @@
                 href="https://merlijn.sebrechts.be/categories/"
                 />
   </url><url>
+    <loc>https://merlijn.sebrechts.be/tags/copyright/</loc>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://merlijn.sebrechts.be/categories/linux/</loc>
-    <lastmod>2024-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://merlijn.sebrechts.be/</loc>
-    <lastmod>2024-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
@@ -36,6 +36,25 @@
                 hreflang="en"
                 href="https://merlijn.sebrechts.be/"
                 />
+  </url><url>
+    <loc>https://merlijn.sebrechts.be/tags/</loc>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://merlijn.sebrechts.be/nl/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merlijn.sebrechts.be/tags/"
+                />
+  </url><url>
+    <loc>https://merlijn.sebrechts.be/blog/what-is-the-apache-2-llvm-exception/</loc>
+    <lastmod>2024-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://merlijn.sebrechts.be/blog/2024-02-17-ubuntu-community-council-year/</loc>
+    <lastmod>2024-02-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://merlijn.sebrechts.be/blog/2023-12-28-ecoloop-pro-vs-ecoloop-premier-slim/</loc>
     <lastmod>2023-12-28T00:00:00+00:00</lastmod>
@@ -60,19 +79,6 @@
   </url><url>
     <loc>https://merlijn.sebrechts.be/tags/snap/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://merlijn.sebrechts.be/tags/</loc>
-    <lastmod>2022-11-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://merlijn.sebrechts.be/nl/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merlijn.sebrechts.be/tags/"
-                />
   </url><url>
     <loc>https://merlijn.sebrechts.be/blog/2022-11-10-turn-off-snap-updates/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
@@ -129,9 +135,6 @@
     <lastmod>2020-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://merlijn.sebrechts.be/blog/2020-07-17-lgpl-copyleft-snaps/</loc>
-    <lastmod>2020-07-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://merlijn.sebrechts.be/tags/copyright/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://merlijn.sebrechts.be/tags/flatpak/</loc>

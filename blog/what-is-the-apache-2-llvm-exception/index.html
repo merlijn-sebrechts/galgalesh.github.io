@@ -2,24 +2,30 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>Our students can use AI for their master&#39;s thesis - the policy - Merlijn Sebrechts</title>
+<title>What is the Apache 2.0 LLVM Exception? - Merlijn Sebrechts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="generator" content="Hugo 0.92.2" /><meta itemprop="name" content="Our students can use AI for their master&#39;s thesis - the policy">
-<meta itemprop="description" content="During my day job, I teach a number of computer science courses in the Information Engineering Technology programme at Ghent University. The release of ChatGPT and GPT-4 has a large impact on our education because it can get grades of above 80% on most exams and can effortlessly write essays on complex subjects. Students are aware of this, and are thus increasingly using Large Language Models (LLMs) in their education for a number of tasks."><meta itemprop="datePublished" content="2023-05-05T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-05-05T00:00:00+00:00" />
-<meta itemprop="wordCount" content="713">
-<meta itemprop="keywords" content="" /><meta property="og:title" content="Our students can use AI for their master&#39;s thesis - the policy" />
-<meta property="og:description" content="During my day job, I teach a number of computer science courses in the Information Engineering Technology programme at Ghent University. The release of ChatGPT and GPT-4 has a large impact on our education because it can get grades of above 80% on most exams and can effortlessly write essays on complex subjects. Students are aware of this, and are thus increasingly using Large Language Models (LLMs) in their education for a number of tasks." />
+<meta name="generator" content="Hugo 0.92.2" /><meta itemprop="name" content="What is the Apache 2.0 LLVM Exception?">
+<meta itemprop="description" content="Some open source projects use the Apache 2.0 license &ldquo;with LLVM Exception&rdquo; SPDX: &quot;Apache-2.0 WITH LLVM-exception&quot;). So what is the &ldquo;LLVM exception&rdquo; exactly, and why do some projects add it to their license?
+Heather Meeker, a notable open source attorney, created this when she was hired by the LLVM foundation to solve two issues with the Apache 2.0 license.
+It solves the compiler runtime problem The first issue with the Apache 2."><meta itemprop="datePublished" content="2024-03-04T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-03-04T00:00:00+00:00" />
+<meta itemprop="wordCount" content="462">
+<meta itemprop="keywords" content="Copyright," /><meta property="og:title" content="What is the Apache 2.0 LLVM Exception?" />
+<meta property="og:description" content="Some open source projects use the Apache 2.0 license &ldquo;with LLVM Exception&rdquo; SPDX: &quot;Apache-2.0 WITH LLVM-exception&quot;). So what is the &ldquo;LLVM exception&rdquo; exactly, and why do some projects add it to their license?
+Heather Meeker, a notable open source attorney, created this when she was hired by the LLVM foundation to solve two issues with the Apache 2.0 license.
+It solves the compiler runtime problem The first issue with the Apache 2." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://merlijn.sebrechts.be/blog/2023-05-05-ai-chatgpt-master-thesis/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-05-05T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-05-05T00:00:00+00:00" />
+<meta property="og:url" content="https://merlijn.sebrechts.be/blog/what-is-the-apache-2-llvm-exception/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-03-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-03-04T00:00:00+00:00" />
 
-<meta property="og:image" content="https://merlijn.sebrechts.be/img/2023/ai-masters-thesis-feature.jpg" key="ogimage" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Our students can use AI for their master&#39;s thesis - the policy"/>
-<meta name="twitter:description" content="During my day job, I teach a number of computer science courses in the Information Engineering Technology programme at Ghent University. The release of ChatGPT and GPT-4 has a large impact on our education because it can get grades of above 80% on most exams and can effortlessly write essays on complex subjects. Students are aware of this, and are thus increasingly using Large Language Models (LLMs) in their education for a number of tasks."/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What is the Apache 2.0 LLVM Exception?"/>
+<meta name="twitter:description" content="Some open source projects use the Apache 2.0 license &ldquo;with LLVM Exception&rdquo; SPDX: &quot;Apache-2.0 WITH LLVM-exception&quot;). So what is the &ldquo;LLVM exception&rdquo; exactly, and why do some projects add it to their license?
+Heather Meeker, a notable open source attorney, created this when she was hired by the LLVM foundation to solve two issues with the Apache 2.0 license.
+It solves the compiler runtime problem The first issue with the Apache 2."/>
 <meta name="twitter:site" content="@mesebrec"/>
 
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/github.min.css">
@@ -159,12 +165,12 @@
     <header>
   <div class="title">
     
-      <h2><a href="/blog/2023-05-05-ai-chatgpt-master-thesis/">Our students can use AI for their master&#39;s thesis - the policy</a></h2>
+      <h2><a href="/blog/what-is-the-apache-2-llvm-exception/">What is the Apache 2.0 LLVM Exception?</a></h2>
     
     
   </div>
   <div class="meta">
-    <time datetime="2023-05-05 00:00:00 &#43;0000 UTC">May 5, 2023</time>
+    <time datetime="2024-03-04 00:00:00 &#43;0000 UTC">March 4, 2024</time>
     
     
   </div>
@@ -179,47 +185,33 @@
 
     </div>
     <div class="content">
-      <a href="/blog/2023-05-05-ai-chatgpt-master-thesis/" class="image" style="--bg-image: url('https://merlijn.sebrechts.be/img/2023/ai-masters-thesis-feature.jpg');">
-    <img src="https://merlijn.sebrechts.be/img/2023/ai-masters-thesis-feature.jpg" alt="">
-  </a>
-      <p>During my day job, I teach a number of computer science courses in the <a href="https://studiekiezer.ugent.be/master-of-science-in-information-engineering-technology/">Information Engineering Technology programme at Ghent University</a>. The release of ChatGPT and GPT-4 has a large impact on our education because it can get grades of above 80% on most exams and can effortlessly write essays on complex subjects. Students are aware of this, and are thus increasingly using Large Language Models (LLMs) in their education for a number of tasks.</p>
+      
+      <p>Some open source projects use the Apache 2.0 license <a href="https://spdx.org/licenses/LLVM-exception.html">&ldquo;with LLVM Exception&rdquo;</a> <code>SPDX: &quot;Apache-2.0 WITH LLVM-exception&quot;</code>). So what is the &ldquo;LLVM exception&rdquo; exactly, and why do some projects add it to their license?</p>
+<p>Heather Meeker, a notable open source attorney, created this when she was hired by the LLVM foundation to solve two issues with the Apache 2.0 license.</p>
+<h2 id="it-solves-the-compiler-runtime-problem">It solves the compiler runtime problem</h2>
+<p>The first issue with the Apache 2.0 license is specific to compilers. When you compile your application, the compiler will inject part of their own code into the resulting binary. The problem is that, if your application uses Apache 2.0-licensed code, you need to let your users know about that. For LLVM, this would mean that every program compiled by Clang would have to say this to their users.</p>
+<p>As a result, the LLVM Exception adds a clause that says you don&rsquo;t have to notify your users if your application ends up containing some of the compiler&rsquo;s code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">As an exception, if, as a result of your compiling your source code, portions
+of this Software are embedded into an Object form of such source code, you
+may redistribute such embedded portions in such Object form without complying
+with the conditions of Sections 4(a), 4(b) and 4(d) of the License.
+</code></pre></div><h2 id="it-solves-gplv2-incompatibility">It solves GPLv2 incompatibility</h2>
+<p>The <strong>Apache 2.0 license is not compatible with GPLv2 because it has an additional restriction</strong>. The Apache 2.0 license says you are not allowed to start a patent lawsuit about the code. Otherwise, you will loose the patent grant the Apache 2.0 license provides you. This is incompatible with the GPLv2, because it explicitly forbids imposing additional restrictions. Even if that restriction is intended to protect users.</p>
+<p>This incompatibility is accidental, though. The GNU project has made it clear they agree with the patent restriction, which is why they explicitly fixed the incompatibility in the later version of their GPL license. However, a lot of code still uses the older GPLv2 license and will not be relicensed any time soon.</p>
+<p>So the first reason for the LLVM Exception is to solve this incompatibility. It explicitly makes Apache 2.0 compatible with the GPLv2.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">In addition, if you combine or link compiled forms of this Software with
+software that is licensed under the GPLv2 (&#34;Combined Software&#34;) and if a
+court of competent jurisdiction determines that the patent provision (Section
+3), the indemnity provision (Section 9) or other Section of the License
+conflicts with the conditions of the GPLv2, you may retroactively and
+prospectively choose to deem waived or otherwise exclude such Section(s) of
+the License, but only in their entirety and only with respect to the Combined
+Software.
+</code></pre></div><h2 id="sources">Sources</h2>
 <ul>
-<li>Writing code</li>
-<li>Explaining error messages</li>
-<li>Translate text</li>
-<li>Improving grammar and flow of texts</li>
-</ul>
-<p>Rather than seeing this as &ldquo;cheating&rdquo;, our department has decided to embrace ChatGPT as much as possible. AI is becoming an increasingly important part of society and it is our responsibility to prepare students for that. This includes teaching them how to use AI effectively and responsibly. This is in line with recent guidelines from the <a href="https://eua.eu/resources/publications/1059:artificial-intelligence-tools-and-their-responsible-use-in-higher-education-learning-and-teaching.html">European University Association</a>.</p>
-<blockquote>
-<p>&ldquo;The higher education sector must adapt its learning, teaching and assessment approaches in such a way that AI is used effectively and appropriately. Universities must explore the responsible use of AI tools, in line with their mission, goals and values, and paying due regard to their legal framework and the broader consequences for and impacts on society, culture and the economy.&rdquo;</p>
-</blockquote>
-<p>Our first step in this embrace is to officially allow the use of AI for a master&rsquo;s thesis. Below is the policy as communicated to the students. I publish it here with the hope of gathering some broader feedback on it and possibly help other educators navigate this difficult terrain. The policy specifically requires students to document how they used AI in their master&rsquo;s thesis, so hopefully in a few months time, I&rsquo;ll be able to report back here and give an overview of how students used these tools and what their results were.</p>
-<h2 id="policy-as-communicated-to-students">Policy as communicated to students</h2>
-<p>This guideline explain how students of <em>Master of Science in Information Engineering Technology</em> at Ghent University can use AI programs such as ChatGPT, GitHub CoPilot and Google Bard in their master’s thesis.</p>
-<p>The role of AI in digital society is increasing rapidly. Therefore, we want to teach students how to use AI responsibly and ethically. For this reason, using AI to write a master’s thesis and code <strong>is allowed</strong>, but the <strong>student remains responsible</strong> for the content and needs to add an attachment to their thesis <strong>detailing extensively how AI was used</strong>. It should explain which programs where used, what they were used for, and give some examples of the used prompts. Failure to do so is in violation of <a href="https://www.ugent.be/ea/nl/faculteit/studentenadministratie/masterproef/plagiaat_integriteit">the academic integrity rules of our faculty</a>.</p>
-<p>Be aware of the limitations of AI and take the necessary precautions.</p>
-<ul>
-<li>If you provide minimum effort prompts, you might get low quality results. <strong>Refine your prompts</strong> in order to get good outcomes. Experiment with this.</li>
-<li><strong>Don’t trust anything it says</strong>. If it gives you a fact, assume it is wrong unless you can check it with another source. If it gives you a reference, read the reference to see if it exists and if it agrees with the generated text. You are responsible for any errors or omissions. This type of AI works best for topics you understand.</li>
-<li>Be aware that some low-effort prompts return very similar results to different users. Other prompts might return text straight from other sources without proper citation. You are responsible to <strong>make sure your use of AI does not result in plagiarism</strong>. For this reason, it is not advised to let the AI write entire paragraphs from scratch.</li>
-<li><strong>Do not give sensitive or personal information to online AI</strong>. If your thesis is in collaboration with a company, discuss with them what kind of information you are allowed to share with the AI.</li>
-</ul>
-<p>For tips on how to effectively use AI; take a look at <a href="https://www.oneusefulthing.org/p/how-to-use-chatgpt-to-boost-your">How to use ChatGPT to boost your writing</a>. Note that there are a number of interesting AI projects that can help you with writing. Some projects such as <a href="https://www.grammarly.com/">Grammarly</a> are a lot more objective and hallucinate less.</p>
-<h2 id="sources-and-inspiration">Sources and inspiration</h2>
-<ul>
-<li>
-<p><a href="https://www.oneusefulthing.org/p/all-my-classes-suddenly-became-ai">All my classes suddenly became AI classes</a></p>
-</li>
-<li>
-<p><a href="https://www.oneusefulthing.org/p/my-class-required-ai-heres-what-ive">My class required AI. Here&rsquo;s what I&rsquo;ve learned so far.</a></p>
-</li>
-<li>
-<p><a href="https://eua.eu/resources/publications/1059:artificial-intelligence-tools-and-their-responsible-use-in-higher-education-learning-and-teaching.html">European University Association: Artificial intelligence tools and their responsible use in higher education learning and teaching</a></p>
-</li>
-<li>
-<p>Header images generated by <a href="https://www.craiyon.com/">Craiyon</a></p>
-<p><img src="/img/2023/ai-masters-thesis-feature.jpg" alt="ai masters thesis"></p>
-</li>
+<li><a href="https://lwn.net/Articles/701155/">LLVM contemplates relicensing</a></li>
+<li><a href="https://blog.gerv.net/2016/09/gplv2-combination-exception-for-the-apache-2-license/">GPLv2 Combination Exception for the Apache 2 License</a></li>
+<li><a href="https://www.gnu.org/licenses/license-list.html#apache2">GNU comments about Apache 2.0 license</a></li>
 </ul>
 
     </div>
@@ -229,14 +221,18 @@
     <ul class="categories">
       
         
-          <li><a class="article-terms-link" href="/categories/university/">University</a></li>
+          <li><a class="article-terms-link" href="/categories/linux/">Linux</a></li>
         
       
     </ul>
   
   
     <ul class="tags">
-      <li>None</li>
+      
+        
+          <li><a class="article-terms-link" href="/tags/copyright/">Copyright</a></li>
+        
+      
     </ul>
   
 </div>
@@ -274,10 +270,8 @@
   
   <div class="pagination">
     
-      <a href="/blog/2023-12-28-ecoloop-pro-vs-ecoloop-premier-slim/" class="button left"><span>Dell EcoLoop Pro vs Premier backpack</span></a>
     
-    
-      <a href="/blog/2023-01-24-dell-mh3021p-speakerphone-linux/" class="button right"><span>Using Dell MH3021P speakerphone on Ubuntu Linux</span></a>
+      <a href="/blog/2024-02-17-ubuntu-community-council-year/" class="button right"><span>A year in the Ubuntu Community Council</span></a>
     
   </div>
 

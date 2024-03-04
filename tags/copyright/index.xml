@@ -6,7 +6,18 @@
     <description>Recent content in Copyright on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/tags/copyright/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is the Apache 2.0 LLVM Exception?</title>
+      <link>https://merlijn.sebrechts.be/blog/what-is-the-apache-2-llvm-exception/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/blog/what-is-the-apache-2-llvm-exception/</guid>
+      <description>Some open source projects use the Apache 2.0 license &amp;ldquo;with LLVM Exception&amp;rdquo; SPDX: &amp;quot;Apache-2.0 WITH LLVM-exception&amp;quot;). So what is the &amp;ldquo;LLVM exception&amp;rdquo; exactly, and why do some projects add it to their license?
+Heather Meeker, a notable open source attorney, created this when she was hired by the LLVM foundation to solve two issues with the Apache 2.0 license.
+It solves the compiler runtime problem The first issue with the Apache 2.</description>
+    </item>
+    
     <item>
       <title>Copyleft and LGPL in Snaps and Flatpaks</title>
       <link>https://merlijn.sebrechts.be/blog/2020-07-17-lgpl-copyleft-snaps/</link>
