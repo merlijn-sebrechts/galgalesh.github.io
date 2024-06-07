@@ -8,6 +8,18 @@
     <language>en</language>
     <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Talks &amp; Teaching</title>
+      <link>https://merlijn.sebrechts.be/talks/</link>
+      <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/talks/</guid>
+      <description>This is a small selection of recorded talks and guest lectures I gave in the past.
+I love sharing my knowledge, both with peers and with the wider public! Contact me if you’re looking for a speaker or guest lecturer on one of these topics.
+Open source   Keynote: AI is breaking Open Source (recording, slides) Drupalcamp Ghent, May 2024
+  [Dutch] How open source software is changing the (AI) world (slides, interview recording) Science Festival Ghent, November 2023</description>
+    </item>
+    
+    <item>
       <title>What is the Apache 2.0 LLVM Exception?</title>
       <link>https://merlijn.sebrechts.be/blog/what-is-the-apache-2-llvm-exception/</link>
       <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
@@ -37,18 +49,6 @@ I&amp;rsquo;m clearly not the only person with this issue, given the first quest
       <description>I bought the Dell EcoLoop Pro, so you don&amp;rsquo;t have to.
 Dell EcoLoop Pro At the beginning of this year, I bought the Dell EcoLoop Pro Slim and regretted it immediately. The advertising for it is borderline deceptive, in my opinion.
 My previous experience with Dell backpacks is that they look stylish and professional, are very handy, and very durable. I&amp;rsquo;ve used my previous Dell backpack for about 6 years, and it&amp;rsquo;s still very useful, although it&amp;rsquo;s starting to look a bit dated.</description>
-    </item>
-    
-    <item>
-      <title>Talks &amp; Teaching</title>
-      <link>https://merlijn.sebrechts.be/talks/</link>
-      <pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://merlijn.sebrechts.be/talks/</guid>
-      <description>This is a selection of the talks and guest lectures I gave in the past.
-I love sharing my knowledge, both with peers and with the wider public! Contact me if you’re looking for a guest lecturer on one of these topics.
-Community building   Do-ocratic communities: when merit is not the only metric (recording) Ubuntu Summit, November 2023
-  How to solve conflict in a community of equals (recording) rC3, December 2020</description>
     </item>
     
     <item>
