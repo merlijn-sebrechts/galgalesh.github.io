@@ -6,7 +6,17 @@
     <description>Recent content in Linux on Merlijn Sebrechts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Llama&#39;s Legal Labyrinth</title>
+      <link>https://merlijn.sebrechts.be/blog/2024-08-06-problematic-meta-llama-3-1-license/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/blog/2024-08-06-problematic-meta-llama-3-1-license/</guid>
+      <description>Meta just introduced the Llama 3.1 AI model and accompanied the launch with a blog post explaining &amp;ldquo;Open Source AI is the path forward&amp;rdquo; [a]. But buyer beware: Llama 3.1 itself is a legal labyrinth.
+Despite what Meta is implying, Llama 3.1 is not open source. The model is licensed under the Llama 3.1 license and the Llama 3.1 acceptable use policy. These heavily restrict who can use the model and for what purpose.</description>
+    </item>
+    
     <item>
       <title>What is the Apache 2.0 LLVM Exception?</title>
       <link>https://merlijn.sebrechts.be/blog/what-is-the-apache-2-llvm-exception/</link>
