@@ -8,6 +8,18 @@
     <language>en</language>
     <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://merlijn.sebrechts.be/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Lectures and courses</title>
+      <link>https://merlijn.sebrechts.be/lectures-courses/</link>
+      <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://merlijn.sebrechts.be/lectures-courses/</guid>
+      <description>Conferences   WebAssembly for IoT Devices: Interfacing with USB and I2C Hardware WasmCon 2024, November 2024
+  Panel: Platform Engineering: Unveiling the Next Evolution in DevOps (event, recording) DASA Connect 2024, May 2024 [invited panelist]
+  Keynote: AI is breaking Open Source (event, recording) Drupalcamp Ghent 2024, May 2024 [invited keynote]
+  Hoe open source software de (AI) wereld verbetert (event, interview) Science Festival Ghent, November 2023</description>
+    </item>
+    
+    <item>
       <title>Llama&#39;s Legal Labyrinth</title>
       <link>https://merlijn.sebrechts.be/blog/2024-08-06-problematic-meta-llama-3-1-license/</link>
       <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
