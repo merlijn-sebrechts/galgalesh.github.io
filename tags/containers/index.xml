@@ -14,7 +14,7 @@
       
       <guid>https://merlijn.sebrechts.be/blog/2020-01-docker-podman-kata-cri-o/</guid>
       <description>The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at the &amp;ldquo;consolidation&amp;rdquo; stage of the hype cycle:
- Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &amp;ldquo;The primary orchestrator going forward is Kubernetes.&amp;rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer.</description>
+Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &amp;ldquo;The primary orchestrator going forward is Kubernetes.&amp;rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer.</description>
     </item>
     
   </channel>

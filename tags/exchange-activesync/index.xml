@@ -14,8 +14,8 @@
       
       <guid>https://merlijn.sebrechts.be/blog/2021-08-31-ugent-thunderbird/</guid>
       <description>UGent address book support in Mozilla Thunderbird Ghent University has an LDAP address book which contains all students and staff. Adding this address book to Thunderbird is non-trivial, though. Follow these steps to add it.
-  Install the extensions &amp;ldquo;TbSync&amp;rdquo; and &amp;ldquo;Provider for Exchange ActiveSync&amp;rdquo;. (Press alt to show the menu and choose Edit &amp;gt; Preferences &amp;gt; Add-ons and Themes)
-  Open TBSync settings, click Account actions &amp;gt; Add New Account &amp;gt; Exchange ActiveSync.</description>
+Install the extensions &amp;ldquo;TbSync&amp;rdquo; and &amp;ldquo;Provider for Exchange ActiveSync&amp;rdquo;. (Press alt to show the menu and choose Edit &amp;gt; Preferences &amp;gt; Add-ons and Themes)
+Open TBSync settings, click Account actions &amp;gt; Add New Account &amp;gt; Exchange ActiveSync.</description>
     </item>
     
   </channel>

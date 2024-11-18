@@ -55,9 +55,9 @@ Thankfully I can say all the important parts work very well out of the box on Ub
       
       <guid>https://merlijn.sebrechts.be/blog/2022-11-10-turn-off-snap-updates/</guid>
       <description>During the Ubuntu Summit, a long-awaited feature was quietly released for preview: You can now completely turn off automatic updates of snaps.
- &amp;ldquo;The snap refresh --hold command holds, or postpones, snap updates for individual snaps, or for all snaps on the system, either indefinitely or for a specified period of time.&amp;rdquo;
+&amp;ldquo;The snap refresh --hold command holds, or postpones, snap updates for individual snaps, or for all snaps on the system, either indefinitely or for a specified period of time.&amp;rdquo;
 (currently only available in edge channel of snapd)
- This might sound like an obvious feature to many people, but it&amp;rsquo;s a continental shift in philosophy for the Snap developers.</description>
+This might sound like an obvious feature to many people, but it&amp;rsquo;s a continental shift in philosophy for the Snap developers.</description>
     </item>
     
     <item>
@@ -77,7 +77,7 @@ Why Developers want to use Kubernetes in the edge, but it uses too much memory f
       
       <guid>https://merlijn.sebrechts.be/blog/2020-08-17-verify-snap/</guid>
       <description>Many Snap packages contain two files which allow users to verify what sources were used to build the package.
- snap/snapcraft.yaml is the &amp;ldquo;source&amp;rdquo; of the package. This file was used by snapcraft to build the package. snap/manifest.yaml is a &amp;ldquo;recording&amp;rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more.</description>
+snap/snapcraft.yaml is the &amp;ldquo;source&amp;rdquo; of the package. This file was used by snapcraft to build the package. snap/manifest.yaml is a &amp;ldquo;recording&amp;rdquo; of the build of that package. It is similar to the first file, but it includes a lot more information to pinpoint what exact sources were being used. It records the exact package versions of dependencies, the git commit of all source repositories, checksums of any downloaded binary and more.</description>
     </item>
     
     <item>
@@ -87,7 +87,7 @@ Why Developers want to use Kubernetes in the edge, but it uses too much memory f
       
       <guid>https://merlijn.sebrechts.be/blog/2020-08-02-why-one-snap-store/</guid>
       <description>Snap and Flatpak are the basis of two universal app stores for Linux: the Snap Store and Flathub. Interestingly, Flatpak has multiple repositories: Flathub is the main one but both Fedora and Elementary OS also host their own store. In contrast; there is only one Snap store. Why is that?
- Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.</description>
+Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.</description>
     </item>
     
     <item>
@@ -99,7 +99,7 @@ Why Developers want to use Kubernetes in the edge, but it uses too much memory f
       <description>The question often comes up of how Snaps and Flatpaks influence copyleft, GPL and LGPL licenses. It is a common misconception that these new packaging formats significantly influence license compliance.
 Disclaimer: I am not a lawyer, this is not legal advice.
 Distributing your software in a Snap has no effect on GPL copyleft and LGPL compliance.
- It has no effect on copyleft because containers do not trigger copyleft according to the GNU GPL FAQ [see note].</description>
+It has no effect on copyleft because containers do not trigger copyleft according to the GNU GPL FAQ [see note].</description>
     </item>
     
     <item>
@@ -109,7 +109,7 @@ Distributing your software in a Snap has no effect on GPL copyleft and LGPL comp
       
       <guid>https://merlijn.sebrechts.be/blog/2020-07-06-why-snap-flatpak/</guid>
       <description>The Snap Store and Flathub are two universal app stores for Linux. They are very different from how traditional software distribution works. As is always the case with new software, the question &amp;ldquo;why do we need this?&amp;rdquo; often arises. &amp;ldquo;Including software in distribution repositories has worked for so long, so why do we need to change it?&amp;rdquo;
- Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.</description>
+Note: for an introduction into Flatpak and Snap, please read The future of Linux desktop application delivery is Flatpak and Snap.</description>
     </item>
     
     <item>
@@ -139,7 +139,7 @@ sudo snap install arduino s4a After that, you need to give the user account on y
       
       <guid>https://merlijn.sebrechts.be/blog/2020-01-docker-podman-kata-cri-o/</guid>
       <description>The container ecosystem is moving rapidly. A lot happened in 2019! It seems the container ecosystem has arrived at the &amp;ldquo;consolidation&amp;rdquo; stage of the hype cycle:
- Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &amp;ldquo;The primary orchestrator going forward is Kubernetes.&amp;rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer.</description>
+Docker Inc. sold off its enterprise business and had a bunch of restructuring. They shelved Docker Swarm saying &amp;ldquo;The primary orchestrator going forward is Kubernetes.&amp;rdquo; Twitter joined Spotify in moving away from Mesos-based container orchestration to Kubernetes. This was a huge blow to Mesos given Twitter was its original developer.</description>
     </item>
     
     <item>
@@ -170,7 +170,7 @@ Docker is awesome! What is docker? Docker encapsulates apps in their own little 
       <guid>https://merlijn.sebrechts.be/blog/2014-11-why-you-think-linux-sucks-and-why-its-your-own-fault/</guid>
       <description>Let&amp;rsquo;s rid the world of one of the most prominent Linux myths: “Desktop Linux sucks. It&amp;rsquo;s just not there yet”.
 When Windows power users try out Linux two things always happen:
- They get frustrated because they can&amp;rsquo;t find how to do something in Linux. They brick their system, or make it extremely buggy.  I&amp;rsquo;ve been that person, I&amp;rsquo;ve bricked my system (a lot!), and the fact is, it was entirely my own fault.</description>
+They get frustrated because they can&amp;rsquo;t find how to do something in Linux. They brick their system, or make it extremely buggy. I&amp;rsquo;ve been that person, I&amp;rsquo;ve bricked my system (a lot!), and the fact is, it was entirely my own fault.</description>
     </item>
     
   </channel>

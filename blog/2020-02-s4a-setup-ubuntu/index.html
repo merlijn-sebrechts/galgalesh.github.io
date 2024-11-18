@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="generator" content="Hugo 0.92.2" /><meta itemprop="name" content="Tutorial: S4A on Ubuntu">
+<meta name="generator" content="Hugo 0.109.0"><meta itemprop="name" content="Tutorial: S4A on Ubuntu">
 <meta itemprop="description" content="S4A, or Scratch for Arduino, is an app that you can use to program Arduino boards using Scratch. You can program robots and LED&rsquo;s without writing any code: all you need to do is drag and drop instructions in the visual programming environment.
 Step 1: Install Arduino IDE and S4A The first step is to install Arduino and S4A from the Snap Store.
 sudo snap install arduino s4a After that, you need to give the user account on your computer access to USB devices."><meta itemprop="datePublished" content="2020-02-23T00:00:00+00:00" />
@@ -20,7 +20,6 @@ sudo snap install arduino s4a After that, you need to give the user account on y
 <meta property="og:url" content="https://merlijn.sebrechts.be/blog/2020-02-s4a-setup-ubuntu/" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2020-02-23T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-02-23T00:00:00+00:00" />
-
 <meta property="og:image" content="https://merlijn.sebrechts.be/img/2020/s4a/s4a-banner.png" key="ogimage" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tutorial: S4A on Ubuntu"/>
 <meta name="twitter:description" content="S4A, or Scratch for Arduino, is an app that you can use to program Arduino boards using Scratch. You can program robots and LED&rsquo;s without writing any code: all you need to do is drag and drop instructions in the visual programming environment.
@@ -192,11 +191,11 @@ sudo snap install arduino s4a After that, you need to give the user account on y
 <p><img src="/img/2020/s4a/s4a-shot01.png" alt="Upload succeeded"></p>
 <h2 id="step-1-install-arduino-ide-and-s4a">Step 1: Install Arduino IDE and S4A</h2>
 <p>The first step is to install Arduino and S4A from the Snap Store.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo snap install arduino s4a
-</code></pre></div><p>After that, you need to give the user account on your computer access to USB devices. Only administrators and user in the <code>dialout</code> group have access to Arduino board connected over USB. Because of that, you will get a &ldquo;Permission Denied&rdquo; error when you try to upload a program. In order to give your user access, run the following command and <strong>restart</strong> your computer.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Add the current user to the `dailout` group</span>
-sudo usermod -a -G dialout $USER
-</code></pre></div><p>After this, you need to <strong>restart your computer</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo snap install arduino s4a
+</span></span></code></pre></div><p>After that, you need to give the user account on your computer access to USB devices. Only administrators and user in the <code>dialout</code> group have access to Arduino board connected over USB. Because of that, you will get a &ldquo;Permission Denied&rdquo; error when you try to upload a program. In order to give your user access, run the following command and <strong>restart</strong> your computer.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Add the current user to the `dailout` group</span>
+</span></span><span style="display:flex;"><span>sudo usermod -a -G dialout $USER
+</span></span></code></pre></div><p>After this, you need to <strong>restart your computer</strong>.</p>
 <h2 id="step-2-upload-s4a-firmware-to-arduino-board">Step 2: Upload S4A firmware to Arduino board</h2>
 <p>The next step is to Flash the S4A firmware on your Arduino board. This is required so that S4A can connect to your board to run your apps on it. You need to install this firmware using the Arduino IDE.</p>
 <ol>
@@ -219,11 +218,11 @@ sudo usermod -a -G dialout $USER
 <h3 id="when-i-upload-code-to-the-arduino-i-get-a-permission-denied-error">When I upload code to the Arduino, I get a &ldquo;permission denied&rdquo; error</h3>
 <p>When you get the following error, that means that the Arduino IDE is not allowed access to the Arduino board.</p>
 <pre tabindex="0"><code>An error occurred while uploading the sketch
-avrdude: ser_open(): can't open device &quot;/dev/ttyUSB0&quot;: Permission denied
+avrdude: ser_open(): can&#39;t open device &#34;/dev/ttyUSB0&#34;: Permission denied
 </code></pre><p>This means that either the IDE or your current user is not allowed access to the Arduino USB device. Make sure you execute the following commands <em>as the user which runs the IDE</em>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Give the current user access to the USB device.</span>
-sudo usermod -a -G dialout $USER
-</code></pre></div><p>After this, <strong>restart your computer</strong> and try again.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Give the current user access to the USB device.</span>
+</span></span><span style="display:flex;"><span>sudo usermod -a -G dialout $USER
+</span></span></code></pre></div><p>After this, <strong>restart your computer</strong> and try again.</p>
 <blockquote>
 <p><em>Note: if the user which runs the IDE does not have <code>sudo</code> permissions, you can grant the user permissions from another account by running <code>sudo usermod -a -G dialout &lt;username&gt;</code> and replacing <code>&lt;username&gt;</code> to the name of the user running the Arduino IDE.</em></p>
 </blockquote>
@@ -258,7 +257,7 @@ sudo usermod -a -G dialout $USER
   <article class="post">
     <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -451,14 +450,14 @@ sudo usermod -a -G dialout $USER
   <p class="copyright">
     © 2024 Merlijn Sebrechts
       <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.92.2' target='_blank' rel='noopener'>Hugo</a>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.109.0' target='_blank' rel='noopener'>Hugo</a>
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
 
       <script src="/js/highlight.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/html.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/css.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/js.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/toml.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.593b1494ead4e1333c161f2f57150b049c9049463a506a8be0ce88b2041d3b5d.js" integrity="sha256-WTsUlOrU4TM8Fh8vVxULBJyQSUY6UGqL4M6IsgQdO10="></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.9d88ddaa98317bcb4edc30879f086204e7380b2e5ec94aa11df2643e69861c80.js" integrity="sha256-nYjdqpgxe8tO3DCHnwhiBOc4Cy5eyUqhHfJkPmmGHIA="></script>
     <script src="/js/add-on.js"></script>
 <script type="application/javascript">
 var doNotTrack = false;
